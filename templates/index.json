@@ -226,7 +226,7 @@
       "settings": {
         "image": "shopify://shop_images/fashionable-man-by-textured-wall.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "adapt",
+        "image_height": "small",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",

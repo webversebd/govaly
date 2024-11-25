@@ -20,18 +20,10 @@
             "text": "Welcome to our store",
             "link": ""
           }
-        },
-        "announcement_BePDWh": {
-          "type": "announcement",
-          "settings": {
-            "text": "5% discount",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement_BePDWh"
+        "announcement-bar-0"
       ],
       "settings": {
         "color_scheme": "scheme-3",

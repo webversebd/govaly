@@ -128,6 +128,12 @@
             </span>
           </button>
         </div>
+        {{- 'icon-mail.svg' | asset_url -}}
+        <p class="announcement-bar__message h5">
+          <a href="mail:to{{{{ section.settings.mail  }}}}">
+          <span>{{ section.settings.mail  }}</span>
+          </a>
+        </p>
       </slideshow-component>
       {%- if request.design_mode -%}
         <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
@@ -139,12 +145,6 @@
         </style>
       {%- endif -%}
     {%- endif -%}
-      {{- 'icon-mail.svg' | asset_url -}}
-          <p class="announcement-bar__message h5">
-            <a href="mail:to{{{{ section.settings.mail  }}}}">
-            <span>{{ section.settings.mail  }}</span>
-            </a>
-          </p>
     <div class="localization-wrapper">
       {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
         <localization-form class="small-hide medium-hide">

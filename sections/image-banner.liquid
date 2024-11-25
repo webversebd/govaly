@@ -120,8 +120,8 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 
-              class="color-{{ section.settings.color_scheme }} banner__heading inline-richtext {{ block.settings.heading_size }}"
+            <h2
+              class="banner__heading inline-richtext {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
@@ -370,12 +370,6 @@
       "type": "heading",
       "name": "t:sections.image-banner.blocks.heading.name",
       "settings": [
-        {
-          "type": "color_scheme",
-          "id": "color_scheme",
-          "label": "t:sections.all.colors.label",
-          "default": "scheme-1"
-        },
         {
           "type": "inline_richtext",
           "id": "heading",

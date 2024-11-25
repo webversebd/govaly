@@ -34,3 +34,10 @@ a{
 	}
   }
 
+.banner__text{
+	background: rgba(var(--color-foreground);
+	padding: 10px 20px;
+}
+.button{
+	border-radius: 50px;
+}

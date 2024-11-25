@@ -35,6 +35,9 @@
       >
         {%- if section.blocks.first.settings.text != blank -%}
           {%- if section.blocks.first.settings.link != blank -%}
+            <span class="svg-wrapper">
+              {{ section.blocks.first.settings.image |  image_url  }}
+            </span>
             <a
               href="{{ section.blocks.first.settings.link }}"
               class="announcement-bar__link link link--text focus-inset animate-arrow"
@@ -244,6 +247,11 @@
       "type": "announcement",
       "name": "t:sections.announcement-bar.blocks.announcement.name",
       "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
         {
           "type": "text",
           "id": "text",

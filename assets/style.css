@@ -1,0 +1,7 @@
+.announcement-bar.announcement-bar--one-announcement, .announcement-bar--one-announcement .announcement-bar__link {
+	margin: 0;
+}
+
+.announcement-bar, .announcement-bar__announcement {
+	grid-area: auto;
+}

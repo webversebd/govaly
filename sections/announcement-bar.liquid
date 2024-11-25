@@ -40,11 +40,8 @@
               class="announcement-bar__link link link--text focus-inset animate-arrow"
             >
           {%- endif -%}
+          <img class="svg-wrapper" src="{{ section.blocks.first.settings.icon |  image_url  }}" alt="">
           <p class="announcement-bar__message h5">
-            <span class="svg-wrapper">
-              <img src="{{ section.blocks.first.settings.icon |  image_url  }}" alt="">
-              
-            </span>
             <span>{{ section.blocks.first.settings.text | escape }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
               {{- 'icon-arrow.svg' | inline_asset_content -}}

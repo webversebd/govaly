@@ -41,6 +41,10 @@ a{
 .button{
 	border-radius: 50px;
 }
+.button::after,.button::before,.button:not([disabled]):hover::after{
+	box-shadow: none;
+}
+
 .btn{
     box-shadow: 0 4px 9px rgba(0,0,0,.05);
     cursor: pointer;
@@ -59,7 +63,14 @@ a{
     color: rgb(var(--color-button));
     background-color: rgb(var(--color-button-text));
 }
-.button::after,.button::before,.button:not([disabled]):hover::after{
-	box-shadow: none;
+.btn-secondary{
+    background-color: rgb(var(--color-secondary-button));
+    color: rgb(var(--color-secondary-button-text));
+    transition: .2s all linear;
 }
+.btn-secondary:hover{
+    color: rgb(var(--color-secondary-button));
+    background-color: rgb(var(--color-secondary-button-text));
+}
+
 

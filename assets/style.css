@@ -29,5 +29,8 @@ a{
 	.header--middle-left {
 	  grid-template-columns: auto auto;
 	}
+	.header__inline-menu{
+		text-align: center;
+	}
   }
 

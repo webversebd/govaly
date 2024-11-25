@@ -1,7 +1,23 @@
+a{
+	text-decoration: none;
+}
 .announcement-bar.announcement-bar--one-announcement, .announcement-bar--one-announcement .announcement-bar__link {
 	margin: 0;
 }
 
 .announcement-bar, .announcement-bar__announcement {
 	grid-area: auto;
+}
+.mail-wrapper{
+	display: flex;
+	justify-content: flex-end;
+}
+.mail-wrapper a{
+	align-items: center;
+}
+.br{
+	element {
+		border-right: 1px solid #fff;
+		padding-right: 10px;
+	}
 }

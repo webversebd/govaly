@@ -120,6 +120,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/retail-shopping-package.jpg",
+            "align": "right",
             "collection_name": "New Collection",
             "heading": "Intensive Glow C+ Serum",
             "button_label": "Explore More",
@@ -130,6 +131,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/retail-shopping-package.jpg",
+            "align": "left",
             "collection_name": "New Collection",
             "heading": "Intensive Glow C+ Serum",
             "button_label": "Explore More",

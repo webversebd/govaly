@@ -138,13 +138,11 @@
           }
         </style>
       {%- endif -%}
-    {%- endif -%}ppkk
-    {{- 'icon-mail.svg' | asset_url -}}
-    <p class="announcement-bar__message h5">
+    {%- endif -%}
+    {{- 'icon-mail.svg' | inline_asset_content -}}
       <a href="mail:to{{ section.settings.mail  }}">
       <span>{{ section.settings.mail  }}</span>
       </a>
-    </p>
     <div class="localization-wrapper">
       {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
         <localization-form class="small-hide medium-hide">

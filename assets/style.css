@@ -35,7 +35,7 @@ a{
   }
 
 .banner__text{
-	background: rgba(var(--color-foreground));
+	background: rgba(var(--color-button));
 	padding: 10px 20px;
 }
 .button{

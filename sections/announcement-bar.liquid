@@ -139,10 +139,12 @@
         </style>
       {%- endif -%}
     {%- endif -%}
+    <div class="localization-wrapper">
     {{- 'icon-mail.svg' | inline_asset_content -}}
-      <a href="mail:to{{ section.settings.mail  }}">
+      <a href="mailto:{{ section.settings.mail  }}">
       <span>{{ section.settings.mail  }}</span>
       </a>
+      </div>
     <div class="localization-wrapper">
       {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
         <localization-form class="small-hide medium-hide">

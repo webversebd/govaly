@@ -41,3 +41,6 @@ a{
 .button{
 	border-radius: 50px;
 }
+.button::after,.button::before{
+	box-shadow: none;
+}

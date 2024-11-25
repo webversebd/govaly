@@ -120,6 +120,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/retail-shopping-package.jpg",
+            "button": "primary",
             "align": "right",
             "collection_name": "New Collection",
             "heading": "Intensive Glow C+ Serum",
@@ -131,9 +132,10 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/retail-shopping-package.jpg",
-            "align": "left",
-            "collection_name": "New Collection",
-            "heading": "Intensive Glow C+ Serum",
+            "button": "secondary",
+            "align": "right",
+            "collection_name": "Big Offers",
+            "heading": "Bes of Women Styles",
             "button_label": "Explore More",
             "button_link": ""
           }

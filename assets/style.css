@@ -46,31 +46,38 @@ a{
 }
 
 .btn{
-    box-shadow: 0 4px 9px rgba(0,0,0,.05);
     cursor: pointer;
     padding: 2% 5%;
     border-radius: 50px;
     text-decoration: none;
-    border: 1px solid rgb(var(--color-button));
+    
     font-weight: 600;
 }
 .btn-primary{
     background-color: rgb(var(--color-button));
     color: rgb(var(--color-button-text));
+	border: 1px solid rgb(var(--color-button));
+	box-shadow: 0 4px 9px rgb(var(--color-button));
     transition: .2s all linear;
 }
 .btn-primary:hover{
     color: rgb(var(--color-button));
     background-color: rgb(var(--color-button-text));
+	border: 1px solid rgb(var(--color-button-text));
+	box-shadow: 0 4px 9px rgb(var(--color-button-text));
 }
 .btn-secondary{
     background-color: rgb(var(--color-secondary-button));
     color: rgb(var(--color-secondary-button-text));
+	border: 1px solid rgb(var(--color-secondary-button));
+	box-shadow: 0 4px 9px rgb(var(--color-secondary-button));
     transition: .2s all linear;
 }
 .btn-secondary:hover{
     color: rgb(var(--color-secondary-button));
     background-color: rgb(var(--color-secondary-button-text));
+	border: 1px solid rgb(var(--color-secondary-button-text));
+	box-shadow: 0 4px 9px rgb(var(--color-secondary-button-text));
 }
 
 

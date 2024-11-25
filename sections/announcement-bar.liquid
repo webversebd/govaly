@@ -139,10 +139,10 @@
         </style>
       {%- endif -%}
     {%- endif -%}
-    {{- 'icon-mail.svg' | inline_asset_content -}}
+      {{- 'icon-mail.svg' | asset_url -}}
           <p class="announcement-bar__message h5">
-            <a href="mail:to{{{{ section.blocks.first.settings.mail  }}}}">
-            <span>{{ section.blocks.first.settings.mail  }}</span>
+            <a href="mail:to{{{{ section.settings.mail  }}}}">
+            <span>{{ section.settings.mail  }}</span>
             </a>
           </p>
     <div class="localization-wrapper">
@@ -194,7 +194,7 @@
     },
     {
       "type": "text",
-      "id": "email",
+      "id": "mail",
       "default": "admin@gmail.com",
       "label": "Mail"
     },

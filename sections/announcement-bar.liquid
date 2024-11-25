@@ -42,7 +42,8 @@
           {%- endif -%}
           <p class="announcement-bar__message h5">
             <span class="svg-wrapper">
-              {{ section.blocks.first.settings.icon |  image_url  }}
+              <img src="{{ section.blocks.first.settings.icon |  image_url  }}" alt="">
+              
             </span>
             <span>{{ section.blocks.first.settings.text | escape }}</span>
             {%- if section.blocks.first.settings.link != blank -%}

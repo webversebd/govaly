@@ -150,12 +150,51 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "two_column_section_c3XK6e": {
+      "type": "two-column-section",
+      "blocks": {
+        "column_6BXbYc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "Big Offers!",
+            "heading": "Mens Big Collections",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        },
+        "column_Cy9JRi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
+            "button": "secondary",
+            "align": "left",
+            "collection_name": "Big Offers!",
+            "heading": "Womens Big Collections",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_6BXbYc",
+        "column_Cy9JRi"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "slideshow_hKGaey",
     "image_banner",
     "featured_collection",
-    "two_column_section_qXNdAN"
+    "two_column_section_qXNdAN",
+    "two_column_section_c3XK6e"
   ]
 }

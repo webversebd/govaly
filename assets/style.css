@@ -17,7 +17,7 @@ a{
 	align-items: center;
 	text-decoration: none;
 }
-.br{
+.br, .br:first-child{
 		border-right: 1px solid #fff;
 		padding-right: 10px;
 }

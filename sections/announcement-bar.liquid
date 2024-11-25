@@ -139,9 +139,9 @@
         </style>
       {%- endif -%}
     {%- endif -%}
-    <div class="localization-wrapper">
-    {{- 'icon-mail.svg' | inline_asset_content -}}
-      <a href="mailto:{{ section.settings.mail  }}">
+    <div class="mail-wrapper">
+      <a class="link" href="mailto:{{ section.settings.mail  }}">
+        {{- 'icon-mail.svg' | inline_asset_content -}}
       <span>{{ section.settings.mail  }}</span>
       </a>
       </div>

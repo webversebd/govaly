@@ -116,34 +116,34 @@
     "two_column_section_qXNdAN": {
       "type": "two-column-section",
       "blocks": {
-        "column_NXwnma": {
+        "column_CTFx9x": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/retail-shopping-package.jpg",
             "button": "primary",
             "align": "right",
-            "collection_name": "New Collection",
-            "heading": "Intensive Glow C+ Serum",
+            "collection_name": "Big Offers!",
+            "heading": "Mens Big Collections",
             "button_label": "Explore More",
             "button_link": ""
           }
         },
-        "column_G3m49a": {
+        "column_6d6a3n": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/retail-shopping-package.jpg",
             "button": "secondary",
-            "align": "right",
-            "collection_name": "Big Offers",
-            "heading": "Bes of Women Styles",
+            "align": "left",
+            "collection_name": "Big Offers!",
+            "heading": "Womens Big Collections",
             "button_label": "Explore More",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "column_NXwnma",
-        "column_G3m49a"
+        "column_CTFx9x",
+        "column_6d6a3n"
       ],
       "settings": {
         "color_scheme": "",

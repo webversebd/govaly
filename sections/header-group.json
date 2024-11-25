@@ -14,16 +14,17 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
+        "announcement_b9FEkp": {
           "type": "announcement",
           "settings": {
+            "icon": "shopify://shop_images/email-1-svgrepo-com.svg",
             "text": "Welcome to our store",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement_b9FEkp"
       ],
       "settings": {
         "color_scheme": "scheme-3",

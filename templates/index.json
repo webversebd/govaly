@@ -171,7 +171,7 @@
           "settings": {
             "image": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
             "button": "secondary",
-            "align": "left",
+            "align": "right",
             "collection_name": "Big Offers!",
             "heading": "Womens Big Collections",
             "button_label": "Explore More",

@@ -150,12 +150,100 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "two_column_section_c3XK6e": {
+      "type": "two-column-section",
+      "blocks": {
+        "column_6BXbYc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "Big Offers!",
+            "heading": "Mens Big Collections",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        },
+        "column_Cy9JRi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
+            "button": "secondary",
+            "align": "right",
+            "collection_name": "Big Offers!",
+            "heading": "Womens Big Collections",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_6BXbYc",
+        "column_Cy9JRi"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_y3ArPR": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_cVCdBg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_zKeHA3": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_g4HyJA": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cVCdBg",
+        "text_zKeHA3",
+        "buttons_g4HyJA"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/fashionable-man-by-textured-wall.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "slideshow_hKGaey",
     "image_banner",
     "featured_collection",
-    "two_column_section_qXNdAN"
+    "two_column_section_qXNdAN",
+    "two_column_section_c3XK6e",
+    "image_banner_y3ArPR"
   ]
 }

@@ -85,6 +85,9 @@
     flex-direction: row;
   }
 
+  .banner--tiny:not(.banner--adapt) {
+    min-height: 27rem;
+  }
   .banner--small:not(.banner--adapt) {
     min-height: 42rem;
   }

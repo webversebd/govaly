@@ -17,6 +17,7 @@
         "announcement_b9FEkp": {
           "type": "announcement",
           "settings": {
+            "icon": "shopify://shop_images/email-1-svgrepo-com.svg",
             "text": "Welcome to our store",
             "link": "shopify://collections/frontpage"
           }

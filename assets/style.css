@@ -13,11 +13,11 @@ a{
 	justify-content: flex-end;
 }
 .mail-wrapper a{
+	display: flex;
 	align-items: center;
+	text-decoration: none;
 }
 .br{
-	element {
 		border-right: 1px solid #fff;
 		padding-right: 10px;
-	}
 }

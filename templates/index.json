@@ -112,11 +112,46 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "two_column_section_qXNdAN": {
+      "type": "two-column-section",
+      "blocks": {
+        "column_NXwnma": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "collection_name": "New Collection",
+            "heading": "Intensive Glow C+ Serum",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        },
+        "column_G3m49a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/retail-shopping-package.jpg",
+            "collection_name": "New Collection",
+            "heading": "Intensive Glow C+ Serum",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_NXwnma",
+        "column_G3m49a"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "slideshow_hKGaey",
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "two_column_section_qXNdAN"
   ]
 }

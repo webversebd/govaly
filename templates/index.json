@@ -195,33 +195,29 @@
         "heading_cVCdBg": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "not just a deal",
+            "heading_size": "h2"
+          }
+        },
+        "heading_LqaEU7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Big Collections Modern Wear",
             "heading_size": "h1"
           }
         },
-        "text_zKeHA3": {
-          "type": "text",
+        "heading_YPGPab": {
+          "type": "heading",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_g4HyJA": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "heading": "the biggest ever shopping festive",
+            "heading_size": "h2"
           }
         }
       },
       "block_order": [
         "heading_cVCdBg",
-        "text_zKeHA3",
-        "buttons_g4HyJA"
+        "heading_LqaEU7",
+        "heading_YPGPab"
       ],
       "settings": {
         "image": "shopify://shop_images/fashionable-man-by-textured-wall.jpg",

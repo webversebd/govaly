@@ -139,6 +139,12 @@
         </style>
       {%- endif -%}
     {%- endif -%}
+    {{- 'icon-mail.svg' | inline_asset_content -}}
+          <p class="announcement-bar__message h5">
+            <a href="mail:to{{{{ section.blocks.first.settings.mail  }}}}">
+            <span>{{ section.blocks.first.settings.mail  }}</span>
+            </a>
+          </p>
     <div class="localization-wrapper">
       {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
         <localization-form class="small-hide medium-hide">
@@ -185,6 +191,12 @@
       "id": "show_line_separator",
       "default": true,
       "label": "t:sections.header.settings.show_line_separator.label"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "default": "admin@gmail.com",
+      "label": "Mail"
     },
     {
       "type": "header",

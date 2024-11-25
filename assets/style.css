@@ -17,11 +17,12 @@ a{
 	align-items: center;
 	text-decoration: none;
 }
+.br{
+	border-right: 1px solid #fff;
+	padding-right: 10px;
+}
 .br:last-child{
 		border-right:none;
 		padding-right: 0px;
 }
-.br, .br:first-child{
-	border-right: 1px solid #fff;
-	padding-right: 10px;
-}
+

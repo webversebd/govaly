@@ -41,6 +41,7 @@ a{
 .button{
 	border-radius: 50px;
 }
-.button::after,.button::before{
+.button::after,.button::before,.button:not([disabled]):hover::after{
 	box-shadow: none;
 }
+

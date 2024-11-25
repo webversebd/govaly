@@ -15,6 +15,7 @@
         "slide_bVGH84": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/hands-on-hips-girls-fashion.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",

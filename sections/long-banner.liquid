@@ -16,7 +16,7 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="section-{{ section.id }}-padding">
-        <img width="100%" height="{{section.settings.height}}" src="{{section.settings.image | image_url }}" alt="">  
+        <img style="object-fit: cover;object-position:{{section.settings.position}}" width="100%" height="{{section.settings.height}}" src="{{section.settings.image | image_url }}" alt="">  
   </div>
 </div>
 
@@ -30,15 +30,35 @@
   },
   "settings": [
     {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
       "type": "text",
       "id": "height",
       "label": "Banner Height",
       "default": "300px"
     },
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
+      "type": "select",
+      "id": "position",
+      "label": "Image Positions",
+      "default": "top",
+      "options": [
+        {
+          "value": "bottom",
+          "label": "bottom"
+        },
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "top",
+          "label": "top"
+        }
+      ]
     },
     {
       "type": "header",

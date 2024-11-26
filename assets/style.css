@@ -89,6 +89,7 @@ a{
 	margin: 5px;
 	color: #000;
     border-radius: 15px;
+	font-size: calc(var(--font-heading-scale) * 3rem);
   }
 
 

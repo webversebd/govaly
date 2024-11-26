@@ -418,10 +418,9 @@
     "long_banner_7ByHVY": {
       "type": "long-banner",
       "settings": {
-        "height": "300px",
         "image": "shopify://shop_images/fashionable-man-by-textured-wall.jpg",
-        "heading_size": "h1",
-        "color_scheme": "",
+        "height": "200px",
+        "position": "bottom",
         "padding_top": 40,
         "padding_bottom": 0
       }

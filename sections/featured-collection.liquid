@@ -37,6 +37,18 @@
     }
   }
 {%- endstyle -%}
+<style>
+  .days, .hours, .minutes, .seconds{
+	background: #fff;
+	padding: 5px;
+	margin: 5px;
+	color: #000;
+  border-radius: 15px;
+  }
+  .countdown_text{
+    margin-left: 2rem;
+  }
+</style>
 
 {%- liquid
   assign products_to_display = section.settings.collection.all_products_count

@@ -414,6 +414,17 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "logn_banner_ApkMXe": {
+      "type": "logn-banner",
+      "settings": {
+        "height": "300px",
+        "image": "shopify://shop_images/fashionable-man-by-textured-wall.jpg",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -425,6 +436,7 @@
     "image_banner_y3ArPR",
     "two_column_section_HgAcF9",
     "collection_list_DVz3Yp",
-    "collection_list_9wQgYL"
+    "collection_list_9wQgYL",
+    "logn_banner_ApkMXe"
   ]
 }

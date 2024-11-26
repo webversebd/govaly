@@ -95,7 +95,20 @@
     transition: 0.5s all ease-in-out; 
 }
 #two-column-gallary .item .image h3{
-    text-align: center;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#two-column-gallary .item:hover .image h3{
+    z-index: 9999;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
 }
 #two-column-gallary .item .text h2{
     font-size: 24px;

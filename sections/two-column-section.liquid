@@ -101,6 +101,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
+    font-size: 4rem;
+    transition: 0.5s linear all;
 }
 #two-column-gallary .item:hover .image h3{
     z-index: 9999;
@@ -109,6 +111,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
+    transition: 0.5s linear all;
 }
 #two-column-gallary .item .text h2{
     font-size: 24px;
@@ -148,7 +151,9 @@
           <div class="image overlay-hover">
             {% if block.settings.image != blank %}
               <img src="{{ block.settings.image | image_url }}" alt="">
-              <h3>Men</h3>
+              {% if block.settings.hover != blank %}
+              <h3>{{block.settings.hover}}</h3>
+              {% endif %}
             {% endif %}
           </div>
         </div>
@@ -247,6 +252,11 @@
           "id": "collection_name",
           "label": "Sub Text",
           "default" : "Big Offers!"
+          },
+          {
+          "type": "text",
+          "id": "hover",
+          "label": "Hover Text"
           },
           {
           "type": "text",

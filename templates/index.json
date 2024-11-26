@@ -302,7 +302,68 @@
         "height": "300px",
         "color_scheme": "",
         "padding_top": 40,
-        "padding_bottom": 0
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_DVz3Yp": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_3KMALQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_ycf6K6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_YDU7f8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_cj7hrC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_ebBj8V": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_A4dTkd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_3KMALQ",
+        "featured_collection_ycf6K6",
+        "featured_collection_YDU7f8",
+        "featured_collection_cj7hrC",
+        "featured_collection_ebBj8V",
+        "featured_collection_A4dTkd"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "scheme-3",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -313,6 +374,7 @@
     "two_column_section_qXNdAN",
     "two_column_section_c3XK6e",
     "image_banner_y3ArPR",
-    "two_column_section_HgAcF9"
+    "two_column_section_HgAcF9",
+    "collection_list_DVz3Yp"
   ]
 }

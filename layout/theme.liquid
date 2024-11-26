@@ -291,6 +291,10 @@
       >
     {%- endif -%}
 
+    {{ 'jquery-2.2.0.min.js' | asset_url | script_tag }}
+    {{ 'slick.min.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'slick-theme.min.css' | asset_url | stylesheet_tag: preload: true }}
+
     <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
 
     <script>
@@ -374,5 +378,12 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script>
+      var arrow; 
+      window.arrow = '{{ "arrow.svg" |  asset_url }}';
+    </script>
+    {{ 'slick.min.js' | asset_url | script_tag }}
+    {{ 'script.js' | asset_url | script_tag }}
   </body>
 </html>

@@ -123,7 +123,7 @@
   <div class="section-{{ section.id }}-padding page-width">
     <div class="box">
       {% for block in section.blocks %}
-        <div class="item item1" onclick="location.href={{block.settings.button_link}}">
+        <div class="item item1" onclick="location.href='{{block.settings.button_link}}'">
           <div class="text" style="float:{{block.settings.align}}">
             <h2>{{ block.settings.heading }}</h2>
             <p>{{ block.settings.collection_name }}</p>

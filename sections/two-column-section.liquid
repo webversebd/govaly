@@ -127,12 +127,11 @@
             <a class="btn btn-{{block.settings.button}}" href="{{block.settings.button_link}}">{{ block.settings.button_label }}</a>
           </div>
           <div class="image overlay-hover">
-            {% if block.settings.image != blank %}           
+            {% if block.settings.image != blank %}
               <img src="{{ block.settings.image | image_url }}" alt="">
             {% endif %}
           </div>
         </div>
-        
       {% endfor %}
     </div>
   </div>

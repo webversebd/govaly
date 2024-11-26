@@ -16,6 +16,17 @@
   }
 {%- endstyle -%}
 
+<style>
+  .days{
+	background: #fff;
+	padding: 10px;
+	color: #000;
+  }
+  .countdown_text{
+    margin-left: 2rem;
+  }
+</style>
+
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
@@ -35,7 +46,7 @@
           {{ section.settings.title }}
 
         {% if section.settings.date != blank %}
-          Deals Expire In
+          <span class="countdown_text">Deals Expire In</span>
           <span id="countdown-{{ section.id }}"></span>
         {% endif %}
         </h2>

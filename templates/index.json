@@ -52,7 +52,7 @@
           "type": "heading",
           "settings": {
             "heading": "Browse our latest products",
-            "heading_color": "#FFF",
+            "heading_color": "#ffffff",
             "heading_size": "h0"
           }
         },
@@ -147,6 +147,7 @@
         "column_6d6a3n"
       ],
       "settings": {
+        "height": "200px",
         "color_scheme": "scheme-1",
         "padding_top": 40,
         "padding_bottom": 52
@@ -161,9 +162,9 @@
             "image": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
             "button": "primary",
             "align": "left",
-            "collection_name": "Big Offers!",
-            "heading": "Mens Big Collections",
-            "button_label": "Explore More",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "Offer",
             "button_link": ""
           }
         },
@@ -171,11 +172,11 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
-            "button": "secondary",
-            "align": "right",
-            "collection_name": "Big Offers!",
-            "heading": "Womens Big Collections",
-            "button_label": "Explore More",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "Offer",
             "button_link": ""
           }
         }
@@ -185,6 +186,7 @@
         "column_Cy9JRi"
       ],
       "settings": {
+        "height": "200px",
         "color_scheme": "scheme-2",
         "padding_top": 40,
         "padding_bottom": 52
@@ -197,7 +199,7 @@
           "type": "heading",
           "settings": {
             "heading": "not just a deal",
-            "heading_color": "#FFF",
+            "heading_color": "#ffffff",
             "heading_size": "h2"
           }
         },
@@ -213,7 +215,7 @@
           "type": "heading",
           "settings": {
             "heading": "the biggest ever shopping festive",
-            "heading_color": "#FFF",
+            "heading_color": "#ffffff",
             "heading_size": "h2"
           }
         }

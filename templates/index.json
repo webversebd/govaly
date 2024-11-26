@@ -306,16 +306,6 @@
         "padding_bottom": 52
       }
     },
-    "long_banner_7ByHVY": {
-      "type": "long-banner",
-      "settings": {
-        "image": "shopify://shop_images/fashionable-man-by-textured-wall.jpg",
-        "height": "200px",
-        "position": "bottom",
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
     "collection_list_DVz3Yp": {
       "type": "collection-list",
       "blocks": {
@@ -378,6 +368,16 @@
         "padding_bottom": 36
       }
     },
+    "long_banner_7ByHVY": {
+      "type": "long-banner",
+      "settings": {
+        "image": "shopify://shop_images/fashionable-man-by-textured-wall.jpg",
+        "height": "200px",
+        "position": "bottom",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "collection_list_9wQgYL": {
       "type": "collection-list",
       "blocks": {
@@ -422,7 +422,7 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 28,
         "padding_bottom": 36
       }
     },

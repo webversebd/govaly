@@ -17,9 +17,9 @@
 {%- endstyle -%}
 
 <style>
-  .days{
+  .days, .hours, .minutes, .seconds{
 	background: #fff;
-	padding: 10px;
+	padding: 5px;
 	color: #000;
   }
   .countdown_text{
@@ -168,8 +168,7 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("countdown-{{ section.id }}").innerHTML = "<span class='days'>" + days+  "d "  + hours + "h "
-  + minutes + "m " + seconds + "s " + "</span>"
+  document.getElementById("countdown-{{ section.id }}").innerHTML = "<span class='days'>" + days +  "d " + "</span>"  +"<span class='hours'>" + hours  + "h " + "</span>" + "<span class='minutes'>" + minutes + "m "  + "</span>" + "<span class='seconds'>" + seconds + "s " + "</span>" ;
 
   // If the count down is finished, write some text
   if (distance < 0) {

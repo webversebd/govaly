@@ -70,6 +70,10 @@
       {%- if section.settings.title != blank -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
+          {% if section.settings.date != blank %}
+            <span class="countdown_text">Ends In</span>
+            <span id="countdown-{{ section.id }}"></span>
+          {% endif %}
         </h2>
       {%- endif -%}
       {%- if section.settings.description != blank
@@ -197,6 +201,35 @@
   </div>
 </div>
 
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("{{section.settings.date}}").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown-{{ section.id }}").innerHTML = "<span class='days'>" + days +  "d " + "</span>"  +"<span class='hours'>" + hours  + "h " + "</span>" + "<span class='minutes'>" + minutes + "m "  + "</span>" + "<span class='seconds'>" + seconds + "s " + "</span>" ;
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown-{{ section.id }}").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
 {% schema %}
 {
   "name": "t:sections.featured-collection.name",
@@ -212,6 +245,13 @@
       "default": "t:sections.featured-collection.settings.title.default",
       "label": "t:sections.featured-collection.settings.title.label"
     },
+    {
+      "type": "text",
+      "id": "date",
+      "label": "Select Date",
+      "default": "July 3, 2025 00:00:00",
+      "info":"M D, Y H:M:S"
+      },
     {
       "type": "select",
       "id": "heading_size",

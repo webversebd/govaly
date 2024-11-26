@@ -121,7 +121,6 @@
     <div class="box">
       {% for block in section.blocks %}
         <div class="item item1" >
-          <a href="{{block.settings.button_link}}">
           <div class="text" style="float:{{block.settings.align}}">
             <h2>{{ block.settings.heading }}</h2>
             <p>{{ block.settings.collection_name }}</p>
@@ -132,7 +131,6 @@
               <img src="{{ block.settings.image | image_url }}" alt="">
             {% endif %}
           </div>
-            </a>
         </div>
         
       {% endfor %}

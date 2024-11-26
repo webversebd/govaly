@@ -150,7 +150,7 @@
         "height": "200px",
         "color_scheme": "scheme-1",
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 28
       }
     },
     "two_column_section_c3XK6e": {
@@ -188,7 +188,7 @@
       "settings": {
         "height": "200px",
         "color_scheme": "scheme-2",
-        "padding_top": 40,
+        "padding_top": 8,
         "padding_bottom": 52
       }
     },

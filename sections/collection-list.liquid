@@ -22,6 +22,7 @@
 	padding: 5px;
 	margin: 5px;
 	color: #000;
+  border-radius: 15px;
   }
   .countdown_text{
     margin-left: 2rem;
@@ -47,7 +48,7 @@
           {{ section.settings.title }}
 
         {% if section.settings.date != blank %}
-          <span class="countdown_text">Deals Expire In</span>
+          <span class="countdown_text">Ends In</span>
           <span id="countdown-{{ section.id }}"></span>
         {% endif %}
         </h2>

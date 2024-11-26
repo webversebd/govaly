@@ -126,7 +126,7 @@
             "collection_name": "Big Offers!",
             "heading": "Mens Big Collections",
             "button_label": "Explore More",
-            "button_link": ""
+            "button_link": "shopify://collections"
           }
         },
         "column_6d6a3n": {
@@ -225,6 +225,7 @@
         "heading_LqaEU7",
         "heading_YPGPab"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/fashionable-man-by-textured-wall.jpg",
         "image_overlay_opacity": 10,

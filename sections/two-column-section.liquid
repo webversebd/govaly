@@ -85,7 +85,7 @@
     position: relative;
     overflow: hidden;
     transition: 0.5s all ease-in-out; 
-    height: 200px; 
+    height: {{section.settings.height}}; 
 }
 #two-column-gallary .item:hover .image{
     transform: scale(1.3);
@@ -133,6 +133,12 @@
 "tag": "section",
 "class": "section",
   "settings": [
+    {
+    "type": "text",
+    "id": "height",
+    "label": "Height",
+    "default": "200px"
+    },
     {
     "type": "color_scheme",
     "id": "color_scheme",

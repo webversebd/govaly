@@ -80,6 +80,7 @@ a{
 
 .countdown_text{
 	font-size: calc(var(--font-heading-scale) * 3rem);
+	margin-left: 2rem;
 }
 
 .days, .hours, .minutes, .seconds{
@@ -88,9 +89,6 @@ a{
 	margin: 5px;
 	color: #000;
     border-radius: 15px;
-  }
-  .countdown_text{
-    margin-left: 2rem;
   }
 
 

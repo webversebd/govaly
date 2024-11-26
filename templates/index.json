@@ -239,6 +239,71 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "two_column_section_HgAcF9": {
+      "type": "two-column-section",
+      "blocks": {
+        "column_M4AiUF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/model-laughs-barefoot.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "column_tiNFp9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/model-laughs-barefoot.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_gmgnBp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/model-laughs-barefoot.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_rtCwCq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/model-laughs-barefoot.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_M4AiUF",
+        "column_tiNFp9",
+        "column_gmgnBp",
+        "column_rtCwCq"
+      ],
+      "settings": {
+        "height": "300px",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -247,6 +312,7 @@
     "featured_collection",
     "two_column_section_qXNdAN",
     "two_column_section_c3XK6e",
-    "image_banner_y3ArPR"
+    "image_banner_y3ArPR",
+    "two_column_section_HgAcF9"
   ]
 }

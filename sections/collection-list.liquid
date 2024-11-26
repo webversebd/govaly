@@ -33,8 +33,8 @@
           class="collection-list-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         >
           {{ section.settings.title }}
-          
-        {% if section.settings.date %}
+
+        {% if section.settings.date != blank %}
           <span id="countdown"></span>
         {% endif %}
         </h2>
@@ -156,13 +156,13 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  document.getElementById("countdown-{{section.id}}").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
+    document.getElementById("countdown-{{section.id}}").innerHTML = "EXPIRED";
   }
 }, 1000);
 </script>

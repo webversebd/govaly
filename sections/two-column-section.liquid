@@ -120,7 +120,7 @@
   <div class="section-{{ section.id }}-padding page-width">
     <div class="box">
       {% for block in section.blocks %}
-        <a href="{{block.settings.button_link}}">
+        
         <div class="item item1" >
           <div class="text" style="float:{{block.settings.align}}">
             <h2>{{ block.settings.heading }}</h2>
@@ -129,11 +129,13 @@
           </div>
           <div class="image overlay-hover">
             {% if block.settings.image != blank %}
+              <a href="{{block.settings.button_link}}">
               <img src="{{ block.settings.image | image_url }}" alt="">
+              </a>
             {% endif %}
           </div>
         </div>
-        </a>
+        
       {% endfor %}
     </div>
   </div>

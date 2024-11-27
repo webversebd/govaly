@@ -252,6 +252,34 @@
         "padding_top": 12,
         "padding_bottom": 52
       }
+    },
+    "shop_brand_6a7Qfw": {
+      "type": "shop-brand",
+      "blocks": {
+        "column_Vbyewn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/mobile-phone-with-mask-icon.jpg",
+            "link": ""
+          }
+        },
+        "column_jipzBc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/emoji-faces-on-a-screen.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Vbyewn",
+        "column_jipzBc"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -260,6 +288,7 @@
     "two_column_section_9pndxa",
     "two_column_section_NXjHed",
     "two_column_section_GXg6wA",
-    "two_column_section_NCg3tx"
+    "two_column_section_NCg3tx",
+    "shop_brand_6a7Qfw"
   ]
 }

@@ -46,6 +46,8 @@
         width: 50px;
         height: 50px;
         margin-bottom: 10px;
+        position: absolute;
+        left: 30px;
     }
 
     /* Feature text styling */
@@ -68,7 +70,7 @@
     }
 
     /* Responsive design */
-    @media (max-width: 768px) {
+    @media (max-width: 700px) {
         .feature-bar {
             flex-direction: column;
             gap: 20px;
@@ -81,14 +83,17 @@
 </style>
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
-        <div class="feature-bar">
+        <div class="feature-bar isolate">
            {% for block in section.blocks %}
             <div class="feature-item">
                 <img src="{{block.settings.image |  image_url }}" alt="Free Shipping Icon">
                 <h3>{{block.settings.heading}}</h3>
                 <p>{{block.settings.subheading}}</p>
             </div>
-            <div class="divider"></div>
+            {% if block.last %}
+                <div class="divider"></div>
+            {% endif %}
+           
            {% endfor %}          
         </div>
     </div>

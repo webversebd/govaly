@@ -283,44 +283,17 @@
     "support_qeqKr8": {
       "type": "support",
       "blocks": {
-        "column_FVdWxB": {
+        "column_hPEyEf": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/01.png",
             "heading": "Free Shipping",
-            "subheading": "Deliver to Door"
-          }
-        },
-        "column_DQmdVQ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/02.png",
-            "heading": "No free",
-            "subheading": "OO"
-          }
-        },
-        "column_Nmqybe": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/email-1-svgrepo-com.svg",
-            "heading": "All Free",
-            "subheading": "sdf"
-          }
-        },
-        "column_AWMeyc": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/email-1-svgrepo-com.svg",
-            "heading": "Go",
-            "subheading": "o"
+            "subheading": "Deliver To Door"
           }
         }
       },
       "block_order": [
-        "column_FVdWxB",
-        "column_DQmdVQ",
-        "column_Nmqybe",
-        "column_AWMeyc"
+        "column_hPEyEf"
       ],
       "settings": {
         "color_scheme": "",

@@ -86,7 +86,7 @@
       ],
       "settings": {
         "slider_height": "default",
-        "center_width": true
+        "center_width": false
       }
     },
     "two_column_section_9pndxa": {

@@ -86,7 +86,7 @@
       ],
       "settings": {
         "slider_height": "default",
-        "center_width": false
+        "center_width": true
       }
     },
     "two_column_section_9pndxa": {
@@ -370,6 +370,7 @@
         "column_YP74zh",
         "column_kmPnX6"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "padding_top": 40,

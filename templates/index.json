@@ -411,18 +411,21 @@
         "column_ppN7nA": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/f01b228fdbd74cf2ae41ccf6e7ec5c50.webp",
             "link": ""
           }
         },
         "column_eLDXRU": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/966cbe59709942c1ad67c964207e352a.webp",
             "link": ""
           }
         },
         "column_qY8CE7": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/dbc3e6c0ed294e9eb744b81caa212690.webp",
             "link": ""
           }
         },

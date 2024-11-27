@@ -235,10 +235,10 @@
       "type": "long-banner",
       "settings": {
         "image": "shopify://shop_images/a87acbcdbad640249e31f7bac69b0593.webp",
-        "height": "300px",
+        "height": "200px",
         "position": "center",
-        "padding_top": 36,
-        "padding_bottom": 0
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "support_qeqKr8": {

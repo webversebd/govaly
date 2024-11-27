@@ -428,12 +428,6 @@
             "image": "shopify://shop_images/dbc3e6c0ed294e9eb744b81caa212690.webp",
             "link": ""
           }
-        },
-        "column_4x9jaH": {
-          "type": "column",
-          "settings": {
-            "link": ""
-          }
         }
       },
       "block_order": [
@@ -447,8 +441,7 @@
         "column_UFLdt6",
         "column_ppN7nA",
         "column_eLDXRU",
-        "column_qY8CE7",
-        "column_4x9jaH"
+        "column_qY8CE7"
       ],
       "settings": {
         "color_scheme": "",

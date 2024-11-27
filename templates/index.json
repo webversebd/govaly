@@ -458,6 +458,55 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "category_image_N86EFC": {
+      "type": "category-image",
+      "blocks": {
+        "column_hFcEiC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3-5.jpg",
+            "title": "Be the First to Introduce Exquisite Decor Collection",
+            "text": "New Arrival",
+            "link_label": "Shop Now",
+            "link": "",
+            "link_label2": "Learn More",
+            "link2": ""
+          }
+        },
+        "column_pzhYmg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/7-1.jpg",
+            "title": "Be the First to Introduce Exquisite Decor Collection",
+            "text": "New Arrival",
+            "link_label": "Shop Now",
+            "link": "",
+            "link_label2": "Learn More",
+            "link2": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_hFcEiC",
+        "column_pzhYmg"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -472,6 +521,7 @@
     "featured_collection_jVYHCY",
     "four_column_Mx6FMe",
     "support_qeqKr8",
-    "category_list_bnyC7d"
+    "category_list_bnyC7d",
+    "category_image_N86EFC"
   ]
 }

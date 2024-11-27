@@ -88,6 +88,35 @@
         "center_width": false
       }
     },
+    "featured_collection_jVYHCY": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Collections",
+        "date": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 6,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
     "category_image_N86EFC": {
       "type": "category-image",
       "blocks": {
@@ -211,35 +240,6 @@
         "padding_bottom": 0
       }
     },
-    "featured_collection_jVYHCY": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "date": "",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "",
-        "products_to_show": 4,
-        "columns_desktop": 6,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": true,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
     "support_qeqKr8": {
       "type": "support",
       "blocks": {
@@ -292,11 +292,11 @@
   "order": [
     "featured_collection",
     "slick_slider_KnEU9M",
+    "featured_collection_jVYHCY",
     "category_image_N86EFC",
     "countdown_4TRHPG",
     "category_list_bnyC7d",
     "long_banner_7N6BRH",
-    "featured_collection_jVYHCY",
     "support_qeqKr8"
   ]
 }

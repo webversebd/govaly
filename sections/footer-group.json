@@ -33,12 +33,20 @@
             "heading": "Quick links",
             "menu": "footer"
           }
+        },
+        "link_list_iKhNpq": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
         }
       },
       "block_order": [
         "brand_information_N6eUKY",
         "link_list_cP8Tdi",
-        "link_list_zJKQ4U"
+        "link_list_zJKQ4U",
+        "link_list_iKhNpq"
       ],
       "settings": {
         "payment_width": 90,

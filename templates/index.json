@@ -120,6 +120,7 @@
         "column_CTFx9x": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
             "button": "primary",
             "align": "right",
             "collection_name": "Big Offers!",
@@ -132,6 +133,7 @@
         "column_6d6a3n": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/model-with-leather-jacket-over-shoulders.jpg",
             "button": "secondary",
             "align": "left",
             "collection_name": "Big Offers!",

@@ -383,6 +383,7 @@ ul.slick-dots {
 }
 
 .multicolumnimagebutton .multicolumn_button {
+  display: flex;
   height: 400px;
 }
 .multicolumnimagebutton .multicolumn-card__image-wrapper .media {

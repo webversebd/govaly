@@ -286,6 +286,7 @@
         "column_FVdWxB": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/02.png",
             "heading": "Free Shipping",
             "subheading": "Deliver to Door"
           }

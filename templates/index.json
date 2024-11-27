@@ -86,7 +86,7 @@
       ],
       "settings": {
         "slider_height": "default",
-        "center_width": true
+        "center_width": false
       }
     },
     "two_column_section_9pndxa": {
@@ -319,6 +319,62 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "four_column_Mx6FMe": {
+      "type": "four-column",
+      "blocks": {
+        "column_9wCH7U": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fall-vegetable-box.jpg",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_6F8NTB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fall-vegetable-box.jpg",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_YP74zh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fall-vegetable-box.jpg",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_kmPnX6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fall-vegetable-box.jpg",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_9wCH7U",
+        "column_6F8NTB",
+        "column_YP74zh",
+        "column_kmPnX6"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -330,6 +386,7 @@
     "two_column_section_NCg3tx",
     "shop_brand_6a7Qfw",
     "long_banner_7N6BRH",
-    "featured_collection_jVYHCY"
+    "featured_collection_jVYHCY",
+    "four_column_Mx6FMe"
   ]
 }

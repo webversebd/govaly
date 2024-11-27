@@ -88,35 +88,6 @@
         "center_width": false
       }
     },
-    "featured_collection_jVYHCY": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "New Collections",
-        "date": "",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "new-arrivals",
-        "products_to_show": 11,
-        "columns_desktop": 6,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "scheme-1",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": true,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 52,
-        "padding_bottom": 64
-      }
-    },
     "category_image_N86EFC": {
       "type": "category-image",
       "blocks": {
@@ -187,7 +158,7 @@
         "featured_collection_DGh4tH": {
           "type": "featured_collection",
           "settings": {
-            "collection": "frontpage"
+            "collection": "new-arrivals"
           }
         },
         "featured_collection_R4yVVW": {
@@ -229,6 +200,35 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "featured_collection_jVYHCY": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Collections",
+        "date": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-arrivals",
+        "products_to_show": 11,
+        "columns_desktop": 6,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 52,
+        "padding_bottom": 64
       }
     },
     "long_banner_7N6BRH": {

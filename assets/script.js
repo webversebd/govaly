@@ -1,7 +1,7 @@
 // hero slider 
 $(document).ready(function(){
     hero_slider();
-    // shop_slider();
+    shop_slider();
     product_slider();
     upsell_slider();
     collection_item_slider();
@@ -82,7 +82,7 @@ $(document).ready(function(){
     }); 
   }
   function shop_slider() {
-    $('.box22').slick({ 
+    $('.box').slick({ 
         speed:800,
         fade: true,
         infinite: true,

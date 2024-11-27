@@ -358,10 +358,33 @@
             "image": "shopify://shop_images/1877f32ebf384754adb89fef68812654.webp",
             "link": "#"
           }
+        },
+        "column_FRNGYy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/d5d1bdf18bc749caa7d255e1d37eec99.webp",
+            "link": ""
+          }
+        },
+        "column_8nBdQ8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fa4b9817a8da4b6a9dfdc393a293f9fe.webp",
+            "link": ""
+          }
+        },
+        "column_J8rUnf": {
+          "type": "column",
+          "settings": {
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "column_hJLfFT"
+        "column_hJLfFT",
+        "column_FRNGYy",
+        "column_8nBdQ8",
+        "column_J8rUnf"
       ],
       "settings": {
         "color_scheme": "",

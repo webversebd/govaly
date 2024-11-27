@@ -306,12 +306,21 @@
             "heading": "Big Saving",
             "subheading": "At Lowest Price"
           }
+        },
+        "column_dbqFHR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/04.png",
+            "heading": "Money Back",
+            "subheading": "Easy To Return"
+          }
         }
       },
       "block_order": [
         "column_hPEyEf",
         "column_fVGGMT",
-        "column_K7LH6K"
+        "column_K7LH6K",
+        "column_dbqFHR"
       ],
       "settings": {
         "color_scheme": "",

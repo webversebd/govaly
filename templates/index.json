@@ -376,7 +376,22 @@
         "column_J8rUnf": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/eafcc3fff3d944e7890dafcc786f4b58.webp",
             "link": ""
+          }
+        },
+        "column_BJUtmh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/e6bdaa3101af4cde84c8e55cff87a840.webp",
+            "link": ""
+          }
+        },
+        "column_fYKhEp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/bced81ce70454f44a6c48521c903e2b1.webp",
+            "link": "https://facebook.com"
           }
         }
       },
@@ -384,7 +399,9 @@
         "column_hJLfFT",
         "column_FRNGYy",
         "column_8nBdQ8",
-        "column_J8rUnf"
+        "column_J8rUnf",
+        "column_BJUtmh",
+        "column_fYKhEp"
       ],
       "settings": {
         "color_scheme": "",

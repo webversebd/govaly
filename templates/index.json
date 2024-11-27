@@ -63,11 +63,12 @@
         "slides_NjYP8w": {
           "type": "slides",
           "settings": {
+            "bg_image": "shopify://shop_images/2-3-1-scaled.jpg",
             "content_position": "center-center",
             "content_alignment": "left",
             "opacity": 10,
-            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
-            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
+            "heading": "",
+            "sub_heading": "",
             "text": "",
             "btn_label": "Shop now",
             "url": "",

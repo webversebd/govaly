@@ -375,6 +375,14 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "support_qeqKr8": {
+      "type": "support",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -387,6 +395,7 @@
     "shop_brand_6a7Qfw",
     "long_banner_7N6BRH",
     "featured_collection_jVYHCY",
-    "four_column_Mx6FMe"
+    "four_column_Mx6FMe",
+    "support_qeqKr8"
   ]
 }

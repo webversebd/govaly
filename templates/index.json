@@ -88,86 +88,53 @@
         "center_width": false
       }
     },
-    "two_column_section_9pndxa": {
-      "type": "two-column-section",
+    "category_image_N86EFC": {
+      "type": "category-image",
       "blocks": {
-        "column_4kt39e": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/7-1.jpg",
-            "button": "primary",
-            "align": "left",
-            "collection_name": "Big Offers!",
-            "hover": "",
-            "heading": "Mens Big Collections",
-            "button_label": "Explore More",
-            "button_link": ""
-          }
-        },
-        "column_69dgUj": {
+        "column_hFcEiC": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/3-5.jpg",
-            "button": "secondary",
-            "align": "right",
-            "collection_name": "Big Offers!",
-            "hover": "",
-            "heading": "Womens Big Collections",
-            "button_label": "Explore More",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_4kt39e",
-        "column_69dgUj"
-      ],
-      "settings": {
-        "height": "1080px",
-        "color_scheme": "scheme-1",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "two_column_section_NXjHed": {
-      "type": "two-column-section",
-      "blocks": {
-        "column_jip76K": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/6-2.jpg",
-            "button": "primary",
-            "align": "left",
-            "collection_name": "",
-            "hover": "",
-            "heading": "",
-            "button_label": "Offer",
-            "button_link": ""
+            "title": "Be the First to Introduce Exquisite Decor Collection",
+            "text": "New Arrival",
+            "link_label": "Shop Now",
+            "link": "",
+            "link_label2": "Learn More",
+            "link2": ""
           }
         },
-        "column_RTkc9h": {
+        "column_pzhYmg": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/17121306420.jpg",
-            "button": "primary",
-            "align": "left",
-            "collection_name": "",
-            "hover": "",
-            "heading": "",
-            "button_label": "Offer",
-            "button_link": ""
+            "image": "shopify://shop_images/7-1.jpg",
+            "title": "Be the First to Introduce Exquisite Decor Collection",
+            "text": "New Arrival",
+            "link_label": "Shop Now",
+            "link": "",
+            "link_label2": "Learn More",
+            "link2": ""
           }
         }
       },
       "block_order": [
-        "column_jip76K",
-        "column_RTkc9h"
+        "column_hFcEiC",
+        "column_pzhYmg"
       ],
       "settings": {
-        "height": "600px",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
         "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "two_column_section_GXg6wA": {
@@ -446,6 +413,9 @@
         "featured_collection_DgG8aC",
         "featured_collection_AYEcDK"
       ],
+      "custom_css": [
+        "#Slider-template--23780886184251__category_list_bnyC7d .card__heading a {display: none;}"
+      ],
       "settings": {
         "title": "Collections",
         "heading_size": "h1",
@@ -458,62 +428,12 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "category_image_N86EFC": {
-      "type": "category-image",
-      "blocks": {
-        "column_hFcEiC": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/3-5.jpg",
-            "title": "Be the First to Introduce Exquisite Decor Collection",
-            "text": "New Arrival",
-            "link_label": "Shop Now",
-            "link": "",
-            "link_label2": "Learn More",
-            "link2": ""
-          }
-        },
-        "column_pzhYmg": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/7-1.jpg",
-            "title": "Be the First to Introduce Exquisite Decor Collection",
-            "text": "New Arrival",
-            "link_label": "Shop Now",
-            "link": "",
-            "link_label2": "Learn More",
-            "link2": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_hFcEiC",
-        "column_pzhYmg"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "featured_collection",
     "slick_slider_KnEU9M",
-    "two_column_section_9pndxa",
-    "two_column_section_NXjHed",
+    "category_image_N86EFC",
     "two_column_section_GXg6wA",
     "two_column_section_NCg3tx",
     "shop_brand_6a7Qfw",
@@ -521,7 +441,6 @@
     "featured_collection_jVYHCY",
     "four_column_Mx6FMe",
     "support_qeqKr8",
-    "category_list_bnyC7d",
-    "category_image_N86EFC"
+    "category_list_bnyC7d"
   ]
 }

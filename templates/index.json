@@ -253,102 +253,6 @@
         "padding_bottom": 0
       }
     },
-    "featured_collection_bt8tUf": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "New Collections",
-        "date": "",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "new-arrivals",
-        "products_to_show": 12,
-        "columns_desktop": 6,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "scheme-1",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "long_banner_V4MtPn": {
-      "type": "long-banner",
-      "settings": {
-        "image": "shopify://shop_images/65976ad2d6334153988d256e328a6590.webp",
-        "height": "200px",
-        "position": "center",
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
-    },
-    "support_qeqKr8": {
-      "type": "support",
-      "blocks": {
-        "column_hPEyEf": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/01.png",
-            "heading": "Free Shipping",
-            "subheading": "Deliver To Door"
-          }
-        },
-        "column_fVGGMT": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/02.png",
-            "heading": "24*7 Support",
-            "subheading": "In Safe Hand"
-          }
-        },
-        "column_K7LH6K": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/03.png",
-            "heading": "Big Saving",
-            "subheading": "At Lowest Price"
-          }
-        },
-        "column_dbqFHR": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/04.png",
-            "heading": "Money Back",
-            "subheading": "Easy To Return"
-          }
-        },
-        "column_gtWbWr": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/05_abaaf6fa-e8cf-43d9-a45a-272fe63adc20.png",
-            "heading": "Exchange Offer",
-            "subheading": "Easy To Exchange"
-          }
-        }
-      },
-      "block_order": [
-        "column_hPEyEf",
-        "column_fVGGMT",
-        "column_K7LH6K",
-        "column_dbqFHR",
-        "column_gtWbWr"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "shop_brand_6TyGVW": {
       "type": "shop-brand",
       "blocks": {
@@ -448,6 +352,102 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "featured_collection_bt8tUf": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Collections",
+        "date": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-arrivals",
+        "products_to_show": 12,
+        "columns_desktop": 6,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "long_banner_V4MtPn": {
+      "type": "long-banner",
+      "settings": {
+        "image": "shopify://shop_images/65976ad2d6334153988d256e328a6590.webp",
+        "height": "200px",
+        "position": "center",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "support_qeqKr8": {
+      "type": "support",
+      "blocks": {
+        "column_hPEyEf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/01.png",
+            "heading": "Free Shipping",
+            "subheading": "Deliver To Door"
+          }
+        },
+        "column_fVGGMT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/02.png",
+            "heading": "24*7 Support",
+            "subheading": "In Safe Hand"
+          }
+        },
+        "column_K7LH6K": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/03.png",
+            "heading": "Big Saving",
+            "subheading": "At Lowest Price"
+          }
+        },
+        "column_dbqFHR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/04.png",
+            "heading": "Money Back",
+            "subheading": "Easy To Return"
+          }
+        },
+        "column_gtWbWr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/05_abaaf6fa-e8cf-43d9-a45a-272fe63adc20.png",
+            "heading": "Exchange Offer",
+            "subheading": "Easy To Exchange"
+          }
+        }
+      },
+      "block_order": [
+        "column_hPEyEf",
+        "column_fVGGMT",
+        "column_K7LH6K",
+        "column_dbqFHR",
+        "column_gtWbWr"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -458,9 +458,9 @@
     "category_list_bnyC7d",
     "long_banner_7N6BRH",
     "featured_collection_jVYHCY",
+    "shop_brand_6TyGVW",
     "featured_collection_bt8tUf",
     "long_banner_V4MtPn",
-    "support_qeqKr8",
-    "shop_brand_6TyGVW"
+    "support_qeqKr8"
   ]
 }

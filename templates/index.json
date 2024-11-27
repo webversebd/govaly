@@ -94,6 +94,7 @@
         "column_4kt39e": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/7-1.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "Big Offers!",
@@ -122,7 +123,7 @@
         "column_69dgUj"
       ],
       "settings": {
-        "height": "400px",
+        "height": "1080px",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52

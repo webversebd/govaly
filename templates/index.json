@@ -518,35 +518,27 @@
         "center_width": false
       }
     },
-    "shop_brand_nF7cmc": {
+    "shop_brand_UK7A9y": {
       "type": "shop-brand",
       "blocks": {
-        "column_PR8XQe": {
+        "column_4YKrwM": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/american-flag-on-pole.jpg",
             "link": ""
           }
         },
-        "column_jkchmL": {
+        "column_fBHEEN": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/american-flag-on-pole.jpg",
             "link": ""
-          }
-        },
-        "column_fyKmPp": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/american-flag-on-pole.jpg",
-            "link": "google.com"
           }
         }
       },
       "block_order": [
-        "column_PR8XQe",
-        "column_jkchmL",
-        "column_fyKmPp"
+        "column_4YKrwM",
+        "column_fBHEEN"
       ],
       "settings": {
         "color_scheme": "",
@@ -568,6 +560,6 @@
     "collection_list_9wQgYL",
     "featured_collection_aJzyTW",
     "slick_slider_RXdEAb",
-    "shop_brand_nF7cmc"
+    "shop_brand_UK7A9y"
   ]
 }

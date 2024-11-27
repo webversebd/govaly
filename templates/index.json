@@ -148,6 +148,7 @@
         "column_RTkc9h": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/17121306420.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",

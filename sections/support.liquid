@@ -68,6 +68,9 @@
         height: 50px;
         background-color: #ddd;
     }
+    .divider:last-child {
+        display: none;
+    }
 
     /* Responsive design */
     @media (max-width: 700px) {
@@ -90,9 +93,8 @@
                 <h3>{{block.settings.heading}}</h3>
                 <p>{{block.settings.subheading}}</p>
             </div>
-            {% if block.last %}
                 <div class="divider"></div>
-            {% endif %}
+
            
            {% endfor %}          
         </div>

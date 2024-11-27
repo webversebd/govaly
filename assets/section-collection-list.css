@@ -281,7 +281,7 @@ ul.slick-dots {
 }
 #cart-icon-bubble svg {
   fill: #494949;
-  width: 3rem;
+  /* width: 3rem; */
 }
 .facets__summary-label, 
 .facets__summary>div>span {

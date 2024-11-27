@@ -527,10 +527,18 @@
             "image": "shopify://shop_images/american-flag-on-pole.jpg",
             "link": ""
           }
+        },
+        "column_fBHEEN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/american-flag-on-pole.jpg",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "column_4YKrwM"
+        "column_4YKrwM",
+        "column_fBHEEN"
       ],
       "settings": {
         "color_scheme": "",

@@ -383,7 +383,7 @@ ul.slick-dots {
 }
 
 .multicolumnimagebutton .multicolumn_button {
-  height: 450px;
+  height: 0;
 }
 .multicolumnimagebutton .multicolumn-card__image-wrapper .media {
   position: absolute;

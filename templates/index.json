@@ -164,9 +164,91 @@
         "column_RTkc9h"
       ],
       "settings": {
-        "height": "200px",
+        "height": "400px",
         "color_scheme": "",
         "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "two_column_section_GXg6wA": {
+      "type": "two-column-section",
+      "blocks": {
+        "column_GYGLed": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/man-dressed-in-monochrome-by-white-wall.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "hover": "MEN",
+            "heading": "",
+            "button_label": "",
+            "button_link": "shopify://collections"
+          }
+        },
+        "column_VWFDn8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/model-poses-near-bushes.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "hover": "Women",
+            "heading": "",
+            "button_label": "",
+            "button_link": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "column_GYGLed",
+        "column_VWFDn8"
+      ],
+      "settings": {
+        "height": "400px",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "two_column_section_NCg3tx": {
+      "type": "two-column-section",
+      "blocks": {
+        "column_MMx8Ra": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/kids-at-the-farm.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "hover": "Kids",
+            "heading": "",
+            "button_label": "",
+            "button_link": "shopify://collections"
+          }
+        },
+        "column_qWE6rD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/bbq-season-full-grill.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "hover": "ETC",
+            "heading": "",
+            "button_label": "",
+            "button_link": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "column_MMx8Ra",
+        "column_qWE6rD"
+      ],
+      "settings": {
+        "height": "400px",
+        "color_scheme": "",
+        "padding_top": 0,
         "padding_bottom": 52
       }
     }
@@ -175,6 +257,8 @@
     "featured_collection",
     "slick_slider_KnEU9M",
     "two_column_section_9pndxa",
-    "two_column_section_NXjHed"
+    "two_column_section_NXjHed",
+    "two_column_section_GXg6wA",
+    "two_column_section_NCg3tx"
   ]
 }

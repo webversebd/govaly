@@ -127,8 +127,6 @@
       <div class="image-container">
         {% if section.settings.image != blank %}
           <img src="{{ section.settings.image | image_url }}" alt="">
-        {% else %}
-          <img src="{{'banner.jpg '| asset_url}}" alt="">
         {% endif %}
       </div>
       <!-- Offer details container -->

@@ -32,8 +32,6 @@
         align-items: center;
         background-color: white;
         padding: 20px 10px;
-        border-top: 5px solid #ff5252; /* Red border at the top */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     /* Individual feature items */
@@ -84,44 +82,14 @@
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
         <div class="feature-bar">
-            <!-- Feature 1 -->
+           {% for block in section.blocks %}
             <div class="feature-item">
-                <img src="https://via.placeholder.com/50" alt="Free Shipping Icon">
-                <h3>Free Shipping</h3>
-                <p>Deliver To Door</p>
+                <img src="{{block.settings.image |  image_url }}" alt="Free Shipping Icon">
+                <h3>{{block.settings.heading}}</h3>
+                <p>{{block.settings.subheading}}</p>
             </div>
             <div class="divider"></div>
-    
-            <!-- Feature 2 -->
-            <div class="feature-item">
-                <img src="https://via.placeholder.com/50" alt="Support Icon">
-                <h3>24*7 Support</h3>
-                <p>In Safe Hands</p>
-            </div>
-            <div class="divider"></div>
-    
-            <!-- Feature 3 -->
-            <div class="feature-item">
-                <img src="https://via.placeholder.com/50" alt="Savings Icon">
-                <h3>Big Saving</h3>
-                <p>At Lowest Price</p>
-            </div>
-            <div class="divider"></div>
-    
-            <!-- Feature 4 -->
-            <div class="feature-item">
-                <img src="https://via.placeholder.com/50" alt="Money Back Icon">
-                <h3>Money Back</h3>
-                <p>Easy To Return</p>
-            </div>
-            <div class="divider"></div>
-    
-            <!-- Feature 5 -->
-            <div class="feature-item">
-                <img src="https://via.placeholder.com/50" alt="Exchange Icon">
-                <h3>Exchange Offer</h3>
-                <p>Easy To Exchange</p>
-            </div>
+           {% endfor %}          
         </div>
     </div>
   </div>
@@ -162,6 +130,29 @@
         "label": "t:sections.all.padding.padding_bottom",
         "default": 52
       }
+    ],
+    "blocks": [
+        {
+            "type": "column",
+            "name": "Add Slide",
+            "settings": [
+                {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Select Icon"
+                },
+                {
+                "type": "text",
+                "id": "heading",
+                "label": "Text"
+                },
+                {
+                "type": "text",
+                "id": "subheading",
+                "label": "Sub Text"
+                }
+                        ]
+        }
     ],
     "presets": [
       {

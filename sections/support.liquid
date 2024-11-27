@@ -68,7 +68,7 @@
         height: 50px;
         background-color: #ddd;
     }
-    .divider:last-of-type {
+    .divider:last-child {
         display: none;
     }
 
@@ -93,7 +93,9 @@
                 <h3>{{block.settings.heading}}</h3>
                 <p>{{block.settings.subheading}}</p>
             </div>
-                <div class="divider">&nbsp;</div>          
+                <div class="divider"></div>
+
+           
            {% endfor %}          
         </div>
     </div>

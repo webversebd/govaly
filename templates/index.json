@@ -45,13 +45,12 @@
         "slides_dVE7iD": {
           "type": "slides",
           "settings": {
-            "bg_image": "shopify://shop_images/american-flag-on-pole.jpg",
-            "bg_image_mob": "shopify://shop_images/model-with-leather-jacket-over-shoulders.jpg",
+            "bg_image": "shopify://shop_images/3-3-scaled.jpg",
             "content_position": "center-center",
             "content_alignment": "center",
             "opacity": 10,
-            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
-            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
+            "heading": "",
+            "sub_heading": "",
             "text": "",
             "btn_label": "Shop now",
             "url": "",
@@ -64,7 +63,6 @@
         "slides_NjYP8w": {
           "type": "slides",
           "settings": {
-            "bg_image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
             "content_position": "center-center",
             "content_alignment": "left",
             "opacity": 10,
@@ -95,7 +93,6 @@
         "column_4kt39e": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/man-dressed-in-monochrome-by-white-wall.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "Big Offers!",
@@ -136,7 +133,6 @@
         "column_jip76K": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/bbq-season-full-grill.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",
@@ -149,7 +145,6 @@
         "column_RTkc9h": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/bbq-season-full-grill.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",
@@ -177,7 +172,6 @@
         "column_GYGLed": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/man-dressed-in-monochrome-by-white-wall.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",
@@ -190,7 +184,6 @@
         "column_VWFDn8": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/model-poses-near-bushes.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",
@@ -218,7 +211,6 @@
         "column_MMx8Ra": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/kids-at-the-farm.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",
@@ -231,7 +223,6 @@
         "column_qWE6rD": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/bbq-season-full-grill.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",
@@ -259,14 +250,12 @@
         "column_Vbyewn": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/mobile-phone-with-mask-icon.jpg",
             "link": ""
           }
         },
         "column_jipzBc": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/emoji-faces-on-a-screen.jpg",
             "link": ""
           }
         }
@@ -284,7 +273,6 @@
     "long_banner_7N6BRH": {
       "type": "long-banner",
       "settings": {
-        "image": "shopify://shop_images/large-banner-at-demonstration.jpg",
         "height": "300px",
         "position": "center",
         "padding_top": 36,
@@ -326,7 +314,6 @@
         "column_9wCH7U": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/fall-vegetable-box.jpg",
             "collection_name": "",
             "heading": "",
             "button_label": "",
@@ -336,7 +323,6 @@
         "column_6F8NTB": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/fall-vegetable-box.jpg",
             "collection_name": "",
             "heading": "",
             "button_label": "",
@@ -346,7 +332,6 @@
         "column_YP74zh": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/fall-vegetable-box.jpg",
             "collection_name": "",
             "heading": "",
             "button_label": "",
@@ -356,7 +341,6 @@
         "column_kmPnX6": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/fall-vegetable-box.jpg",
             "collection_name": "",
             "heading": "",
             "button_label": "",

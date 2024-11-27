@@ -314,13 +314,22 @@
             "heading": "Money Back",
             "subheading": "Easy To Return"
           }
+        },
+        "column_gtWbWr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/05_abaaf6fa-e8cf-43d9-a45a-272fe63adc20.png",
+            "heading": "Exchange Offer",
+            "subheading": "Easy To Exchange"
+          }
         }
       },
       "block_order": [
         "column_hPEyEf",
         "column_fVGGMT",
         "column_K7LH6K",
-        "column_dbqFHR"
+        "column_dbqFHR",
+        "column_gtWbWr"
       ],
       "settings": {
         "color_scheme": "",

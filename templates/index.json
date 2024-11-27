@@ -407,6 +407,30 @@
             "image": "shopify://shop_images/ded88a77171d4bcf865978f7522c1613.webp",
             "link": ""
           }
+        },
+        "column_ppN7nA": {
+          "type": "column",
+          "settings": {
+            "link": ""
+          }
+        },
+        "column_eLDXRU": {
+          "type": "column",
+          "settings": {
+            "link": ""
+          }
+        },
+        "column_qY8CE7": {
+          "type": "column",
+          "settings": {
+            "link": ""
+          }
+        },
+        "column_4x9jaH": {
+          "type": "column",
+          "settings": {
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -417,7 +441,11 @@
         "column_BJUtmh",
         "column_fYKhEp",
         "column_QKREK4",
-        "column_UFLdt6"
+        "column_UFLdt6",
+        "column_ppN7nA",
+        "column_eLDXRU",
+        "column_qY8CE7",
+        "column_4x9jaH"
       ],
       "settings": {
         "color_scheme": "",

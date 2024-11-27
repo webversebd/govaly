@@ -1,7 +1,7 @@
 <style>
     /* three column Gallary CSS */
 
-#three-column-gallary .box{
+#three-column-gallary .box123{
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -110,7 +110,7 @@
 
 <div id="three-column-gallary" class="color-{{ section.settings.color_scheme }} gradient isolate">
   <div class="section-{{ section.id }}-padding page-width">
-    <div class="box">
+    <div class="box123">
       {% for block in section.blocks %}
         <div class="item">
           <div class="text">
@@ -119,15 +119,14 @@
             <a class="btn-outline" href="{{block.settings.button_link}}">
             <span>{{ block.settings.button_label }}</span>
             <span class="arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2.5 8H13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9 3.5L13.5 8L9 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox123="0 0 20 20" fill="none"><path d="M2.5 8H13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9 3.5L13.5 8L9 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             </span>
             </a>
             
           </div>
           
           <div class="image">
-              <img src="{{ block.settings.image | image_url }}" alt="">
-             
+              <img src="{{ block.settings.image | image_url }}" alt="">           
           </div>
         </div>
       {% endfor %}

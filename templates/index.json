@@ -15,7 +15,6 @@
         "slide_bVGH84": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/hands-on-hips-girls-fashion.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -121,7 +120,6 @@
         "column_CTFx9x": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/retail-shopping-package.jpg",
             "button": "primary",
             "align": "right",
             "collection_name": "Big Offers!",
@@ -134,7 +132,6 @@
         "column_6d6a3n": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/retail-shopping-package.jpg",
             "button": "secondary",
             "align": "left",
             "collection_name": "Big Offers!",
@@ -162,7 +159,6 @@
         "column_6BXbYc": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",
@@ -175,7 +171,6 @@
         "column_Cy9JRi": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/silver-lamp-on-a-white-table-next-to-books.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",
@@ -232,7 +227,6 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/fashionable-man-by-textured-wall.jpg",
         "image_overlay_opacity": 10,
         "image_height": "tiny",
         "desktop_content_position": "middle-center",
@@ -251,7 +245,6 @@
         "column_M4AiUF": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/model-laughs-barefoot.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",
@@ -264,7 +257,6 @@
         "column_tiNFp9": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/model-laughs-barefoot.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",
@@ -277,7 +269,6 @@
         "column_gmgnBp": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/model-laughs-barefoot.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",
@@ -290,7 +281,6 @@
         "column_rtCwCq": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/model-laughs-barefoot.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",
@@ -379,7 +369,6 @@
     "long_banner_7ByHVY": {
       "type": "long-banner",
       "settings": {
-        "image": "shopify://shop_images/fashionable-man-by-textured-wall.jpg",
         "height": "200px",
         "position": "bottom",
         "padding_top": 40,
@@ -528,6 +517,42 @@
         "slider_height": "default",
         "center_width": false
       }
+    },
+    "shop_brand_nF7cmc": {
+      "type": "shop-brand",
+      "blocks": {
+        "column_PR8XQe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/american-flag-on-pole.jpg",
+            "link": ""
+          }
+        },
+        "column_jkchmL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/american-flag-on-pole.jpg",
+            "link": ""
+          }
+        },
+        "column_fyKmPp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/american-flag-on-pole.jpg",
+            "link": "google.com"
+          }
+        }
+      },
+      "block_order": [
+        "column_PR8XQe",
+        "column_jkchmL",
+        "column_fyKmPp"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -542,6 +567,7 @@
     "long_banner_7ByHVY",
     "collection_list_9wQgYL",
     "featured_collection_aJzyTW",
-    "slick_slider_RXdEAb"
+    "slick_slider_RXdEAb",
+    "shop_brand_nF7cmc"
   ]
 }

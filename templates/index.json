@@ -290,10 +290,19 @@
             "heading": "Free Shipping",
             "subheading": "Deliver To Door"
           }
+        },
+        "column_fVGGMT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/02.png",
+            "heading": "24*7 Support",
+            "subheading": "In Safe Hand"
+          }
         }
       },
       "block_order": [
-        "column_hPEyEf"
+        "column_hPEyEf",
+        "column_fVGGMT"
       ],
       "settings": {
         "color_scheme": "",

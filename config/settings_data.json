@@ -9,9 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/govaly-logo.png",
-    "logo_width": 120,
-    "favicon": "shopify://shop_images/Icon-logo2.png",
+    "logo_width": 90,
     "type_header_font": "dm_sans_n7",
     "heading_scale": 100,
     "type_body_font": "dm_sans_n4",

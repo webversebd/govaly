@@ -11,6 +11,21 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "new_announcement_bar_zx6dcP": {
+      "type": "new-announcement-bar",
+      "settings": {
+        "heading": "Welcome To Govaly",
+        "phone": "+88 01750 000223",
+        "email": "support@govaly.shop",
+        "about_url": "shopify://pages/contact",
+        "about_text": "About Us",
+        "contact_url": "shopify://pages/contact",
+        "contact_text": "Contact Us",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "header": {
       "type": "header",
       "settings": {
@@ -32,6 +47,7 @@
     }
   },
   "order": [
+    "new_announcement_bar_zx6dcP",
     "header"
   ]
 }

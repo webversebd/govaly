@@ -103,17 +103,6 @@
             "link2": ""
           }
         },
-        "column_aJA9eP": {
-          "type": "column",
-          "settings": {
-            "title": "Be the First to Introduce Exquisite Decor Collection",
-            "text": "New Arrival",
-            "link_label": "Shop Now",
-            "link": "",
-            "link_label2": "Learn More",
-            "link2": ""
-          }
-        },
         "column_pzhYmg": {
           "type": "column",
           "settings": {
@@ -129,7 +118,6 @@
       },
       "block_order": [
         "column_hFcEiC",
-        "column_aJA9eP",
         "column_pzhYmg"
       ],
       "settings": {

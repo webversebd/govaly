@@ -294,6 +294,7 @@
         "column_DQmdVQ": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/02.png",
             "heading": "No free",
             "subheading": "OO"
           }

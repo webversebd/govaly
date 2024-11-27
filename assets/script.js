@@ -1,6 +1,7 @@
 // hero slider 
 $(document).ready(function(){
     hero_slider();
+    shop_slider();
     product_slider();
     upsell_slider();
     collection_item_slider();
@@ -72,6 +73,21 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows:true,
+        dots:true,
+        prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
+        nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>"
+    }); 
+  }
+  function shop_slider() {
+    $('.box').slick({ 
+        speed:800,
+        fade: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 10,
         autoplay: true,
         autoplaySpeed: 4000,
         arrows:true,

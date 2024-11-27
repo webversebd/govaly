@@ -202,6 +202,16 @@
         "padding_bottom": 36
       }
     },
+    "long_banner_7N6BRH": {
+      "type": "long-banner",
+      "settings": {
+        "image": "shopify://shop_images/a87acbcdbad640249e31f7bac69b0593.webp",
+        "height": "200px",
+        "position": "center",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "featured_collection_jVYHCY": {
       "type": "featured-collection",
       "settings": {
@@ -231,7 +241,36 @@
         "padding_bottom": 0
       }
     },
-    "long_banner_7N6BRH": {
+    "featured_collection_bt8tUf": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Collections",
+        "date": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-arrivals",
+        "products_to_show": 12,
+        "columns_desktop": 6,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "long_banner_V4MtPn": {
       "type": "long-banner",
       "settings": {
         "image": "shopify://shop_images/a87acbcdbad640249e31f7bac69b0593.webp",
@@ -247,15 +286,14 @@
         "column_FVdWxB": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/email-1-svgrepo-com.svg",
-            "heading": "Free",
-            "subheading": "Shipping"
+            "image": "shopify://shop_images/01.png",
+            "heading": "Free Shipping",
+            "subheading": "Deliver to Door"
           }
         },
         "column_DQmdVQ": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/email-1-svgrepo-com.svg",
             "heading": "No free",
             "subheading": "OO"
           }
@@ -296,8 +334,10 @@
     "category_image_N86EFC",
     "countdown_4TRHPG",
     "category_list_bnyC7d",
-    "featured_collection_jVYHCY",
     "long_banner_7N6BRH",
+    "featured_collection_jVYHCY",
+    "featured_collection_bt8tUf",
+    "long_banner_V4MtPn",
     "support_qeqKr8"
   ]
 }

@@ -37,9 +37,144 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "slick_slider_KnEU9M": {
+      "type": "slick-slider",
+      "blocks": {
+        "slides_dVE7iD": {
+          "type": "slides",
+          "settings": {
+            "bg_image": "shopify://shop_images/american-flag-on-pole.jpg",
+            "bg_image_mob": "shopify://shop_images/model-with-leather-jacket-over-shoulders.jpg",
+            "content_position": "center-center",
+            "content_alignment": "center",
+            "opacity": 10,
+            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
+            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
+            "text": "",
+            "btn_label": "Shop now",
+            "url": "",
+            "second_label": "",
+            "second_url": "",
+            "enable_link": false,
+            "color_scheme": "accent-1"
+          }
+        },
+        "slides_NjYP8w": {
+          "type": "slides",
+          "settings": {
+            "bg_image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
+            "content_position": "center-center",
+            "content_alignment": "left",
+            "opacity": 10,
+            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
+            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
+            "text": "",
+            "btn_label": "Shop now",
+            "url": "",
+            "second_label": "",
+            "second_url": "",
+            "enable_link": false,
+            "color_scheme": "accent-1"
+          }
+        }
+      },
+      "block_order": [
+        "slides_dVE7iD",
+        "slides_NjYP8w"
+      ],
+      "settings": {
+        "slider_height": "default",
+        "center_width": true
+      }
+    },
+    "two_column_section_9pndxa": {
+      "type": "two-column-section",
+      "blocks": {
+        "column_4kt39e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/man-dressed-in-monochrome-by-white-wall.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "Big Offers!",
+            "hover": "",
+            "heading": "Mens Big Collections",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        },
+        "column_69dgUj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/model-with-leather-jacket-over-shoulders.jpg",
+            "button": "secondary",
+            "align": "right",
+            "collection_name": "Big Offers!",
+            "hover": "",
+            "heading": "Womens Big Collections",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_4kt39e",
+        "column_69dgUj"
+      ],
+      "settings": {
+        "height": "400px",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "two_column_section_NXjHed": {
+      "type": "two-column-section",
+      "blocks": {
+        "column_jip76K": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/bbq-season-full-grill.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "hover": "",
+            "heading": "",
+            "button_label": "Offer",
+            "button_link": ""
+          }
+        },
+        "column_RTkc9h": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/bbq-season-full-grill.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "hover": "",
+            "heading": "",
+            "button_label": "Offer",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_jip76K",
+        "column_RTkc9h"
+      ],
+      "settings": {
+        "height": "200px",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "featured_collection"
+    "featured_collection",
+    "slick_slider_KnEU9M",
+    "two_column_section_9pndxa",
+    "two_column_section_NXjHed"
   ]
 }

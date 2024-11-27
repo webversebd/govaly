@@ -137,6 +137,21 @@
         "padding_bottom": 36
       }
     },
+    "countdown_4TRHPG": {
+      "type": "countdown",
+      "settings": {
+        "image": "shopify://shop_images/2-3-1-scaled.jpg",
+        "offer": "-20%",
+        "heading": "Save on Sets",
+        "subtext": "Made using clean, non-toxic ingredients, our products are designed for everyone.",
+        "date": "July 3, 2025 00:00:00",
+        "button_label": "Get only $39.00",
+        "button_link": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "category_list_bnyC7d": {
       "type": "category-list",
       "blocks": {
@@ -434,6 +449,7 @@
     "featured_collection",
     "slick_slider_KnEU9M",
     "category_image_N86EFC",
+    "countdown_4TRHPG",
     "category_list_bnyC7d",
     "two_column_section_GXg6wA",
     "two_column_section_NCg3tx",

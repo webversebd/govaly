@@ -298,11 +298,20 @@
             "heading": "24*7 Support",
             "subheading": "In Safe Hand"
           }
+        },
+        "column_K7LH6K": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/03.png",
+            "heading": "Big Saving",
+            "subheading": "At Lowest Price"
+          }
         }
       },
       "block_order": [
         "column_hPEyEf",
-        "column_fVGGMT"
+        "column_fVGGMT",
+        "column_K7LH6K"
       ],
       "settings": {
         "color_scheme": "",

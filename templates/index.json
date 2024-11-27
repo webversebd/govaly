@@ -202,110 +202,6 @@
         "padding_bottom": 36
       }
     },
-    "two_column_section_GXg6wA": {
-      "type": "two-column-section",
-      "blocks": {
-        "column_GYGLed": {
-          "type": "column",
-          "settings": {
-            "button": "primary",
-            "align": "left",
-            "collection_name": "",
-            "hover": "MEN",
-            "heading": "",
-            "button_label": "",
-            "button_link": "shopify://collections"
-          }
-        },
-        "column_VWFDn8": {
-          "type": "column",
-          "settings": {
-            "button": "primary",
-            "align": "left",
-            "collection_name": "",
-            "hover": "Women",
-            "heading": "",
-            "button_label": "",
-            "button_link": "shopify://collections"
-          }
-        }
-      },
-      "block_order": [
-        "column_GYGLed",
-        "column_VWFDn8"
-      ],
-      "settings": {
-        "height": "300px",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "two_column_section_NCg3tx": {
-      "type": "two-column-section",
-      "blocks": {
-        "column_MMx8Ra": {
-          "type": "column",
-          "settings": {
-            "button": "primary",
-            "align": "left",
-            "collection_name": "",
-            "hover": "Kids",
-            "heading": "",
-            "button_label": "",
-            "button_link": "shopify://collections"
-          }
-        },
-        "column_qWE6rD": {
-          "type": "column",
-          "settings": {
-            "button": "primary",
-            "align": "left",
-            "collection_name": "",
-            "hover": "ETC",
-            "heading": "",
-            "button_label": "",
-            "button_link": "shopify://collections"
-          }
-        }
-      },
-      "block_order": [
-        "column_MMx8Ra",
-        "column_qWE6rD"
-      ],
-      "settings": {
-        "height": "300px",
-        "color_scheme": "",
-        "padding_top": 12,
-        "padding_bottom": 52
-      }
-    },
-    "shop_brand_6a7Qfw": {
-      "type": "shop-brand",
-      "blocks": {
-        "column_Vbyewn": {
-          "type": "column",
-          "settings": {
-            "link": ""
-          }
-        },
-        "column_jipzBc": {
-          "type": "column",
-          "settings": {
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_Vbyewn",
-        "column_jipzBc"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "long_banner_7N6BRH": {
       "type": "long-banner",
       "settings": {
@@ -342,58 +238,6 @@
         "swipe_on_mobile": true,
         "padding_top": 0,
         "padding_bottom": 36
-      }
-    },
-    "four_column_Mx6FMe": {
-      "type": "four-column",
-      "blocks": {
-        "column_9wCH7U": {
-          "type": "column",
-          "settings": {
-            "collection_name": "",
-            "heading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_6F8NTB": {
-          "type": "column",
-          "settings": {
-            "collection_name": "",
-            "heading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_YP74zh": {
-          "type": "column",
-          "settings": {
-            "collection_name": "",
-            "heading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_kmPnX6": {
-          "type": "column",
-          "settings": {
-            "collection_name": "",
-            "heading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_9wCH7U",
-        "column_6F8NTB",
-        "column_YP74zh",
-        "column_kmPnX6"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "support_qeqKr8": {
@@ -451,12 +295,8 @@
     "category_image_N86EFC",
     "countdown_4TRHPG",
     "category_list_bnyC7d",
-    "two_column_section_GXg6wA",
-    "two_column_section_NCg3tx",
-    "shop_brand_6a7Qfw",
     "long_banner_7N6BRH",
     "featured_collection_jVYHCY",
-    "four_column_Mx6FMe",
     "support_qeqKr8"
   ]
 }

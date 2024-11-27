@@ -82,7 +82,7 @@ $(document).ready(function(){
     }); 
   }
   function shop_slider() {
-    $('.box').slick({ 
+    $('.box22').slick({ 
         speed:800,
         fade: true,
         infinite: true,

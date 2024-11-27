@@ -135,6 +135,7 @@
         "column_jip76K": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/6-2.jpg",
             "button": "primary",
             "align": "left",
             "collection_name": "",
@@ -162,7 +163,7 @@
         "column_RTkc9h"
       ],
       "settings": {
-        "height": "400px",
+        "height": "600px",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52

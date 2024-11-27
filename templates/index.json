@@ -9,84 +9,9 @@
  */
 {
   "sections": {
-    "slideshow_hKGaey": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_bVGH84": {
-          "type": "slide",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "shopify://collections",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": true,
-            "text_alignment": "left",
-            "image_overlay_opacity": 20,
-            "color_scheme": "scheme-5",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_bVGH84"
-      ],
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "large",
-        "slider_visual": "dots",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "ambient",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Browse our latest products",
-            "heading_color": "#ffffff",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "date": "July 3, 2025 00:00:00",
@@ -114,26 +39,78 @@
         "padding_bottom": 36
       }
     },
-    "two_column_section_qXNdAN": {
+    "slick_slider_KnEU9M": {
+      "type": "slick-slider",
+      "blocks": {
+        "slides_dVE7iD": {
+          "type": "slides",
+          "settings": {
+            "bg_image": "shopify://shop_images/american-flag-on-pole.jpg",
+            "bg_image_mob": "shopify://shop_images/model-with-leather-jacket-over-shoulders.jpg",
+            "content_position": "center-center",
+            "content_alignment": "center",
+            "opacity": 10,
+            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
+            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
+            "text": "",
+            "btn_label": "Shop now",
+            "url": "",
+            "second_label": "",
+            "second_url": "",
+            "enable_link": false,
+            "color_scheme": "accent-1"
+          }
+        },
+        "slides_NjYP8w": {
+          "type": "slides",
+          "settings": {
+            "bg_image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
+            "content_position": "center-center",
+            "content_alignment": "left",
+            "opacity": 10,
+            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
+            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
+            "text": "",
+            "btn_label": "Shop now",
+            "url": "",
+            "second_label": "",
+            "second_url": "",
+            "enable_link": false,
+            "color_scheme": "accent-1"
+          }
+        }
+      },
+      "block_order": [
+        "slides_dVE7iD",
+        "slides_NjYP8w"
+      ],
+      "settings": {
+        "slider_height": "default",
+        "center_width": true
+      }
+    },
+    "two_column_section_9pndxa": {
       "type": "two-column-section",
       "blocks": {
-        "column_CTFx9x": {
+        "column_4kt39e": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/man-dressed-in-monochrome-by-white-wall.jpg",
             "button": "primary",
-            "align": "right",
+            "align": "left",
             "collection_name": "Big Offers!",
             "hover": "",
             "heading": "Mens Big Collections",
             "button_label": "Explore More",
-            "button_link": "shopify://collections"
+            "button_link": ""
           }
         },
-        "column_6d6a3n": {
+        "column_69dgUj": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/model-with-leather-jacket-over-shoulders.jpg",
             "button": "secondary",
-            "align": "left",
+            "align": "right",
             "collection_name": "Big Offers!",
             "hover": "",
             "heading": "Womens Big Collections",
@@ -143,423 +120,146 @@
         }
       },
       "block_order": [
-        "column_CTFx9x",
-        "column_6d6a3n"
+        "column_4kt39e",
+        "column_69dgUj"
       ],
       "settings": {
-        "height": "200px",
-        "color_scheme": "scheme-1",
-        "padding_top": 40,
-        "padding_bottom": 28
-      }
-    },
-    "two_column_section_c3XK6e": {
-      "type": "two-column-section",
-      "blocks": {
-        "column_6BXbYc": {
-          "type": "column",
-          "settings": {
-            "button": "primary",
-            "align": "left",
-            "collection_name": "",
-            "hover": "",
-            "heading": "",
-            "button_label": "Offer",
-            "button_link": ""
-          }
-        },
-        "column_Cy9JRi": {
-          "type": "column",
-          "settings": {
-            "button": "primary",
-            "align": "left",
-            "collection_name": "",
-            "hover": "",
-            "heading": "",
-            "button_label": "Offer",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_6BXbYc",
-        "column_Cy9JRi"
-      ],
-      "settings": {
-        "height": "200px",
-        "color_scheme": "scheme-2",
-        "padding_top": 8,
-        "padding_bottom": 52
-      }
-    },
-    "image_banner_y3ArPR": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_cVCdBg": {
-          "type": "heading",
-          "settings": {
-            "heading": "not just a deal",
-            "heading_color": "#ffffff",
-            "heading_size": "h2"
-          }
-        },
-        "heading_LqaEU7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Big Collections Modern Wear",
-            "heading_color": "#cd3939",
-            "heading_size": "h1"
-          }
-        },
-        "heading_YPGPab": {
-          "type": "heading",
-          "settings": {
-            "heading": "the biggest ever shopping festive",
-            "heading_color": "#ffffff",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "heading_cVCdBg",
-        "heading_LqaEU7",
-        "heading_YPGPab"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_overlay_opacity": 10,
-        "image_height": "tiny",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-5",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "two_column_section_HgAcF9": {
-      "type": "two-column-section",
-      "blocks": {
-        "column_M4AiUF": {
-          "type": "column",
-          "settings": {
-            "button": "primary",
-            "align": "left",
-            "collection_name": "",
-            "hover": "Men",
-            "heading": "",
-            "button_label": "",
-            "button_link": "shopify://collections/all"
-          }
-        },
-        "column_tiNFp9": {
-          "type": "column",
-          "settings": {
-            "button": "primary",
-            "align": "left",
-            "collection_name": "",
-            "hover": "",
-            "heading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_gmgnBp": {
-          "type": "column",
-          "settings": {
-            "button": "primary",
-            "align": "left",
-            "collection_name": "",
-            "hover": "",
-            "heading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_rtCwCq": {
-          "type": "column",
-          "settings": {
-            "button": "primary",
-            "align": "left",
-            "collection_name": "",
-            "hover": "",
-            "heading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_M4AiUF",
-        "column_tiNFp9",
-        "column_gmgnBp",
-        "column_rtCwCq"
-      ],
-      "settings": {
-        "height": "300px",
+        "height": "400px",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
       }
     },
-    "collection_list_DVz3Yp": {
-      "type": "collection-list",
+    "two_column_section_NXjHed": {
+      "type": "two-column-section",
       "blocks": {
-        "featured_collection_3KMALQ": {
-          "type": "featured_collection",
+        "column_jip76K": {
+          "type": "column",
           "settings": {
-            "collection": ""
+            "image": "shopify://shop_images/bbq-season-full-grill.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "hover": "",
+            "heading": "",
+            "button_label": "Offer",
+            "button_link": ""
           }
         },
-        "featured_collection_ycf6K6": {
-          "type": "featured_collection",
+        "column_RTkc9h": {
+          "type": "column",
           "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_YDU7f8": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_cj7hrC": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_ebBj8V": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_A4dTkd": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
+            "image": "shopify://shop_images/bbq-season-full-grill.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "hover": "",
+            "heading": "",
+            "button_label": "Offer",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "featured_collection_3KMALQ",
-        "featured_collection_ycf6K6",
-        "featured_collection_YDU7f8",
-        "featured_collection_cj7hrC",
-        "featured_collection_ebBj8V",
-        "featured_collection_A4dTkd"
+        "column_jip76K",
+        "column_RTkc9h"
       ],
       "settings": {
-        "title": "Collections",
-        "date": "",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 6,
-        "color_scheme": "scheme-4",
-        "show_view_all": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "height": "400px",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
-    "long_banner_7ByHVY": {
-      "type": "long-banner",
+    "two_column_section_GXg6wA": {
+      "type": "two-column-section",
+      "blocks": {
+        "column_GYGLed": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/man-dressed-in-monochrome-by-white-wall.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "hover": "MEN",
+            "heading": "",
+            "button_label": "",
+            "button_link": "shopify://collections"
+          }
+        },
+        "column_VWFDn8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/model-poses-near-bushes.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "hover": "Women",
+            "heading": "",
+            "button_label": "",
+            "button_link": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "column_GYGLed",
+        "column_VWFDn8"
+      ],
       "settings": {
-        "height": "200px",
-        "position": "bottom",
+        "height": "400px",
+        "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 0
       }
     },
-    "collection_list_9wQgYL": {
-      "type": "collection-list",
+    "two_column_section_NCg3tx": {
+      "type": "two-column-section",
       "blocks": {
-        "featured_collection_NH4KL8": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_KjMHWr": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_Hx8QY8": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_bN76wz": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_NH4KL8",
-        "featured_collection_KjMHWr",
-        "featured_collection_Hx8QY8",
-        "featured_collection_bN76wz"
-      ],
-      "settings": {
-        "title": "Collections",
-        "date": "July 3, 2025 00:00:00",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 6,
-        "color_scheme": "scheme-0bffdece-f639-4949-90e7-11de5bddd30d",
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "featured_collection_aJzyTW": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "date": "July 3, 2025 00:00:00",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "frontpage",
-        "products_to_show": 9,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "slick_slider_RXdEAb": {
-      "type": "slick-slider",
-      "blocks": {
-        "slides_pTz7PP": {
-          "type": "slides",
-          "settings": {
-            "content_position": "center-center",
-            "content_alignment": "left",
-            "opacity": 10,
-            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
-            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
-            "text": "",
-            "btn_label": "Shop now",
-            "url": "",
-            "second_label": "",
-            "second_url": "",
-            "enable_link": false,
-            "color_scheme": "accent-1"
-          }
-        },
-        "slides_YxhghX": {
-          "type": "slides",
-          "settings": {
-            "content_position": "center-center",
-            "content_alignment": "left",
-            "opacity": 10,
-            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
-            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
-            "text": "",
-            "btn_label": "Shop now",
-            "url": "",
-            "second_label": "",
-            "second_url": "",
-            "enable_link": false,
-            "color_scheme": "accent-1"
-          }
-        },
-        "slides_BF6jPH": {
-          "type": "slides",
-          "settings": {
-            "content_position": "center-center",
-            "content_alignment": "left",
-            "opacity": 10,
-            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
-            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
-            "text": "",
-            "btn_label": "Shop now",
-            "url": "",
-            "second_label": "",
-            "second_url": "",
-            "enable_link": false,
-            "color_scheme": "accent-1"
-          }
-        }
-      },
-      "block_order": [
-        "slides_pTz7PP",
-        "slides_YxhghX",
-        "slides_BF6jPH"
-      ],
-      "disabled": true,
-      "settings": {
-        "slider_height": "default",
-        "center_width": false
-      }
-    },
-    "shop_brand_UK7A9y": {
-      "type": "shop-brand",
-      "blocks": {
-        "column_4YKrwM": {
+        "column_MMx8Ra": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/american-flag-on-pole.jpg",
-            "link": ""
+            "image": "shopify://shop_images/kids-at-the-farm.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "hover": "Kids",
+            "heading": "",
+            "button_label": "",
+            "button_link": "shopify://collections"
           }
         },
-        "column_fBHEEN": {
+        "column_qWE6rD": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/american-flag-on-pole.jpg",
-            "link": ""
+            "image": "shopify://shop_images/bbq-season-full-grill.jpg",
+            "button": "primary",
+            "align": "left",
+            "collection_name": "",
+            "hover": "ETC",
+            "heading": "",
+            "button_label": "",
+            "button_link": "shopify://collections"
           }
         }
       },
       "block_order": [
-        "column_4YKrwM",
-        "column_fBHEEN"
+        "column_MMx8Ra",
+        "column_qWE6rD"
       ],
       "settings": {
+        "height": "400px",
         "color_scheme": "",
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 52
       }
     }
   },
   "order": [
-    "slideshow_hKGaey",
-    "image_banner",
     "featured_collection",
-    "two_column_section_qXNdAN",
-    "two_column_section_c3XK6e",
-    "image_banner_y3ArPR",
-    "two_column_section_HgAcF9",
-    "collection_list_DVz3Yp",
-    "long_banner_7ByHVY",
-    "collection_list_9wQgYL",
-    "featured_collection_aJzyTW",
-    "slick_slider_RXdEAb",
-    "shop_brand_UK7A9y"
+    "slick_slider_KnEU9M",
+    "two_column_section_9pndxa",
+    "two_column_section_NXjHed",
+    "two_column_section_GXg6wA",
+    "two_column_section_NCg3tx"
   ]
 }

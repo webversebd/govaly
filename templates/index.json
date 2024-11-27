@@ -348,6 +348,26 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "shop_brand_6TyGVW": {
+      "type": "shop-brand",
+      "blocks": {
+        "column_hJLfFT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1877f32ebf384754adb89fef68812654.webp",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "column_hJLfFT"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -358,8 +378,9 @@
     "category_list_bnyC7d",
     "long_banner_7N6BRH",
     "featured_collection_jVYHCY",
-    "long_banner_V4MtPn",
     "featured_collection_bt8tUf",
-    "support_qeqKr8"
+    "long_banner_V4MtPn",
+    "support_qeqKr8",
+    "shop_brand_6TyGVW"
   ]
 }

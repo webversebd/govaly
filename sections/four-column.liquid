@@ -6,7 +6,7 @@
     flex-direction:row;
     flex-wrap: wrap;
     justify-content:space-between;
-    align-items:center;
+    align-item33s:center;
     gap: 25px;
 }
 #three-column-gallary .image{
@@ -45,14 +45,14 @@
     font-weight: 400;
 }
 
-#three-column-gallary .item{
+#three-column-gallary .item33{
     width: calc(25% - 20px);
     position: relative;
     overflow: hidden;
     transition: 0.5s all ease-in-out; 
     height: 400px; 
 }
-#three-column-gallary .item .text h2{
+#three-column-gallary .item33 .text h2{
     font-size: 25px;
     margin: 20px 0px;
 }
@@ -87,7 +87,7 @@
 /* Responsive Mobile */
 
 @media only screen and (max-width: 767px) {
-    #three-column-gallary .item{
+    #three-column-gallary .item33{
         width: 100%;
         height: 330px;
     }
@@ -112,7 +112,7 @@
   <div class="section-{{ section.id }}-padding page-width">
     <div class="box123">
       {% for block in section.blocks %}
-        <div class="item">
+        <div class="item33">
           <div class="text">
             <h2>{{ block.settings.heading }}</h2>        
             <p>{{ block.settings.collection_name }}</p>

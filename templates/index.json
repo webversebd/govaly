@@ -234,6 +234,7 @@
     "long_banner_7N6BRH": {
       "type": "long-banner",
       "settings": {
+        "image": "shopify://shop_images/a87acbcdbad640249e31f7bac69b0593.webp",
         "height": "300px",
         "position": "center",
         "padding_top": 36,

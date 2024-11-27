@@ -1,7 +1,7 @@
 // hero slider 
 $(document).ready(function(){
     hero_slider();
-    shop_slider();
+    // shop_slider();
     product_slider();
     upsell_slider();
     collection_item_slider();

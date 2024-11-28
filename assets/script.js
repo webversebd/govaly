@@ -90,7 +90,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
-        arrows:true,
+        arrows:false,
         dots:true,
         prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
         nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>"

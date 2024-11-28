@@ -2,6 +2,9 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+.collection__view-all a:not(.link) {
+  margin-top: 0rem !important;
+}
 
 .collection-list-title {
   margin: 0;

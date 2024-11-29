@@ -7,7 +7,6 @@ $(document).ready(function(){
     collection_item_slider();
     review_slider(); 
     instagram_slider(); 
-    my_slider(); 
   
     // product tab 
     $('.product-tab-item').on('click', function(){
@@ -69,21 +68,6 @@ $(document).ready(function(){
   
   function hero_slider() {
     $('.slider-items').slick({ 
-        speed:800,
-        fade: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        arrows:true,
-        dots:true,
-        prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
-        nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>"
-    }); 
-  }
-  function my_slider() {
-    $('.slider-items-product').slick({ 
         speed:800,
         fade: true,
         infinite: true,

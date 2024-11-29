@@ -138,9 +138,9 @@ $(document).ready(function(){
         dots:false,
         responsive: [
             {
-              breakpoint: 767,
+              breakpoint: 480,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
               }

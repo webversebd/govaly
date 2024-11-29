@@ -87,7 +87,7 @@ $(document).ready(function(){
         speed:800,
         fade: true,
         infinite: true,
-        slidesToShow: 6,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,

@@ -357,7 +357,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": true,
+        "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
         "image_ratio": "portrait",
         "image_shape": "default",

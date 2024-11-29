@@ -1,172 +1,172 @@
 {%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: calc({{ section.settings.padding_top }}px * 0.75);
-      padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-  
-    @media screen and (min-width: 750px) {
-      .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+{%- endstyle -%}
+<style>
+      /* General reset */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
       }
-    }
-  {%- endstyle -%}
-  <style>
-    /* General reset */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f8f9fa;
-        color: #333;
-    }
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f8f9fa;
+          color: #333;
+      }
 
-    /* Container for the feature bar */
-    .feature-bar {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: white;
-        padding: 20px 10px;
-    }
+      /* Container for the feature bar */
+      .feature-bar {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          background-color: white;
+          padding: 20px 10px;
+      }
 
-    /* Individual feature items */
-    .feature-item {
-        text-align: center;
-        flex: 1;
-        padding: 10px;
-    }
+      /* Individual feature items */
+      .feature-item {
+          text-align: center;
+          flex: 1;
+          padding: 10px;
+      }
 
-    /* Feature icons */
-    .feature-item img {
-        width: 50px;
-        height: 50px;
-        margin-bottom: 10px;
-        position: absolute;
-        left: 0px;
-    }
+      /* Feature icons */
+      .feature-item img {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 10px;
+          position: absolute;
+          left: 0px;
+      }
 
-    /* Feature text styling */
-    .feature-item h3 {
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
+      /* Feature text styling */
+      .feature-item h3 {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 5px;
+      }
 
-    .feature-item p {
-        font-size: 14px;
-        color: #666;
-    }
+      .feature-item p {
+          font-size: 14px;
+          color: #666;
+      }
 
-    /* Divider between feature items */
-    .divider {
-        width: 1px;
-        height: 50px;
-        background-color: #ddd;
-    }
-    .divider:last-child {
-        display: none;
-    }
+      /* Divider between feature items */
+      .divider {
+          width: 1px;
+          height: 50px;
+          background-color: #ddd;
+      }
+      .divider:last-child {
+          display: none;
+      }
 
-    /* Responsive design */
-    @media (max-width: 700px) {
-        .feature-bar {
-            flex-direction: column;
-            gap: 20px;
-        }
+      /* Responsive design */
+      @media (max-width: 700px) {
+         .feature-bar {
+  	flex-direction: row;
+  	gap: 20px;
+  	flex-wrap: wrap;
+  }
 
-        .divider {
-            display: none;
-        }
-        .feature-item img {
-        position: static;
-    }
-    }
+          .divider {
+              display: none;
+          }
+          .feature-item img {
+          position: static;
+      }
+      }
 </style>
-  <div class="color-{{ section.settings.color_scheme }} gradient isolate">
-    <div class="section-{{ section.id }}-padding page-width">
-        <div class="feature-bar isolate">
-           {% for block in section.blocks %}
-            <div class="feature-item isolate">
-                <img src="{{block.settings.image |  image_url }}" alt="Free Shipping Icon">
-                <h3>{{block.settings.heading}}</h3>
-                <p>{{block.settings.subheading}}</p>
-            </div>
-                <div class="divider"></div>
-           {% endfor %}          
+<div class="color-{{ section.settings.color_scheme }} gradient isolate">
+  <div class="section-{{ section.id }}-padding page-width">
+    <div class="feature-bar isolate">
+      {% for block in section.blocks %}
+        <div class="feature-item isolate">
+          <img src="{{block.settings.image |  image_url }}" alt="Free Shipping Icon">
+          <h3>{{ block.settings.heading }}</h3>
+          <p>{{ block.settings.subheading }}</p>
         </div>
+        <div class="divider"></div>
+      {% endfor %}
     </div>
   </div>
-  
-  {% schema %}
-  {
-    "name": "Support",
-    "tag": "section",
-    "class": "section",
-    "settings": [
+</div>
+
+{% schema %}
+{
+  "name": "Support",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "blocks": [
       {
-        "type": "color_scheme",
-        "id": "color_scheme",
-        "label": "t:sections.all.colors.label",
-        "default": "scheme-1"
-      },
-      {
-        "type": "header",
-        "content": "t:sections.all.padding.section_padding_heading"
-      },
-      {
-        "type": "range",
-        "id": "padding_top",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "t:sections.all.padding.padding_top",
-        "default": 40
-      },
-      {
-        "type": "range",
-        "id": "padding_bottom",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "t:sections.all.padding.padding_bottom",
-        "default": 52
+          "type": "column",
+          "name": "Add Slide",
+          "settings": [
+              {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Select Icon"
+              },
+              {
+              "type": "text",
+              "id": "heading",
+              "label": "Text"
+              },
+              {
+              "type": "text",
+              "id": "subheading",
+              "label": "Sub Text"
+              }
+                      ]
       }
-    ],
-    "blocks": [
-        {
-            "type": "column",
-            "name": "Add Slide",
-            "settings": [
-                {
-                "type": "image_picker",
-                "id": "image",
-                "label": "Select Icon"
-                },
-                {
-                "type": "text",
-                "id": "heading",
-                "label": "Text"
-                },
-                {
-                "type": "text",
-                "id": "subheading",
-                "label": "Sub Text"
-                }
-                        ]
-        }
-    ],
-    "presets": [
-      {
-        "name": "Support Column"
-      }
-    ]
-  }
-  {% endschema %}
-  
+  ],
+  "presets": [
+    {
+      "name": "Support Column"
+    }
+  ]
+}
+{% endschema %}

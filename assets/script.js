@@ -130,8 +130,9 @@ $(document).ready(function(){
   function collection_item_slider() {
     $('.collection-item-slider').slick({ 
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 6,
         slidesToScroll: 1,
+        arrow:true,
         prevArrow:"<span type='button' class='product-arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
         nextArrow:"<span type='button' class='product-arrow-next'><img src='"+ arrow +"' alt='arrow'></span>",
         dots:false,
@@ -152,8 +153,9 @@ $(document).ready(function(){
   function product_slider() {
     $('.product-contents-slider').slick({
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 6,
         slidesToScroll: 1,
+        arrow: true,
         prevArrow:"<span type='button' class='product-arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
         nextArrow:"<span type='button' class='product-arrow-next'><img src='"+ arrow +"' alt='arrow'></span>",
         dots:false,

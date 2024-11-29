@@ -130,7 +130,7 @@ $(document).ready(function(){
   function product_slick_slider() {
     $('.product-slick-slider').slick({ 
         infinite: true,
-        slidesToShow: 2,
+        slidesToShow: 6,
         slidesToScroll: 1,
         arrows:true,
         prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",

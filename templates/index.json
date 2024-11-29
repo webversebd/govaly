@@ -13,7 +13,7 @@
       "type": "product-slider",
       "settings": {
         "collection": "new-arrivals",
-        "show_view_all": false,
+        "show_view_all": true,
         "title": "Collections",
         "heading_size": "h1",
         "color_scheme": "",

@@ -31,6 +31,11 @@
    .product-slick-slider .card-wrapper{
      padding:5px
    }
+     @media screen and (max-width: 750px) {
+      .product-slick-slider .card:not(.ratio) {
+    height: 330px;
+   }
+      }
 </style>
   <div class=" gradient isolate">
     <div class="color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding page-width">

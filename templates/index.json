@@ -450,6 +450,17 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "product_slider_rRkT9L": {
+      "type": "product-slider",
+      "settings": {
+        "collection": "new-arrivals",
+        "title": "Collections",
+        "heading_size": "h2",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -464,6 +475,7 @@
     "shop_brand_6TyGVW",
     "featured_collection_bt8tUf",
     "long_banner_V4MtPn",
-    "support_qeqKr8"
+    "support_qeqKr8",
+    "product_slider_rRkT9L"
   ]
 }

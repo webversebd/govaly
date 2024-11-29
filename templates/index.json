@@ -207,6 +207,7 @@
       "settings": {
         "image": "shopify://shop_images/a87acbcdbad640249e31f7bac69b0593.webp",
         "height": "200px",
+        "width": true,
         "position": "center",
         "padding_top": 20,
         "padding_bottom": 20
@@ -375,6 +376,7 @@
       "settings": {
         "image": "shopify://shop_images/65976ad2d6334153988d256e328a6590.webp",
         "height": "200px",
+        "width": true,
         "position": "center",
         "padding_top": 20,
         "padding_bottom": 20

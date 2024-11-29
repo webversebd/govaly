@@ -19,14 +19,12 @@
   /* Social media section */
   .social-media{
     display: flex;
-    color: #000;
   }
   .social-media span {
     margin-right: 20px;
   }
   .social-media a {
    text-decoration: none;
-   color: #000;
   }
   .social-info-bar svg{
     height: 20px;

@@ -457,7 +457,7 @@
         "collection": "new-arrivals",
         "title": "Collections",
         "heading_size": "h2",
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "padding_top": 40,
         "padding_bottom": 52
       }

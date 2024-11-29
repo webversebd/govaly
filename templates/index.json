@@ -9,6 +9,15 @@
  */
 {
   "sections": {
+    "product_slider_dYJdFy": {
+      "type": "product-slider",
+      "settings": {
+        "collection": "new-arrivals",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "disabled": true,
@@ -441,6 +450,7 @@
     }
   },
   "order": [
+    "product_slider_dYJdFy",
     "featured_collection",
     "slick_slider_KnEU9M",
     "category_image_N86EFC",

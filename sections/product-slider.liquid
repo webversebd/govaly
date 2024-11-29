@@ -13,20 +13,9 @@
   {%- endstyle -%}
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
-        <h2>
-                {{section.settings.title}}
-                <a
-                href="{{ routes.collections_url }}"
-                id="ViewAll-{{ section.id }}"
-                class="link underlined-link large-up-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
-              >
-                {{- 'sections.collection_list.view_all' | t -}}
-              </a>
-        </h2>
-        <ul class="product-slick-slider grid product-grid contains-card contains-card--product">
+        <ul class="product-slick-slider ">
             {%- for product in section.settings.collection.products  -%}
-            <li class="grid__item">
+            <li>
                 {% render 'card-product', card_product: product, %}
             </li>
             {% endfor %}
@@ -40,13 +29,7 @@
     "tag": "section",
     "class": "section",
     "settings": [
-       {
-      "type": "inline_richtext",
-      "id": "title",
-      "default": "t:sections.featured-collection.settings.title.default",
-      "label": "t:sections.featured-collection.settings.title.label"
-    },
-    {
+        {
       "type": "collection",
       "id": "collection",
       "label": "t:sections.featured-collection.settings.collection.label"

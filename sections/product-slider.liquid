@@ -9,6 +9,9 @@
         padding-top: {{ section.settings.padding_top }}px;
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
+      .product-slick-slider .card:not(.ratio) {
+      height: 330px;
+      }
     }
   {%- endstyle -%}
   <style>
@@ -28,6 +31,9 @@
     #SectionHeading-{{ section.id }} {
       padding-bottom: 20px
     }
+   .product-slick-slider .card-wrapper{
+     padding:5px
+   }
 </style>
   <div class=" gradient isolate">
     <div class="color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding page-width">

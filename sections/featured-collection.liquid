@@ -38,6 +38,15 @@
   }
 {%- endstyle -%}
 
+<style>
+  #{{section.id}} .arrow-next.slick-arrow{
+    right: 0px
+  }
+  #{{section.id}} .arrow-prev.slick-arrow{
+    left: 0px
+  }
+</style>
+
 {%- liquid
   assign products_to_display = section.settings.collection.all_products_count
 

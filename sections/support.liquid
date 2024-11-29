@@ -47,7 +47,7 @@
         height: 50px;
         margin-bottom: 10px;
         position: absolute;
-        left: 30px;
+        left: 0px;
     }
 
     /* Feature text styling */
@@ -88,7 +88,7 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="feature-bar isolate">
            {% for block in section.blocks %}
-            <div class="feature-item">
+            <div class="feature-item isolate">
                 <img src="{{block.settings.image |  image_url }}" alt="Free Shipping Icon">
                 <h3>{{block.settings.heading}}</h3>
                 <p>{{block.settings.subheading}}</p>

@@ -133,8 +133,8 @@ $(document).ready(function(){
         slidesToShow: 6,
         slidesToScroll: 1,
         arrows:true,
-        prevArrow:"<span type='button' class='product-arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
-        nextArrow:"<span type='button' class='product-arrow-next'><img src='"+ arrow +"' alt='arrow'></span>",
+        prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
+        nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>",
         dots:false,
         responsive: [
             {

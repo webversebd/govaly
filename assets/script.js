@@ -132,7 +132,7 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 1,
-        arrow:true,
+        arrows:true,
         prevArrow:"<span type='button' class='product-arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
         nextArrow:"<span type='button' class='product-arrow-next'><img src='"+ arrow +"' alt='arrow'></span>",
         dots:false,

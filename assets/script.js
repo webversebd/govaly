@@ -4,7 +4,7 @@ $(document).ready(function(){
     // shop_slider();
     product_slider();
     upsell_slider();
-    collection_item_slider();
+    product_slick_slider();
     review_slider(); 
     instagram_slider(); 
     my_slider()
@@ -127,8 +127,8 @@ $(document).ready(function(){
     }); 
   }
   // upsell slider 
-  function collection_item_slider() {
-    $('.collection-item-slider').slick({ 
+  function product_slick_slider() {
+    $('.product-slick-slider').slick({ 
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 1,

@@ -321,6 +321,7 @@
         },
         "column_gtWbWr": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/05_abaaf6fa-e8cf-43d9-a45a-272fe63adc20.png",
             "heading": "Exchange Offer",

@@ -1,6 +1,6 @@
 <style>
   /* Offer section styling */
-#countdown .offer-section {
+.offer-section {
     display: flex;
     align-items: normal;
     justify-content: center;
@@ -10,37 +10,37 @@
 }
 
 /* Image container styling */
-#countdown  .image-container {
+.image-container {
     flex: 1;
     display: flex;
     max-width: 100%;
 }
 
-#countdown .image-container img {
+.image-container img {
     width: 100%;
     border-radius: 4px;
 }
 
 /* Offer details styling */
-#countdown .offer-details {
+.offer-details {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
-#countdown .offer-details > * {
+.offer-details > * {
     margin: 0px;
 }
 
-#countdown .special-offer {
+.special-offer {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: .1em;
 }
 
-#countdown .discount {
+.discount {
     background-color: rgb(var(--color-button));
     color: rgb(var(--color-button-text));
     padding: 0 5px;
@@ -48,7 +48,7 @@
 }
 
 /* Countdown timer styling */
-#countdown .countdown {
+.countdown {
     display: flex;
     align-items: center;
     font-size: 24px;
@@ -56,19 +56,19 @@
     color: rgb(var(--color-button));
 }
 
-#countdown .time {
+.time {
     padding: 10px 20px;
     background-color: rgb(var(--color-button-text));
     border-radius: 4px;
 }
 
-#countdown .separator {
+.separator {
     font-size: 28px;
     color: rgb(var(--color-button));
 }
 
 /* Call to action button styling */
-#countdown .btn{
+.btn{
     box-shadow: 0 4px 9px rgba(0,0,0,.05);
     cursor: pointer;
     padding: 2% 5%;
@@ -76,12 +76,12 @@
     text-decoration: none;
     display: inline-block
 }
-#countdown .btn-primary{
+.btn-primary{
     background-color: rgb(var(--color-button));
     color: rgb(var(--color-button-text));
     transition: .2s all linear;
 }
-#countdown .btn-primary:hover{
+.btn-primary:hover{
     color: rgb(var(--color-button));
     background-color: rgb(var(--color-button-text));
 
@@ -90,21 +90,21 @@
 /* Responsive Mobile */
 
 @media only screen and (max-width: 767px) {
-    #countdown .offer-section {
+    .offer-section {
         display: block
     }
     /* Countdown timer styling */
-    #countdown  .countdown {
+    .countdown {
         gap: 5px;
     }
-    #countdown  .offer-details {
+    .offer-details {
         align-items: center;
         padding: 20px 0px;
     }
-    #countdown .offer-details p{
+    .offer-details p{
         text-align: center;
     }
-    #countdown .time {
+  .time {
 	padding: 10px 15px;
 }
     
@@ -143,13 +143,13 @@
           <p>{{ section.settings.subtext }}</p>
           <!-- Countdown timer -->
           <div class="countdown">
-              <div class="time" id="days2">00</div>
+              <div class="time" id="days">00</div>
               <div class="separator">:</div>
-              <div class="time" id="hours2">00</div>
+              <div class="time" id="hours">00</div>
               <div class="separator">:</div>
-              <div class="time" id="minutes2">00</div>
+              <div class="time" id="minutes">00</div>
               <div class="separator">:</div>
-              <div class="time" id="seconds2">00</div>
+              <div class="time" id="seconds">00</div>
           </div>
           <!-- Call to action button -->
           <a href="{{section.settings.button_link}}" class="btn btn-primary mt-20">{{section.settings.button_label}}</a>
@@ -178,10 +178,10 @@ const countdownFunction = setInterval(() => {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id
-    document.getElementById("days2").innerText = String(days).padStart(2, '0');
-    document.getElementById("hours2").innerText = String(hours).padStart(2, '0');
-    document.getElementById("minutes2").innerText = String(minutes).padStart(2, '0');
-    document.getElementById("seconds2").innerText = String(seconds).padStart(2, '0');
+    document.getElementById("days").innerText = String(days).padStart(2, '0');
+    document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+    document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+    document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
 
     // If the count down is over, write some text
     if (distance < 0) {

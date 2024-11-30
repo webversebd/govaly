@@ -161,12 +161,12 @@
 <!-- External JavaScript (script.js) -->
 <script>
 // Set the date we're counting down to
-const countdown2Date = new Date("{{section.settings.date}}").gettime();
+const countdown2Date = new Date("{{section.settings.date}}").getTime();
 
 // Update the count down every 1 second
 const countdown2Function = setInterval(() => {
     // Get today's date and time2
-    const now = new Date().gettime();
+    const now = new Date().getTime();
 
     // Find the distance between now and the count down date
     const distance = countdown2Date - now;

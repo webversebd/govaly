@@ -43,6 +43,10 @@
           id="SectionHeading-{{ section.id }}"
           class="collection-list-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         >
+        {% if section.settings.date != blank %}
+          <span class="countdown_text">Ends In</span>
+          <span id="countdown-{{ section.id }}"></span>
+        {% endif %}
           {{ section.settings.title }} 
             <a style="float: right;"
               href="{{ section.settings.collection.url }}"
@@ -77,6 +81,13 @@
       "default": "t:sections.collection-list.settings.title.default",
       "label": "t:sections.collection-list.settings.title.label"
     },
+    {
+      "type": "text",
+      "id": "date",
+      "label": "Select Date",
+      "default": "July 3, 2025 00:00:00",
+      "info":"M D, Y H:M:S"
+      },
     {
       "type": "select",
       "id": "heading_size",

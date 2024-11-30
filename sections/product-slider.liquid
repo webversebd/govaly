@@ -35,6 +35,11 @@
 	font-size: calc(var(--font-heading-scale) * 3rem);
 	margin-left: 2rem;
 }
+#SectionHeading-{{ section.id }} a{
+      float: right;
+      font-size: 20px;
+      line-height: 60px;
+}
 
 #SectionHeading-{{ section.id }} .day,#SectionHeading-{{ section.id }} .hour,#SectionHeading-{{ section.id }} .minute,#SectionHeading-{{ section.id }} .second{
 	background: #fff;
@@ -46,8 +51,11 @@
   }
      @media screen and (max-width: 750px) {
       .product-slick-slider .card:not(.ratio) {
-    height: 330px;
-   }
+       height: 330px;
+     }
+     #SectionHeading-{{ section.id }} a{
+      display: none;
+     }
       }
 </style>
   <div class=" gradient isolate">
@@ -61,7 +69,7 @@
           <span class="countdown_text">Ends In</span>
           <span id="countdown-{{ section.id }}"></span>
         {% endif %}
-            <a style="float: right;"
+            <a
               href="{{ section.settings.collection.url }}"
             >
             See More →

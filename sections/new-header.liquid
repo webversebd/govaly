@@ -11,7 +11,6 @@
       }
     }
   {%- endstyle -%}
-    {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
   <link rel="stylesheet" href="{{ 'headercustom.css' | asset_url }}">
 
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
@@ -1319,8 +1318,7 @@
     </div>
   </div>
 
-  
-<script src="{{ 'bootstrap.min.js' | asset_url }}" defer="defer"></script>
+
   <script src="{{ 'megamenu.js' | asset_url }}" defer="defer"></script>
   
   {% schema %}

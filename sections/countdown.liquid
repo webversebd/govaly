@@ -143,13 +143,13 @@
           <p>{{ section.settings.subtext }}</p>
           <!-- countdown2 time2r -->
           <div class="countdown2">
-              <div class="time2" id="days">00</div>
+              <div class="time2" id="days2">00</div>
               <div class="separator">:</div>
-              <div class="time2" id="hours">00</div>
+              <div class="time2" id="hours2">00</div>
               <div class="separator">:</div>
-              <div class="time2" id="minutes">00</div>
+              <div class="time2" id="minutes2">00</div>
               <div class="separator">:</div>
-              <div class="time2" id="seconds">00</div>
+              <div class="time2" id="seconds2">00</div>
           </div>
           <!-- Call to action button -->
           <a href="{{section.settings.button_link}}" class="btn btn-primary mt-20">{{section.settings.button_label}}</a>
@@ -171,17 +171,17 @@ const countdown2Function = setInterval(() => {
     // Find the distance between now and the count down date
     const distance = countdown2Date - now;
 
-    // time2 calculations for days, hours, minutes and seconds
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // time2 calculations for days2, hours2, minutes2 and seconds2
+    const days2 = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours2 = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes2 = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds2 = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id
-    document.getElementById("days").innerText = String(days).padStart(2, '0');
-    document.getElementById("hours").innerText = String(hours).padStart(2, '0');
-    document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
-    document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+    document.getElementById("days2").innerText = String(days2).padStart(2, '0');
+    document.getElementById("hours2").innerText = String(hours2).padStart(2, '0');
+    document.getElementById("minutes2").innerText = String(minutes2).padStart(2, '0');
+    document.getElementById("seconds2").innerText = String(seconds2).padStart(2, '0');
 
     // If the count down is over, write some text
     if (distance < 0) {

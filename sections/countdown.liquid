@@ -143,13 +143,13 @@
           <p>{{ section.settings.subtext }}</p>
           <!-- Countdown timer -->
           <div class="countdown">
-              <div class="time" id="days">00</div>
+              <div class="time" id="days2">00</div>
               <div class="separator">:</div>
-              <div class="time" id="hours">00</div>
+              <div class="time" id="hours2">00</div>
               <div class="separator">:</div>
-              <div class="time" id="minutes">00</div>
+              <div class="time" id="minutes2">00</div>
               <div class="separator">:</div>
-              <div class="time" id="seconds">00</div>
+              <div class="time" id="seconds2">00</div>
           </div>
           <!-- Call to action button -->
           <a href="{{section.settings.button_link}}" class="btn btn-primary mt-20">{{section.settings.button_label}}</a>
@@ -178,10 +178,10 @@ const countdownFunction = setInterval(() => {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id
-    document.getElementById("days").innerText = String(days).padStart(2, '0');
-    document.getElementById("hours").innerText = String(hours).padStart(2, '0');
-    document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
-    document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+    document.getElementById("days2").innerText = String(days).padStart(2, '0');
+    document.getElementById("hours2").innerText = String(hours).padStart(2, '0');
+    document.getElementById("minutes2").innerText = String(minutes).padStart(2, '0');
+    document.getElementById("seconds2").innerText = String(seconds).padStart(2, '0');
 
     // If the count down is over, write some text
     if (distance < 0) {

@@ -49,8 +49,8 @@
       "type": "new-header",
       "settings": {
         "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "left_menu": "new-menu",
         "middle_menu": "main-menu",
         "right_menu": "main-menu",

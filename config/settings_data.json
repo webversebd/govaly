@@ -9,6 +9,9 @@
  */
 {
   "current": {
+    "aftertext": "OFF",
+    "aftertextbackgroundcolor": "#c60159",
+    "badge_animation": true,
     "logo": "shopify://shop_images/govaly-logo.png",
     "logo_width": 120,
     "favicon": "shopify://shop_images/Icon-logo2.png",

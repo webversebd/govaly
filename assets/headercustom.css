@@ -2,7 +2,7 @@
 -------------------------------------------------------------- */
 #mega-menu {
 	position:relative;
-	top:0px;
+	top:4px;
 	height:55px;
 	width:250px;
 	-webkit-transition:all 0.3s ease-in-out;
@@ -961,6 +961,9 @@ ul.menu li.column-1 .submenu > li > a i {
 
 @media only screen and (max-width:1199px) {
 	
+	body.background section.flat-row {
+		margin-left:15px;margin-right:15px;
+	}
 
 	body.background .flat-imagebox.style4 .owl-carousel-3.owl-theme .owl-controls .owl-nav div.owl-prev {
 		left:-45px;
@@ -2211,6 +2214,10 @@ ul.menu li.column-1 .submenu > li > a i {
 
 	.product-detail-bar.style1 li {
 		padding:12px;
+	}
+
+	body.background section.flat-row .container {
+		padding:10px 15px 0;
 	}
 
 	.box-owl-carousel.style1 .imagebox.style7 {

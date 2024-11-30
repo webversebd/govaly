@@ -20,13 +20,20 @@
         top: 0;
     }
     .rmenu{
-        float: right;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 20px;
+        font-weight: bold;
     }
     .rmenu a{
         text-decoration: none;
         padding: 20px;
-        border-radius: 1px solid #000;
+        border-right: 1px solid #000;
         color: #000;
+    }
+    .rmenu a:last-of-type{
+        border: none;
     }
     ul {
         background: rgb(var(--color-button));

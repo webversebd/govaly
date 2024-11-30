@@ -43,7 +43,16 @@
           id="SectionHeading-{{ section.id }}"
           class="collection-list-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         >
-          {{ section.settings.title }}
+          {{ section.settings.title }} 
+          <div class="right collection__view-all">
+            <a
+              href="{{ section.settings.collection.url }}"
+              class="link underlined-link"
+              aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
+            >
+              {{ 'sections.featured_collection.view_all' | t }}
+            </a>
+          </div>
         </h2>
         <ul class="product-slick-slider ">
             {%- for product in section.settings.collection.products  -%}

@@ -11,10 +11,29 @@
       }
     }
   {%- endstyle -%}
+  <style>
+    .lmenu{
+        float: left;
+    }
+    .rmenu{
+        float: right;
+    }
+    .rmenu a{
+        text-decoration: none;
+        padding: 20px;
+        border-radius: 1px solid #000;
+    }
+  </style>
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
-        {% render 'header-mega-menu' %}
-        {% render 'header-dropdown-menu' %}
+       <div class="lmenu">
+         Categories
+       </div>
+       <div class="rmenu">
+        <a href="">Item</a>
+        <a href="">Item2</a>
+        <a href="">Item3</a>
+       </div>
     </div>
   </div>
   

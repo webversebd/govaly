@@ -11,16 +11,7 @@
       }
     }
   {%- endstyle -%}
-   <link
-   rel="stylesheet"
-   href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-   crossorigin="anonymous"
- />
- <link
-   rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
- />
+{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
   <link rel="stylesheet" href="{{ 'headercustom.css' | asset_url }}">
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
@@ -1328,16 +1319,7 @@
   </div>
 
   
-  <script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous" defer
-></script>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-  crossorigin="anonymous" defer
-></script>
+<script src="{{ 'bootstrap.min.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'megamenu.js' | asset_url }}" defer="defer"></script>
   
   {% schema %}

@@ -596,7 +596,7 @@ ul.menu li.column-1 .submenu > li > a i {
 	background:transparent;
 	cursor:pointer;
 	float:right;
-	top:10px;
+	top:0px;
 	width:25px;
 	height:25px;
 	border:2px solid #fff;

@@ -36,14 +36,14 @@
         border: none;
         padding-right: 0px;
     }
-    ul {
+    .mega-menu ul {
         background: rgb(var(--color-button));
         list-style: none;
         margin: 0;
         padding-left: 0;
         }
 
-        li, .lmenu {
+        .mega-menu  li, .lmenu {
         color: #fff;
         background: rgba(var(--color-button), 1);
         display: block;
@@ -53,10 +53,10 @@
         transition: all 0.5s ease;
         }
         
-        li a {
+        .mega-menu  li a {
         color: #fff;
         }
-        ul li ul {
+        .mega-menu  ul li ul {
         background: rgba(var(--color-button), .9);;
         visibility: hidden;
         opacity: 0;
@@ -68,14 +68,14 @@
         display: none;
         }
 
-        ul li:hover > ul,
-        ul li ul:hover {
+        .mega-menu ul li:hover > ul,
+        .mega-menu ul li ul:hover {
         visibility: visible;
         opacity: 1;
         display: block;
         }
 
-        ul li ul li {
+        .mega-menu ul li ul li {
         clear: both;
         width: 100%;
         }

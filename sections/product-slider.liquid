@@ -79,7 +79,8 @@
 
   <script>
     // Set the date we're counting down to
-  var connn-"{{section.id}}" = new Date("{{section.settings.date}}").getTime();
+  var cc = `{{ section.id }}`
+  cc = new Date("{{section.settings.date}}").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -88,7 +89,7 @@ var x = setInterval(function() {
   var now = new Date().getTime();
 
   // Find the distance between now and the count down date
-  var distance = connn-"{{section.id}}" - now;
+  var distance = cc - now;
 
   // Time calculations for day, hour, minute and second
   var day = Math.floor(distance / (1000 * 60 * 60 * 24));

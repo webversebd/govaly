@@ -12,9 +12,12 @@
     }
   {%- endstyle -%}
   <style>
+    .mega-menu{
+        z-index: 99;
+    }
     .lmenu{
         position: absolute;
-        z-index: 999;
+        top: 0;
     }
     .rmenu{
         float: right;
@@ -26,14 +29,14 @@
         color: #000;
     }
     ul {
-        background: darkorange;
+        background: rgb(var(--color-button));
         list-style: none;
         margin: 0;
         padding-left: 0;
         }
 
         li {
-        color: #fff;
+        color: rgb(var(--color-button));
         background: darkorange;
         display: block;
         padding: 1rem;
@@ -73,6 +76,17 @@
         ul li ul li {
         clear: both;
         width: 100%;
+        }
+        .mega-menu ul{
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+        .mega-menu .lmenu:hover ul{
+            display: block;
+            visibility: visible;
+            opacity: 1;
         }
   </style>
   <div class="mega-menu color-{{ section.settings.color_scheme }} gradient isolate">

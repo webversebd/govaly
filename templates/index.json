@@ -109,7 +109,6 @@
     },
     "countdown_4TRHPG": {
       "type": "countdown",
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/2-3-1-scaled.jpg",
         "offer": "-20%",

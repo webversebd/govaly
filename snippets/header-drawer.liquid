@@ -3,14 +3,15 @@
 
   Usage:
   {% render 'header-drawer' %}
-{% endcomment %}
+{% endcomment %} 
 
 <header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
-    <summary
+    <summary style="display: flex; gap:30px"
       class="header__icon header__icon--menu header__icon--summary link focus-inset"
       aria-label="{{ 'sections.header.menu' | t }}"
     >
+    <span style="font-size: 20px; text-decoration:none">Categories</span>
       <span>
         {{- 'icon-hamburger.svg' | inline_asset_content -}}
         {{- 'icon-close.svg' | inline_asset_content -}}

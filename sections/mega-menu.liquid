@@ -12,7 +12,7 @@
     }
   {%- endstyle -%}
   <style>
-    .mega-menu{
+    .mega-h-menu{
         z-index: 1;
     }
     .lmenu{
@@ -36,14 +36,14 @@
         border: none;
         padding-right: 0px;
     }
-    .mega-menu ul {
+    .mega-h-menu ul {
         background: rgb(var(--color-button));
         list-style: none;
         margin: 0;
         padding-left: 0;
         }
 
-        .mega-menu  li, .lmenu {
+        .mega-h-menu  li, .lmenu {
         color: #fff;
         background: rgba(var(--color-button), 1);
         display: block;
@@ -53,10 +53,10 @@
         transition: all 0.5s ease;
         }
         
-        .mega-menu  li a {
+        .mega-h-menu  li a {
         color: #fff;
         }
-        .mega-menu  ul li ul {
+        .mega-h-menu  ul li ul {
         background: rgba(var(--color-button), .9);;
         visibility: hidden;
         opacity: 0;
@@ -68,25 +68,25 @@
         display: none;
         }
 
-        .mega-menu ul li:hover > ul,
-        .mega-menu ul li ul:hover {
+        .mega-h-menu ul li:hover > ul,
+        .mega-h-menu ul li ul:hover {
         visibility: visible;
         opacity: 1;
         display: block;
         }
 
-        .mega-menu ul li ul li {
+        .mega-h-menu ul li ul li {
         clear: both;
         width: 100%;
         }
-        .mega-menu ul{
+        .mega-h-menu ul{
             display:none;
             visibility: hidden;
             opacity: 0;
             top: 100%;
             transition: all 0.5s ease;
         }
-        .mega-menu .lmenu:hover ul{
+        .mega-h-menu .lmenu:hover ul{
             transition: all 0.5s ease;
             display: block;
             visibility: visible;
@@ -94,7 +94,7 @@
             top: 0;
         }
   </style>
-  <div class="mega-menu color-{{ section.settings.color_scheme }} gradient isolate">
+  <div class="mega-h-menu color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
        <div class="lmenu">
          Categories 

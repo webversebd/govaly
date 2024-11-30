@@ -48,24 +48,24 @@
     "mega_menu_bpy4Yz": {
       "type": "mega-menu",
       "blocks": {
-        "column_yDNE89": {
+        "column_TJWMHb": {
           "type": "column",
           "settings": {
-            "lable": "PK",
-            "link": "pk"
+            "lable": "Item1",
+            "link": "shopify://collections/new-arrivals"
           }
         },
-        "column_7YJzMW": {
+        "column_AG4ggY": {
           "type": "column",
           "settings": {
-            "lable": "pk2",
-            "link": "pk2"
+            "lable": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "column_yDNE89",
-        "column_7YJzMW"
+        "column_TJWMHb",
+        "column_AG4ggY"
       ],
       "settings": {
         "menu": "main-menu",

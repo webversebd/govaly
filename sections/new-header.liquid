@@ -11,149 +11,1333 @@
       }
     }
   {%- endstyle -%}
-  <!--     bootstrap -->
-  <link rel="stylesheet" href="{{ 'bootstrap.min.css' | asset_url }}">
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+   crossorigin="anonymous"
+ />
+ <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+ />
   <link rel="stylesheet" href="{{ 'headercustom.css' | asset_url }}">
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
-        <div class="row desktop-menu">
-            <div class="col-3 main-mega-menu"> 
-              {% if template == 'index' %}
-              <div class="all-cat for-home">
-                <a href="#" class="all_cat_btn"> 
-                  <img src="https://cdn.shopify.com/s/files/1/0629/8825/5490/files/menu.png?v=1646057445" class="img-fluid bar-icon" alt="bar">
-                  <span>Categories</span>
-                  <img src="https://cdn.shopify.com/s/files/1/0629/8825/5490/files/down-chevron.png?v=1646057529" class="img-fluid down-icon" alt="down">
-                </a>
-              </div>
-              {% endif %}
-              {% if template != 'index' %}
-              <div class="all-cat for-other">
-                <a href="#" class="all_cat_btn"> 
-                  <img src="https://cdn.shopify.com/s/files/1/0629/8825/5490/files/menu.png?v=1646057445" class="img-fluid bar-icon" alt="bar">
-                  <span>Categories</span>
-                  <img src="https://cdn.shopify.com/s/files/1/0629/8825/5490/files/down-chevron.png?v=1646057529" class="img-fluid down-icon" alt="down">
-                </a>
-               <div class="menu-show">
-                   {% include 'sidebar' %}
-               </div>
-              </div>
-               {% endif %}
-            </div>
-            <div class="col-3 pl-0 m-auto">
-                {%- if section.settings.middle_menu != blank -%}
-                <div class="middle-menu">
-                    <ul class="list-menu list-menu--inline" role="list">
-                      {%- for link in section.settings.middle_menu.links -%}
-                        <li>
-                          {%- if link.links != blank -%}
-                            <details-disclosure>
-                              <details id="Details-HeaderMenu-{{ forloop.index }}">
-                                <summary class="header__menu-item list-menu__item link focus-inset">
-                                  <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                                  {% render 'icon-caret' %}
-                                </summary>
-                                <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
-                                  {%- for childlink in link.links -%}
-                                    <li>
-                                      {%- if childlink.links == blank -%}
-                                        <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                          {{ childlink.title | escape }}
-                                        </a>
-                                      {%- else -%}
-                                        <details id="Details-HeaderSubMenu-{{ forloop.index }}">
-                                          <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
-                                            {{ childlink.title | escape }}
-                                            {% render 'icon-caret' %}
-                                          </summary>
-                                          <ul id="HeaderMenu-SubMenuList-{{ forloop.index }}" class="header__submenu list-menu motion-reduce">
-                                            {%- for grandchildlink in childlink.links -%}
-                                              <li>
-                                                <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                                                  {{ grandchildlink.title | escape }}
-                                                </a>
-                                              </li>
-                                            {%- endfor -%}
-                                          </ul>
-                                        </details>
-                                      {%- endif -%}
-                                    </li>
-                                  {%- endfor -%}
-                                </ul>
-                              </details>
-                            </details-disclosure>
-                          {%- else -%} 
-                            <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                              <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                            </a>
-                            {% if forloop.index == 1 %}
-                            <img src="{{'sale.gif' | asset_url}}" class="sale-gif" alt="img">
-                            {% endif %}
-                          {%- endif -%}
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                </div>
-              {% endif %}  
-            </div>
-            <div class="col-6 m-auto text-right">                	
-              {%- if section.settings.right_menu != blank -%}
-              <div class="right-menu">
-                <ul class="list-menu list-menu--inline" role="list">
-                  {%- for link in section.settings.right_menu.links -%}
-                    <li id="{{ link.title | downcase }}">
-                      {%- if link.links != blank -%}
-                        <details-disclosure>
-                          <details id="Details-HeaderMenu-{{ forloop.index }}">
-                            <summary class="header__menu-item list-menu__item link focus-inset">
-                              <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                              {% render 'icon-caret' %}
-                            </summary>
-                            <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
-                              {%- for childlink in link.links -%}
-                                <li>
-                                  {%- if childlink.links == blank -%}
-                                    <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                      {{ childlink.title | escape }}
-                                    </a>
-                                  {%- else -%}
-                                    <details id="Details-HeaderSubMenu-{{ forloop.index }}">
-                                      <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
-                                        {{ childlink.title | escape }}
-                                        {% render 'icon-caret' %}
-                                      </summary>
-                                      <ul id="HeaderMenu-SubMenuList-{{ forloop.index }}" class="header__submenu list-menu motion-reduce">
-                                        {%- for grandchildlink in childlink.links -%}
-                                          <li>
-                                            <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                                              {{ grandchildlink.title | escape }}
-                                            </a>
-                                          </li>
-                                        {%- endfor -%}
-                                      </ul>
-                                    </details>
-                                  {%- endif -%}
-                                </li>
-                              {%- endfor -%}
-                            </ul>
-                          </details>
-                        </details-disclosure>
-                      {%- else -%}
-                        <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                          <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                        </a>
-                      {%- endif -%}
-                    </li>
-                  {%- endfor -%}
+      <div class="header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-2">
+              <div id="mega-menu">
+                <div class="btn-mega"><span></span>ALL CATEGORIES</div>
+                <ul class="menu">
+                  <li>
+                    <a href="#" title="" class="dropdown">
+                      <span class="menu-img">
+                        <img src="#" alt="" />
+                      </span>
+                      <span class="menu-title"> Laptops & Mac </span>
+                    </a>
+                    <div class="drop-menu">
+                      <div class="one-third">
+                        <div class="cat-title">Laptop And Mac</div>
+                        <ul>
+                          <li>
+                            <a href="#" title=""
+                              >Networking & Internet Devices</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              >Laptops, Desktops & Monitors</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              >Hard Drives & Memory Cards</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">Computer Accessories</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Software</a>
+                          </li>
+                        </ul>
+                        <div class="show">
+                          <a href="#" title="">Shop All</a>
+                        </div>
+                      </div>
+                      <div class="one-third">
+                        <div class="cat-title">Audio & Video</div>
+                        <ul>
+                          <li>
+                            <a href="#" title="">Headphones & Speakers</a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              >Home Entertainment Systems</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">MP3 & Media Players</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Software</a>
+                          </li>
+                        </ul>
+                        <div class="show">
+                          <a href="#" title="">Shop All</a>
+                        </div>
+                      </div>
+                      <div class="one-third">
+                        <ul class="banner">
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">Headphones</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">TV & Audio</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">Computers</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" title="" class="dropdown">
+                      <span class="menu-img">
+                        <img src="#" alt="" />
+                      </span>
+                      <span class="menu-title"> Mobile & Tablet </span>
+                    </a>
+                    <div class="drop-menu">
+                      <div class="one-third">
+                        <div class="cat-title">Laptop And Computer</div>
+                        <ul>
+                          <li>
+                            <a href="#" title=""
+                              >Networking & Internet Devices</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              >Laptops, Desktops & Monitors</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              >Hard Drives & Memory Cards</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">Printers & Ink</a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              >Networking & Internet Devices</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">Computer Accessories</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Software</a>
+                          </li>
+                        </ul>
+                        <div class="show">
+                          <a href="#" title="">Shop All</a>
+                        </div>
+                      </div>
+                      <div class="one-third">
+                        <div class="cat-title">Audio & Video</div>
+                        <ul>
+                          <li>
+                            <a href="#" title="">Headphones & Speakers</a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              >Home Entertainment Systems</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">MP3 & Media Players</a>
+                          </li>
+                        </ul>
+                        <div class="show">
+                          <a href="#" title="">Shop All</a>
+                        </div>
+                      </div>
+                      <div class="one-third">
+                        <ul class="banner">
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">Headphones</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">TV & Audio</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">Computers</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" title="" class="dropdown">
+                      <span class="menu-img">
+                        <img src="#" alt="" />
+                      </span>
+                      <span class="menu-title"> Home Devices </span>
+                    </a>
+                    <div class="drop-menu">
+                      <div class="one-third">
+                        <div class="cat-title">Home Devices</div>
+                        <ul>
+                          <li>
+                            <a href="#" title="">Internet Devices</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Desktops & Monitors</a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              >Hard Drives & Memory Cards</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">Networking</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Software</a>
+                          </li>
+                        </ul>
+                        <div class="show">
+                          <a href="#" title="">Shop All</a>
+                        </div>
+                      </div>
+                      <div class="one-third">
+                        <div class="cat-title">Audio</div>
+                        <ul>
+                          <li>
+                            <a href="#" title=""
+                              >Home Entertainment Systems</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">MP3 & Media Players</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Software</a>
+                          </li>
+                        </ul>
+                        <div class="show">
+                          <a href="#" title="">Shop All</a>
+                        </div>
+                      </div>
+                      <div class="one-third">
+                        <ul class="banner">
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">Headphones</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">TV & Audio</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">Computers</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" title="">
+                      <span class="menu-img">
+                        <img src="#" alt="" />
+                      </span>
+                      <span class="menu-title"> Software </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="">
+                      <span class="menu-img">
+                        <img src="#" alt="" />
+                      </span>
+                      <span class="menu-title"> TV & Audio </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="">
+                      <span class="menu-img">
+                        <img src="#" alt="" />
+                      </span>
+                      <span class="menu-title"> Sports & Fitness </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="" class="dropdown">
+                      <span class="menu-img">
+                        <img src="#" alt="" />
+                      </span>
+                      <span class="menu-title"> Games & Toys </span>
+                    </a>
+                    <div class="drop-menu">
+                      <div class="one-third">
+                        <div class="cat-title">Games & Toys</div>
+                        <ul>
+                          <li>
+                            <a href="#" title="">Internet Devices</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Desktops & Monitors</a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              >Hard Drives & Memory Cards</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">Networking</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Software</a>
+                          </li>
+                        </ul>
+                        <div class="show">
+                          <a href="#" title="">Shop All</a>
+                        </div>
+                      </div>
+                      <div class="one-third">
+                        <div class="cat-title">Audio</div>
+                        <ul>
+                          <li>
+                            <a href="#" title=""
+                              >Home Entertainment Systems</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">MP3 & Media Players</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Software</a>
+                          </li>
+                        </ul>
+                        <div class="show">
+                          <a href="#" title="">Shop All</a>
+                        </div>
+                      </div>
+                      <div class="one-third">
+                        <ul class="banner">
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">Headphones</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">TV & Audio</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">Computers</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" title="">
+                      <span class="menu-img">
+                        <img src="#" alt="" />
+                      </span>
+                      <span class="menu-title"> Video Cameras </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="" class="dropdown">
+                      <span class="menu-img">
+                        <img src="#" alt="" />
+                      </span>
+                      <span class="menu-title"> Accessories </span>
+                    </a>
+                    <div class="drop-menu">
+                      <div class="one-third">
+                        <div class="cat-title">Accessories</div>
+                        <ul>
+                          <li>
+                            <a href="#" title="">Internet Devices</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Desktops & Monitors</a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              >Hard Drives & Memory Cards</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">Networking</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Software</a>
+                          </li>
+                        </ul>
+                        <div class="show">
+                          <a href="#" title="">Shop All</a>
+                        </div>
+                      </div>
+                      <div class="one-third">
+                        <div class="cat-title">Audio</div>
+                        <ul>
+                          <li>
+                            <a href="#" title=""
+                              >Home Entertainment Systems</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">MP3 & Media Players</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Software</a>
+                          </li>
+                        </ul>
+                        <div class="show">
+                          <a href="#" title="">Shop All</a>
+                        </div>
+                      </div>
+                      <div class="one-third">
+                        <ul class="banner">
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">Headphones</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">TV & Audio</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">Computers</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" title="" class="dropdown">
+                      <span class="menu-img">
+                        <img src="#" alt="" />
+                      </span>
+                      <span class="menu-title"> Security </span>
+                    </a>
+                    <div class="drop-menu">
+                      <div class="one-third">
+                        <div class="cat-title">Security</div>
+                        <ul>
+                          <li>
+                            <a href="#" title="">Internet Devices</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Desktops & Monitors</a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              >Hard Drives & Memory Cards</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">Networking</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Software</a>
+                          </li>
+                        </ul>
+                        <div class="show">
+                          <a href="#" title="">Shop All</a>
+                        </div>
+                      </div>
+                      <div class="one-third">
+                        <div class="cat-title">Audio</div>
+                        <ul>
+                          <li>
+                            <a href="#" title=""
+                              >Home Entertainment Systems</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">MP3 & Media Players</a>
+                          </li>
+                          <li>
+                            <a href="#" title="">Software</a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              >Hard Drives & Memory Cards</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title="">Networking</a>
+                          </li>
+                        </ul>
+                        <div class="show">
+                          <a href="#" title="">Shop All</a>
+                        </div>
+                      </div>
+                      <div class="one-third">
+                        <ul class="banner">
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">Headphones</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">TV & Audio</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                          <li>
+                            <div class="banner-text">
+                              <div class="banner-title">Computers</div>
+                              <div class="more-link">
+                                <a href="#" title=""
+                                  >Shop Now <img src="#" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="banner-img">
+                              <img src="#" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
+              </div>
             </div>
-              {%- endif -%}  
+            <!-- /.col-md-3 col-2 -->
+            <div class="col-md-9 col-10">
+              <div class="nav-wrap">
+                <div id="mainnav" class="mainnav">
+                  <ul class="menu">
+                    <li class="column-1">
+                      <a href="#" title="">Home</a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Home Layout 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Home Layout 02</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Home Layout 03</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Home Layout 04</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Home Layout 05</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Home Layout 06</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Home Layout 07</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Home Layout 08</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Home Layout 09</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Home Layout 10</a
+                          >
+                        </li>
+                      </ul>
+                      <!-- /.submenu -->
+                    </li>
+                    <!-- /.column-1 -->
+                    <li class="column-1">
+                      <a href="shop.html" title="">Shop</a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Shop left sidebar</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Shop right sidebar</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Shop list view</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Shop full width</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Shop 03 column</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Shop cart</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Shop checkout</a
+                          >
+                        </li>
+                      </ul>
+                      <!-- /.submenu -->
+                    </li>
+                    <!-- /.column-1 -->
+                    <li class="column-1">
+                      <a href="#" title="">Features</a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Home Theater Systems</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Receivers & Amplifiers</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Speakers</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >CD Players & Turntables</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >High-Resolution Audio</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >4K Ultra HD TVs</a
+                          >
+                        </li>
+                      </ul>
+                      <!-- /.submenu -->
+                    </li>
+                    <!-- /.column-1 -->
+                    <li class="has-mega-menu">
+                      <a href="#" title="">Electronic</a>
+                      <div class="submenu">
+                        <div class="row">
+                          <div class="col-lg-3 col-md-12">
+                            <h3 class="cat-title">Accessories</h3>
+                            <ul class="submenu-child">
+                              <li>
+                                <a href="#" title="">Electronics</a>
+                              </li>
+                              <li>
+                                <a href="#" title="">Furniture</a>
+                              </li>
+                              <li>
+                                <a href="#" title="">Accessories</a>
+                              </li>
+                              <li>
+                                <a href="#" title="">Divided</a>
+                              </li>
+                              <li>
+                                <a href="#" title="">Everyday Fashion</a>
+                              </li>
+                              <li>
+                                <a href="#" title="">Modern Classic</a>
+                              </li>
+                              <li>
+                                <a href="#" title="">Party</a>
+                              </li>
+                            </ul>
+                            <div class="show">
+                              <a href="#" title="">Shop All</a>
+                            </div>
+                          </div>
+                          <!-- /.col-lg-3 col-md-12 -->
+                          <div class="col-lg-3 col-md-12">
+                            <h3 class="cat-title">Laptop And Computer</h3>
+                            <ul class="submenu-child">
+                              <li>
+                                <a href="#" title=""
+                                  >Networking & Internet Devices</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#" title=""
+                                  >Laptops, Desktops & Monitors</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#" title=""
+                                  >Hard Drives & Memory Cards</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#" title="">Printers & Ink</a>
+                              </li>
+                              <li>
+                                <a href="#" title=""
+                                  >Networking & Internet Devices</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#" title=""
+                                  >Computer Accessories</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#" title="">Software</a>
+                              </li>
+                            </ul>
+                            <div class="show">
+                              <a href="#" title="">Shop All</a>
+                            </div>
+                          </div>
+                          <!-- /.col-lg-3 col-md-12 -->
+                          <div class="col-lg-4 col-md-12">
+                            <h3 class="cat-title">Audio & Video</h3>
+                            <ul class="submenu-child">
+                              <li>
+                                <a href="#" title=""
+                                  >Headphones & Speakers</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#" title=""
+                                  >Home Entertainment Systems</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#" title="">MP3 & Media Players</a>
+                              </li>
+                            </ul>
+                            <div class="show">
+                              <a href="#" title="">Shop All</a>
+                            </div>
+                          </div>
+                          <!-- /.col-lg-4 col-md-12 -->
+                          <div class="col-lg-2 col-md-12">
+                            <h3 class="cat-title">Home Audio</h3>
+                            <ul class="submenu-child">
+                              <li>
+                                <a href="#" title=""
+                                  >Home Theater Systems</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#" title=""
+                                  >Receivers & Amplifiers</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#" title="">Speakers</a>
+                              </li>
+                              <li>
+                                <a href="#" title=""
+                                  >CD Players & Turntables</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#" title=""
+                                  >High-Resolution Audio</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#" title="">4K Ultra HD TVs</a>
+                              </li>
+                            </ul>
+                            <div class="show">
+                              <a href="#" title="">Shop All</a>
+                            </div>
+                          </div>
+                          <!-- /.col-lg-2 col-md-12 -->
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="banner-box">
+                              <div class="inner-box">
+                                <a href="#" title="">
+                                  <img src="#" alt="" />
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="banner-box">
+                              <div class="inner-box">
+                                <a href="#" title="">
+                                  <img src="#" alt="" />
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /.row -->
+                      </div>
+                      <!-- /.submenu -->
+                    </li>
+                    <!-- /.has-mega-menu -->
+                    <li class="column-1">
+                      <a href="#" title="">Pages</a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >About</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >404 Page</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Brands Page</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Categories 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Categories 02</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Element</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >FAQ</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Order Tracking</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Terms & Conditions</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Single Product 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Single Product 02</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Single Product 03</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Single Product 04</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Single Product 05</a
+                          >
+                        </li>
+                      </ul>
+                      <!-- /.submenu -->
+                    </li>
+                    <!-- /.column-1 -->
+                    <li class="column-1">
+                      <a href="#" title="">Blog</a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Blog left sidebar</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Blog right sidebar</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Blog list</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Blog 02 column</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Blog full width</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Blog single</a
+                          >
+                        </li>
+                      </ul>
+                      <!-- /.submenu -->
+                    </li>
+                    <!-- /.column-1 -->
+                    <li class="column-1">
+                      <a href="#" title="">Contact</a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Contact 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" title=""
+                            ><i
+                              class="fa fa-angle-right"
+                              aria-hidden="true"
+                            ></i
+                            >Contact 02</a
+                          >
+                        </li>
+                      </ul>
+                      <!-- /.submenu -->
+                    </li>
+                    <!-- /.column-1 -->
+                  </ul>
+                  <!-- /.menu -->
+                </div>
+                <!-- /.mainnav -->
+              </div>
+              <!-- /.nav-wrap -->
+              <div class="today-deal">
+                <a href="#" title="">TODAY DEALS</a>
+              </div>
+              <!-- /.today-deal -->
+              <div class="btn-menu">
+                <span></span>
+              </div>
+              <!-- //mobile menu button -->
             </div>
-           </div>
+            <!-- /.col-md-9 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
     </div>
   </div>
 
-  <script src="{{ 'bootstrap.min.js' | asset_url }}" defer="defer"></script>
+  
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous" defer
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous" defer
+></script>
   <script src="{{ 'megamenu.js' | asset_url }}" defer="defer"></script>
   
   {% schema %}

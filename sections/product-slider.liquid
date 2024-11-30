@@ -79,17 +79,21 @@
 
   <script>
     // Set the date we're counting down to
-  var cc = countdown-`{{ section.id }}`
+  var cc = countdown-`{{ section.id }}`;
+  var distance =dis-`{{ section.id }}`;
+  var now =now-`{{ section.id }}`;
+  var x =x-`{{ section.id }}`;
+  
   cc = new Date("{{section.settings.date}}").getTime();
 
 // Update the count down every 1 second
-   var x = setInterval(function() {
+    x = setInterval(function() {
 
   // Get today's date and time
-  var now = new Date().getTime();
+   now = new Date().getTime();
 
   // Find the distance between now and the count down date
-  var distance = cc - now;
+   distance = cc - now;
 
   // Time calculations for day, hour, minute and second
   var day = Math.floor(distance / (1000 * 60 * 60 * 24));

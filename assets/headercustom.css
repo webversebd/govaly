@@ -371,9 +371,6 @@ h4 {
 	font-size:18px;
 }
 
-.container {
-	width:1170px;
-}
 
 .clearfix {
 	clear:both;
@@ -406,32 +403,6 @@ h4 {
 
 /* aniketrod
 -------------------------------------------------------------- */
-.aniketrod {
-	position:relative;
-}
-
-.aniketrod > .overlay {
-	content:'';
-	position:absolute;
-	width:100%;
-	height:100%;
-	top:0;
-	left:0;
-	background-color:rgba(0, 0, 0, 0.5);
-	z-index:909;
-	opacity:0;
-	display:none;
-	-webkit-transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-ms-transition:all 0.3s ease-in-out;
-	-o-transition:all 0.3s ease-in-out;
-	transition:all 0.3s ease-in-out;
-}
-
-.aniketrod > .overlay.show {
-	opacity:1;
-	display:block;
-}
 /* Header Bottom */
 .header-bottom {
 	background-color:#f28b00;

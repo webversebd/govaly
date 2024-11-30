@@ -43,10 +43,10 @@
 
 #SectionHeading-{{ section.id }} .day,#SectionHeading-{{ section.id }} .hour,#SectionHeading-{{ section.id }} .minute,#SectionHeading-{{ section.id }} .second{
 	background: #fff;
-	padding: 5px;
+	padding:5px 10px;
 	margin: 5px;
 	color: #000;
-    border-radius: 15px;
+    border-radius: 5px;
 	font-size: calc(var(--font-heading-scale) * 3rem);
   }
      @media screen and (max-width: 750px) {
@@ -105,7 +105,7 @@
   var minute = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var second = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("countdown-{{ section.id }}").innerHTML = "<span class='day'>" + day +  "d " + "</span>"  +"<span class='hour'>" + hour  + "h " + "</span>" + "<span class='minute'>" + minute + "m "  + "</span>" + "<span class='second'>" + second + "s " + "</span>" ;
+  document.getElementById("countdown-{{ section.id }}").innerHTML = "<span class='hour'>" + hour  + "</span>"+  " : "  + "<span class='minute'>" + minute    + "</span>" + " : "  + "<span class='second'>" +  second +  "</span>" ;
 
   // If the count down is finished, write some text
   if (distance < 0) {

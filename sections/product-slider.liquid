@@ -36,7 +36,7 @@
 	margin-left: 2rem;
 }
 
-#SectionHeading-{{ section.id }} .days,#SectionHeading-{{ section.id }} .hours,#SectionHeading-{{ section.id }} .minutes,#SectionHeading-{{ section.id }} .seconds{
+#SectionHeading-{{ section.id }} .day,#SectionHeading-{{ section.id }} .hour,#SectionHeading-{{ section.id }} .minute,#SectionHeading-{{ section.id }} .second{
 	background: #fff;
 	padding: 5px;
 	margin: 5px;
@@ -90,13 +90,13 @@ var x = setInterval(function() {
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Time calculations for day, hour, minute and second
+  var day = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hour = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minute = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var second = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("countdown-{{ section.id }}").innerHTML = "<span class='days'>" + days +  "d " + "</span>"  +"<span class='hours'>" + hours  + "h " + "</span>" + "<span class='minutes'>" + minutes + "m "  + "</span>" + "<span class='seconds'>" + seconds + "s " + "</span>" ;
+  document.getElementById("countdown-{{ section.id }}").innerHTML = "<span class='day'>" + day +  "d " + "</span>"  +"<span class='hour'>" + hour  + "h " + "</span>" + "<span class='minute'>" + minute + "m "  + "</span>" + "<span class='second'>" + second + "s " + "</span>" ;
 
   // If the count down is finished, write some text
   if (distance < 0) {

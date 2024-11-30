@@ -347,7 +347,7 @@
         "collection": "new-arrivals",
         "title": "Collections",
         "date": "July 3, 2026 00:00:00",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "color_scheme": "scheme-3",
         "padding_top": 40,
         "padding_bottom": 52

@@ -342,3 +342,5 @@ $(document).ready(function(){
     $(this).parent().parent().find('.product-description-full').css("display","none");
     $(this).parent().parent().find('.product-description-short').css("display","block");
   });
+
+  

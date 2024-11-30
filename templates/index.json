@@ -346,6 +346,7 @@
       "settings": {
         "collection": "new-arrivals",
         "title": "Collections",
+        "date": "July 3, 2025 00:00:00",
         "heading_size": "h2",
         "color_scheme": "scheme-3",
         "padding_top": 40,
@@ -407,6 +408,18 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "product_slider_C7tx6i": {
+      "type": "product-slider",
+      "settings": {
+        "collection": "new-arrivals",
+        "title": "New Arrivals",
+        "date": "July 3, 2025 00:00:00",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -418,6 +431,7 @@
     "long_banner_V4MtPn",
     "support_qeqKr8",
     "product_slider_rRkT9L",
-    "four_column_JrnV3j"
+    "four_column_JrnV3j",
+    "product_slider_C7tx6i"
   ]
 }

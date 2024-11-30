@@ -127,11 +127,8 @@
 </ul>
        </div>
        <div class="rmenu">
-        <a href="">IItem</a> 
-        <a href="">IItem</a> 
-        <a href="">IItem</a> 
         {% for block in section.blocks %}
-           <a href="{{block.settings.link}}"></a>
+           <a href="{{block.settings.link}}"> {{block.settings.label}} </a>
           {% endfor %}
        </div>
     </div>
@@ -188,7 +185,7 @@
             "settings": [
                 {
                 "type": "text",
-                "id": "lable",
+                "id": "label",
                 "label": "Link Label"
                 },
                 {

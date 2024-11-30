@@ -45,35 +45,6 @@
         "padding_bottom": 20
       }
     },
-    "mega_menu_bpy4Yz": {
-      "type": "mega-menu",
-      "blocks": {
-        "column_9eaGNP": {
-          "type": "column",
-          "settings": {
-            "label": "Pk",
-            "link": "shopify://collections/new-arrivals"
-          }
-        },
-        "column_fN4Pjc": {
-          "type": "column",
-          "settings": {
-            "label": "pk2",
-            "link": "shopify://products/basic-high-neck-sweater"
-          }
-        }
-      },
-      "block_order": [
-        "column_9eaGNP",
-        "column_fN4Pjc"
-      ],
-      "settings": {
-        "menu": "main-menu",
-        "color_scheme": "",
-        "padding_top": 32,
-        "padding_bottom": 32
-      }
-    },
     "new_header_7RRNFe": {
       "type": "new-header",
       "settings": {
@@ -90,7 +61,6 @@
   "order": [
     "new_announcement_bar_zx6dcP",
     "header",
-    "mega_menu_bpy4Yz",
     "new_header_7RRNFe"
   ]
 }

@@ -11,7 +11,7 @@
       }
     }
   {%- endstyle -%}
-{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }} {% endcomment %}
   <link rel="stylesheet" href="{{ 'headercustom.css' | asset_url }}">
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">

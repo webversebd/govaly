@@ -23,8 +23,17 @@
         padding: 20px;
         border-radius: 1px solid #000;
     }
+    .mega-menu ul li{
+        list-style: none;
+    }
+    .mega-menu ul.menu{
+        display: none;
+    }
+    .mega-menu .lmenu:hover ul.menu{
+        display: block;
+    }
   </style>
-  <div class="color-{{ section.settings.color_scheme }} gradient isolate">
+  <div class="mega-menu color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
        <div class="lmenu">
          Categories 

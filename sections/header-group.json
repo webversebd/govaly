@@ -29,9 +29,9 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo_position": "middle-center",
+        "logo_position": "middle-left",
         "menu": "main-menu",
-        "menu_type_desktop": "drawer",
+        "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "scheme-2",
@@ -48,24 +48,24 @@
     "mega_menu_bpy4Yz": {
       "type": "mega-menu",
       "blocks": {
-        "column_TJWMHb": {
+        "column_9eaGNP": {
           "type": "column",
           "settings": {
-            "lable": "Item1",
+            "label": "Pk",
             "link": "shopify://collections/new-arrivals"
           }
         },
-        "column_AG4ggY": {
+        "column_fN4Pjc": {
           "type": "column",
           "settings": {
-            "lable": "",
-            "link": ""
+            "label": "pk2",
+            "link": "shopify://products/basic-high-neck-sweater"
           }
         }
       },
       "block_order": [
-        "column_TJWMHb",
-        "column_AG4ggY"
+        "column_9eaGNP",
+        "column_fN4Pjc"
       ],
       "settings": {
         "menu": "main-menu",

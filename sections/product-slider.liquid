@@ -28,9 +28,22 @@
     #SectionHeading-{{ section.id }} {
       padding-bottom: 20px
     }
-   .product-slick-slider .card-wrapper{
+    #SectionHeading-{{ section.id }} .product-slick-slider .card-wrapper{
      padding:5px
    }
+   #SectionHeading-{{ section.id }} .countdown_text{
+	font-size: calc(var(--font-heading-scale) * 3rem);
+	margin-left: 2rem;
+}
+
+#SectionHeading-{{ section.id }} .days,#SectionHeading-{{ section.id }} .hours,#SectionHeading-{{ section.id }} .minutes,#SectionHeading-{{ section.id }} .seconds{
+	background: #fff;
+	padding: 5px;
+	margin: 5px;
+	color: #000;
+    border-radius: 15px;
+	font-size: calc(var(--font-heading-scale) * 3rem);
+  }
      @media screen and (max-width: 750px) {
       .product-slick-slider .card:not(.ratio) {
     height: 330px;
@@ -43,11 +56,11 @@
           id="SectionHeading-{{ section.id }}"
           class="collection-list-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         >
+        {{ section.settings.title }} 
         {% if section.settings.date != blank %}
           <span class="countdown_text">Ends In</span>
           <span id="countdown-{{ section.id }}"></span>
         {% endif %}
-          {{ section.settings.title }} 
             {% comment %} <a style="float: right;"
               href="{{ section.settings.collection.url }}"
             >

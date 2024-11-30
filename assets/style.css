@@ -78,18 +78,6 @@ a{
 	box-shadow: 0 4px 9px rgb(var(--color-secondary-button-text));
 }
 
-.countdown_text{
-	font-size: calc(var(--font-heading-scale) * 3rem);
-	margin-left: 2rem;
-}
 
-.days, .hours, .minutes, .seconds{
-	background: #fff;
-	padding: 5px;
-	margin: 5px;
-	color: #000;
-    border-radius: 15px;
-	font-size: calc(var(--font-heading-scale) * 3rem);
-  }
 
 

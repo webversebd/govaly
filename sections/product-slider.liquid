@@ -105,7 +105,7 @@
   var minute = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var second = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("countdown-{{ section.id }}").innerHTML = "<span class='hour'>" + hour+ " : "   + "</span>" + "<span class='minute'>" + minute + " : "    + "</span>" + "<span class='second'>" +  second +  "</span>" ;
+  document.getElementById("countdown-{{ section.id }}").innerHTML = "<span class='hour'>" + hour  + "</span>"+  " : "  + "<span class='minute'>" + minute    + "</span>" + " : "  + "<span class='second'>" +  second +  "</span>" ;
 
   // If the count down is finished, write some text
   if (distance < 0) {

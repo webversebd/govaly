@@ -113,12 +113,12 @@
         "column_W6qwGb": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/558c12c28c7f46348ff2a08f1b4b9035.webp",
-            "title": "Be the First to Introduce Exquisite Decor Collection",
-            "text": "New Arrival",
-            "link_label": "Shop Now",
+            "image": "shopify://shop_images/flash-sale-shopping-poster-banner-600nw-2410266013.webp",
+            "title": "",
+            "text": "",
+            "link_label": "",
             "link": "",
-            "link_label2": "Learn More",
+            "link_label2": "",
             "link2": ""
           }
         },
@@ -126,11 +126,11 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/fa1ec3a6848d4b9b9ca2933ae2594352.webp",
-            "title": "Be the First to Introduce Exquisite Decor Collection",
-            "text": "New Arrival",
-            "link_label": "Shop Now",
+            "title": "",
+            "text": "",
+            "link_label": "",
             "link": "",
-            "link_label2": "Learn More",
+            "link_label2": "",
             "link2": ""
           }
         }

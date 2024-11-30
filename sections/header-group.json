@@ -79,7 +79,11 @@
       "settings": {
         "color_scheme": "",
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 52,
+        "left_menu": "new-menu",
+        "middle_menu": "main-menu",
+        "right_menu": "main-menu",
+        "mobile_menu": "main-menu"
       }
     }
   },

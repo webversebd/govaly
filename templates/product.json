@@ -84,6 +84,15 @@
             "content": "",
             "page": ""
           }
+        },
+        "collapsible_tab_H8q4iB": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -97,7 +106,8 @@
         "description",
         "share",
         "collapsible_tab_dzR3Xy",
-        "collapsible_tab_6FajDF"
+        "collapsible_tab_6FajDF",
+        "collapsible_tab_H8q4iB"
       ],
       "settings": {
         "enable_sticky_info": true,

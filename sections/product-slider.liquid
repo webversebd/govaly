@@ -79,8 +79,8 @@
 
   <script>
     // Set the date we're counting down to
-  var cc = countdown-`{{ section.id }}`
-  var distance =dis-`{{ section.id }}`
+  var cc = countdown-{{ section.id }};
+  var distance =dis-{{ section.id }};
   cc = new Date("{{section.settings.date}}").getTime();
 
 // Update the count down every 1 second

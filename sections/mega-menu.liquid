@@ -127,9 +127,10 @@
 </ul>
        </div>
        <div class="rmenu">
-        <a href="">Item</a>
-        <a href="">Item2</a>
-        <a href="">Item3</a>
+        {% for block in section.blocks %}
+            <a href="{{block.link}}">{{block.label}}</a>
+        {% endfor %}
+    
        </div>
     </div>
   </div>
@@ -176,6 +177,25 @@
         "label": "t:sections.all.padding.padding_bottom",
         "default": 52
       }
+      
+    ],
+    "blocks": [
+        {
+            "type": "column",
+            "name": "Add Link",
+            "settings": [
+                {
+                "type": "text",
+                "id": "lable",
+                "label": "Link Label"
+                },
+                {
+                "type": "text",
+                "id": "link",
+                "label": "Link Url"
+                }
+            ]
+        }
     ],
     "presets": [
       {

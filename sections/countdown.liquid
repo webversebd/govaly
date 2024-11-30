@@ -1,6 +1,6 @@
 <style>
   /* Offer section styling */
-.offer-section {
+#countdown .offer-section {
     display: flex;
     align-items: normal;
     justify-content: center;
@@ -10,37 +10,37 @@
 }
 
 /* Image container styling */
-.image-container {
+#countdown  .image-container {
     flex: 1;
     display: flex;
     max-width: 100%;
 }
 
-.image-container img {
+#countdown .image-container img {
     width: 100%;
     border-radius: 4px;
 }
 
 /* Offer details styling */
-.offer-details {
+#countdown .offer-details {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
-.offer-details > * {
+#countdown .offer-details > * {
     margin: 0px;
 }
 
-.special-offer {
+#countdown .special-offer {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: .1em;
 }
 
-.discount {
+#countdown .discount {
     background-color: rgb(var(--color-button));
     color: rgb(var(--color-button-text));
     padding: 0 5px;
@@ -48,7 +48,7 @@
 }
 
 /* Countdown timer styling */
-.countdown {
+#countdown .countdown {
     display: flex;
     align-items: center;
     font-size: 24px;
@@ -56,19 +56,19 @@
     color: rgb(var(--color-button));
 }
 
-.time {
+#countdown .time {
     padding: 10px 20px;
     background-color: rgb(var(--color-button-text));
     border-radius: 4px;
 }
 
-.separator {
+#countdown .separator {
     font-size: 28px;
     color: rgb(var(--color-button));
 }
 
 /* Call to action button styling */
-.btn{
+#countdown .btn{
     box-shadow: 0 4px 9px rgba(0,0,0,.05);
     cursor: pointer;
     padding: 2% 5%;
@@ -76,12 +76,12 @@
     text-decoration: none;
     display: inline-block
 }
-.btn-primary{
+#countdown .btn-primary{
     background-color: rgb(var(--color-button));
     color: rgb(var(--color-button-text));
     transition: .2s all linear;
 }
-.btn-primary:hover{
+#countdown .btn-primary:hover{
     color: rgb(var(--color-button));
     background-color: rgb(var(--color-button-text));
 
@@ -90,21 +90,21 @@
 /* Responsive Mobile */
 
 @media only screen and (max-width: 767px) {
-    .offer-section {
+    #countdown .offer-section {
         display: block
     }
     /* Countdown timer styling */
-    .countdown {
+    #countdown  .countdown {
         gap: 5px;
     }
-    .offer-details {
+    #countdown  .offer-details {
         align-items: center;
         padding: 20px 0px;
     }
-    .offer-details p{
+    #countdown .offer-details p{
         text-align: center;
     }
-  .time {
+    #countdown .time {
 	padding: 10px 15px;
 }
     

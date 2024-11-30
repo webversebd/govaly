@@ -47,6 +47,26 @@
     },
     "mega_menu_bpy4Yz": {
       "type": "mega-menu",
+      "blocks": {
+        "column_yDNE89": {
+          "type": "column",
+          "settings": {
+            "lable": "PK",
+            "link": "pk"
+          }
+        },
+        "column_7YJzMW": {
+          "type": "column",
+          "settings": {
+            "lable": "pk2",
+            "link": "pk2"
+          }
+        }
+      },
+      "block_order": [
+        "column_yDNE89",
+        "column_7YJzMW"
+      ],
       "settings": {
         "menu": "main-menu",
         "color_scheme": "",

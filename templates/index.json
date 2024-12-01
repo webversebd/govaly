@@ -107,6 +107,91 @@
         "padding_bottom": 0
       }
     },
+    "shop_category_RNKRfK": {
+      "type": "shop-category",
+      "blocks": {
+        "column_Azpjhb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1.webp",
+            "link": "baby"
+          }
+        },
+        "column_GkXLWm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3.webp",
+            "link": ""
+          }
+        },
+        "column_PJDtti": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2.webp",
+            "link": ""
+          }
+        },
+        "column_AEYc3k": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/4.webp",
+            "link": ""
+          }
+        },
+        "column_wYQYde": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/4.webp",
+            "link": ""
+          }
+        },
+        "column_GXXc9g": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/4.webp",
+            "link": ""
+          }
+        },
+        "column_fMXcBx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3.webp",
+            "link": ""
+          }
+        },
+        "column_nCUtEF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3.webp",
+            "link": ""
+          }
+        },
+        "column_cxMxnU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3.webp",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Azpjhb",
+        "column_GkXLWm",
+        "column_PJDtti",
+        "column_AEYc3k",
+        "column_wYQYde",
+        "column_GXXc9g",
+        "column_fMXcBx",
+        "column_nCUtEF",
+        "column_cxMxnU"
+      ],
+      "settings": {
+        "heading": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "countdown_4TRHPG": {
       "type": "countdown",
       "settings": {
@@ -409,87 +494,18 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "shop_category_RNKRfK": {
-      "type": "shop-category",
-      "blocks": {
-        "column_Azpjhb": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/1.webp",
-            "link": "baby"
-          }
-        },
-        "column_GkXLWm": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/3.webp",
-            "link": ""
-          }
-        },
-        "column_PJDtti": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/2.webp",
-            "link": ""
-          }
-        },
-        "column_AEYc3k": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/4.webp",
-            "link": ""
-          }
-        },
-        "column_fMXcBx": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/3.webp",
-            "link": ""
-          }
-        },
-        "column_nCUtEF": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/3.webp",
-            "link": ""
-          }
-        },
-        "column_cxMxnU": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/3.webp",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_Azpjhb",
-        "column_GkXLWm",
-        "column_PJDtti",
-        "column_AEYc3k",
-        "column_fMXcBx",
-        "column_nCUtEF",
-        "column_cxMxnU"
-      ],
-      "settings": {
-        "heading": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "slick_slider_KnEU9M",
     "category_image_N86EFC",
+    "shop_category_RNKRfK",
     "countdown_4TRHPG",
     "category_list_bnyC7d",
     "shop_brand_6TyGVW",
     "long_banner_V4MtPn",
     "support_qeqKr8",
     "product_slider_rRkT9L",
-    "four_column_JrnV3j",
-    "shop_category_RNKRfK"
+    "four_column_JrnV3j"
   ]
 }

@@ -14,12 +14,6 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "brand_information_N6eUKY": {
-          "type": "brand_information",
-          "settings": {
-            "show_social": true
-          }
-        },
         "link_list_cP8Tdi": {
           "type": "link_list",
           "settings": {
@@ -40,13 +34,20 @@
             "heading": "Quick links",
             "menu": "footer"
           }
+        },
+        "link_list_fmnGNf": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
         }
       },
       "block_order": [
-        "brand_information_N6eUKY",
         "link_list_cP8Tdi",
         "link_list_zJKQ4U",
-        "link_list_iKhNpq"
+        "link_list_iKhNpq",
+        "link_list_fmnGNf"
       ],
       "settings": {
         "payment_img": "shopify://shop_images/SSLCommerz_white_1.webp",

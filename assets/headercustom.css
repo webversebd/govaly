@@ -6,7 +6,6 @@ ul {
 }
 .header-bottom {
 	background-color:rgb(var(--color-button));
-	height: 40px;
 }
 
 .header-bottom > .container > .row {
@@ -64,7 +63,7 @@ ul {
 	height:2px;
 	width:18px;
 	left:46px;
-	top:31px;
+	top:20px;
 	background-color:#fff;
 	display:inline-block;
 }

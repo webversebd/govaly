@@ -382,6 +382,11 @@ ul {
 	padding-right: 10px;
 }
 
+
+.today-deal a:hover {
+	color: #f9912f;
+}
+
 .today-deal.style1 > a {
 	color:#f28b00;
 }

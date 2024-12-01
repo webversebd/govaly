@@ -430,6 +430,7 @@
         "column_PJDtti": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/2.webp",
             "link": ""
           }
         },

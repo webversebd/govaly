@@ -376,28 +376,10 @@ ul {
 	line-height:40px;
 	color:#ffffff;
 	font-size:14px;
-	font-weight:600;
+	font-weight:500;
 	position:relative;
 	text-decoration: none;
 	padding-right: 10px;
-}
-
-.today-deal a:before {
-	content:'';
-	position:absolute;
-	width:0;
-	height:2px;
-	bottom:-4px;
-	right:0;
-	background:#fff;
-	-webkit-transition:width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-	-o-transition:width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-	transition:width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-}
-
-.today-deal a:hover:before {
-	width:100%;
-	left:0;
 }
 
 .today-deal.style1 > a {

@@ -133,13 +133,27 @@
           "settings": {
             "collection": ""
           }
+        },
+        "featured_collection_ciD4tj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_aUxpDQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
         "featured_collection_86Rpn7",
         "featured_collection_eVxYpi",
         "featured_collection_HiyYnb",
-        "featured_collection_i9r3wf"
+        "featured_collection_i9r3wf",
+        "featured_collection_ciD4tj",
+        "featured_collection_aUxpDQ"
       ],
       "settings": {
         "title": "Collections",

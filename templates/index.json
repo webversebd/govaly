@@ -437,6 +437,7 @@
         "column_AEYc3k": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/4.webp",
             "link": ""
           }
         },

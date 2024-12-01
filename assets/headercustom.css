@@ -3,7 +3,7 @@ ul {
     list-style: none;
 }
 .header-bottom {
-	background-color:#f28b00;
+	background-color:rgb(var(--color-button));
 }
 
 .header-bottom > .container > .row {
@@ -11,7 +11,7 @@ ul {
 }
 
 .header-bottom.style2 {
-	background-color:#e58400;
+	background-color:rgb(var(--color-button));
 }
 
 .header-bottom.style3 {

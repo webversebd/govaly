@@ -25,9 +25,6 @@
                   {%- for link in section.settings.l_menu.links -%}
                   <li>
                     <a href="{{link.url}}" title="" class="dropdown">
-                      <span class="menu-img">
-                        <img src="#" alt="" />
-                      </span>
                       <span class="menu-title"> {{link.title}} </span>
                     </a>
                     {% if link.links != blank %}

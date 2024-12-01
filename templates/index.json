@@ -69,7 +69,7 @@
             "text": "New Arrival",
             "link_label": "Shop Now",
             "link": "",
-            "link_label2": "Learn More",
+            "link_label2": "",
             "link2": ""
           }
         },
@@ -98,13 +98,60 @@
         "columns_desktop": 2,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "category_list_RL6VYJ": {
+      "type": "category-list",
+      "blocks": {
+        "featured_collection_86Rpn7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_eVxYpi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_HiyYnb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_i9r3wf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_86Rpn7",
+        "featured_collection_eVxYpi",
+        "featured_collection_HiyYnb",
+        "featured_collection_i9r3wf"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "countdown_4TRHPG": {
@@ -413,6 +460,7 @@
   "order": [
     "slick_slider_KnEU9M",
     "category_image_N86EFC",
+    "category_list_RL6VYJ",
     "countdown_4TRHPG",
     "category_list_bnyC7d",
     "shop_brand_6TyGVW",

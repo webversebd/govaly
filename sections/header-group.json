@@ -53,7 +53,8 @@
         "padding_bottom": 0,
         "m_menu": "middle-menu",
         "l_menu": "main-menu",
-        "r_menu": "footer"
+        "title": "Download App",
+        "url": "apps.com"
       }
     }
   },

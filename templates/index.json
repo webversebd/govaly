@@ -448,21 +448,17 @@
             "link": ""
           }
         },
-        "column_B4FeW4": {
+        "column_nCUtEF": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/3.webp",
             "link": ""
           }
         },
-        "column_EEc3Eh": {
+        "column_cxMxnU": {
           "type": "column",
           "settings": {
-            "link": ""
-          }
-        },
-        "column_hYN7qt": {
-          "type": "column",
-          "settings": {
+            "image": "shopify://shop_images/3.webp",
             "link": ""
           }
         }
@@ -473,9 +469,8 @@
         "column_PJDtti",
         "column_AEYc3k",
         "column_fMXcBx",
-        "column_B4FeW4",
-        "column_EEc3Eh",
-        "column_hYN7qt"
+        "column_nCUtEF",
+        "column_cxMxnU"
       ],
       "settings": {
         "heading": "",

@@ -34,7 +34,7 @@
                     <div class="drop-menu">
                       {%- for childlink in link.links -%}
                       <div class="one-third">
-                        <div class="cat-title">{{childlink.title}}</div>
+                        <div class="cat-title"> <a href="{{childlink.url}}"> {{childlink.title}} </a> </div>
                         {%- if childlink.links != blank -%}
                         <ul>
                           {%- for grandchildlink in childlink.links -%}

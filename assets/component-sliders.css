@@ -253,8 +253,14 @@ video.slider-video {
         left: 0;
     }
 
-    .slider-item.default {
+    .slider-item.large {
         height: 400px;
+    }
+      .slider-item.medium {
+        height: 350px;
+    }
+      .slider-item.samll {
+        height: 300px;
     }
     .slick-arrow {
         display: none !important;

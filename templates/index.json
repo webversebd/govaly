@@ -208,6 +208,62 @@
         "padding_bottom": 68
       }
     },
+    "four_column_JrnV3j": {
+      "type": "four-column",
+      "blocks": {
+        "column_CKhNQk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/6-2.jpg",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "",
+            "button_link": "shopify://collections"
+          }
+        },
+        "column_PGKBMw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3-5.jpg",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_mkRntV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2-3-1-scaled.jpg",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_Die7i7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/f1ffc426270a4d8e82f2601dacea411f.webp",
+            "collection_name": "",
+            "heading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CKhNQk",
+        "column_PGKBMw",
+        "column_mkRntV",
+        "column_Die7i7"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "category_list_bnyC7d": {
       "type": "category-list",
       "blocks": {
@@ -257,6 +313,30 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "long_banner_V4MtPn": {
+      "type": "long-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/65976ad2d6334153988d256e328a6590.webp",
+        "height": "200px",
+        "width": true,
+        "position": "center",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "product_slider_rRkT9L": {
+      "type": "product-slider",
+      "settings": {
+        "collection": "new-arrivals",
+        "title": "Collections",
+        "date": "Dec 4, 2025",
+        "heading_size": "h1",
+        "color_scheme": "scheme-3",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "shop_brand_6TyGVW": {
@@ -359,17 +439,6 @@
         "padding_bottom": 52
       }
     },
-    "long_banner_V4MtPn": {
-      "type": "long-banner",
-      "settings": {
-        "image": "shopify://shop_images/65976ad2d6334153988d256e328a6590.webp",
-        "height": "200px",
-        "width": true,
-        "position": "center",
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
-    },
     "support_qeqKr8": {
       "type": "support",
       "blocks": {
@@ -427,72 +496,33 @@
         "padding_bottom": 52
       }
     },
-    "product_slider_rRkT9L": {
-      "type": "product-slider",
+    "featured_collection_tBdRrH": {
+      "type": "featured-collection",
       "settings": {
-        "collection": "new-arrivals",
-        "title": "Collections",
-        "date": "Dec 4, 2025",
+        "title": "Featured collection",
+        "date": "July 3, 2025 00:00:00",
         "heading_size": "h1",
-        "color_scheme": "scheme-3",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "four_column_JrnV3j": {
-      "type": "four-column",
-      "blocks": {
-        "column_CKhNQk": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/6-2.jpg",
-            "collection_name": "",
-            "heading": "",
-            "button_label": "",
-            "button_link": "shopify://collections"
-          }
-        },
-        "column_PGKBMw": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/3-5.jpg",
-            "collection_name": "",
-            "heading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_mkRntV": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/2-3-1-scaled.jpg",
-            "collection_name": "",
-            "heading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column_Die7i7": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/f1ffc426270a4d8e82f2601dacea411f.webp",
-            "collection_name": "",
-            "heading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_CKhNQk",
-        "column_PGKBMw",
-        "column_mkRntV",
-        "column_Die7i7"
-      ],
-      "settings": {
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
         "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -501,11 +531,12 @@
     "category_image_N86EFC",
     "shop_category_RNKRfK",
     "countdown_4TRHPG",
+    "four_column_JrnV3j",
     "category_list_bnyC7d",
-    "shop_brand_6TyGVW",
     "long_banner_V4MtPn",
-    "support_qeqKr8",
     "product_slider_rRkT9L",
-    "four_column_JrnV3j"
+    "featured_collection_tBdRrH",
+    "shop_brand_6TyGVW",
+    "support_qeqKr8"
   ]
 }

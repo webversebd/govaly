@@ -120,7 +120,7 @@ ul {
 }
 
 #mega-menu > ul.menu > li > a.dropdown:after {
-	content:'\f105';
+	content:'\2192';
 	position:absolute;
 	font-family:'fontawesome';
 	right:29px;

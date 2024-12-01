@@ -90,9 +90,9 @@
               
               <!-- /.nav-wrap -->
               <div class="today-deal">
-                {%- for link in section.settings.r_menu.links -%}
-                <a href="{{link.url}}" title="">{{link.title}}</a>
-                {% endfor %}
+                
+                <a href="{{section.settings.url}}" title="">{{ section.settings.title }}</a>
+
               </div>
               <!-- /.today-deal -->
               <div class="btn-menu">
@@ -161,10 +161,14 @@
       "label": "Left Menu"
     },
     {
-      "type": "link_list",
-      "id": "r_menu",
-      "default": "main-menu",
-      "label": "Right menu"
+      "type": "text",
+      "id": "title",
+      "label": "Button Title"
+    },
+    {
+      "type": "text",
+      "id": "url",
+      "label": "Button link"
     }
     ],
     "presets": [

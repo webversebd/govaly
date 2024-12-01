@@ -280,11 +280,11 @@ ul {
 #mainnav ul.menu > li > a:after {
 	content:'';
 	position:absolute;
-	bottom:-20px;
+	bottom:-13px;
 	left:-1px;
 	opacity:0;
 	background-color:#fff;
-	height:48px;
+	height:41px;
 	width:calc(100% + 2px);
 	z-index:-3;
 }

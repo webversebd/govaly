@@ -24,7 +24,7 @@
                 <ul class="menu">
                   {%- for link in section.settings.l_menu.links -%}
                   <li>
-                    <a href="{{link.url}}" title="" class="dropdown"> {{- link.title |  escape -}} </a>
+                    <a href="{{link.url}}" title="" class="dropdown"> {{ link.title }} </a>
                     {% if link.links != blank %}
                     <div class="drop-menu">
                       {%- for childlink in link.links -%}

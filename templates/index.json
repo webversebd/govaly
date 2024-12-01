@@ -486,11 +486,47 @@
             "image": "shopify://shop_images/17121306420.jpg",
             "link": "kids-accessories"
           }
+        },
+        "column_4jAWJC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Product-1.jpg",
+            "link": "kids-accessories"
+          }
+        },
+        "column_ViB3WP": {
+          "type": "column",
+          "settings": {
+            "link": ""
+          }
+        },
+        "column_PxQjNp": {
+          "type": "column",
+          "settings": {
+            "link": ""
+          }
+        },
+        "column_3baK8y": {
+          "type": "column",
+          "settings": {
+            "link": ""
+          }
+        },
+        "column_qxjaTt": {
+          "type": "column",
+          "settings": {
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_GnBV4q",
-        "column_MFR8BH"
+        "column_MFR8BH",
+        "column_4jAWJC",
+        "column_ViB3WP",
+        "column_PxQjNp",
+        "column_3baK8y",
+        "column_qxjaTt"
       ],
       "settings": {
         "heading": "Title",

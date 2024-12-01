@@ -444,6 +444,7 @@
         "column_fMXcBx": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/3.webp",
             "link": ""
           }
         },

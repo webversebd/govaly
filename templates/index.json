@@ -249,8 +249,8 @@
       "settings": {
         "heading": "Shop By Catagory",
         "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "category_list_bnyC7d": {

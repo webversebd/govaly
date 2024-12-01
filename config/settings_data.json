@@ -188,9 +188,9 @@
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
-          "button_label": "#121212",
+          "button_label": "#111926",
           "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "shadow": "#111926"
         }
       },
       "scheme-5": {

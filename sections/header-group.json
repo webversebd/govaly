@@ -51,7 +51,7 @@
         "color_scheme": "",
         "padding_top": 8,
         "padding_bottom": 0,
-        "menu": "new-menu",
+        "menu": "main-menu",
         "middle_menu": "main-menu",
         "right_menu": "main-menu",
         "mobile_menu": "main-menu"

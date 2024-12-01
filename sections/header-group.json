@@ -51,8 +51,8 @@
         "color_scheme": "",
         "padding_top": 8,
         "padding_bottom": 0,
-        "m_menu": "main-menu",
-        "l_menu": "new-menu",
+        "m_menu": "middle-menu",
+        "l_menu": "main-menu",
         "r_menu": "main-menu"
       }
     }

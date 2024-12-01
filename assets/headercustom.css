@@ -738,6 +738,7 @@ ul.menu li.column-1 .submenu > li > a i {
 	z-index:1000;
 	background-color:#222222;
 	top: 54px;
+	width: 300px; 
 }
 
 #mega-mobile > ul.menu > li > a {
@@ -785,7 +786,7 @@ ul.menu li.column-1 .submenu > li > a i {
 
 #mega-mobile > ul.menu > li > a.dropdown .btn-dropdown.active:after,
 .btn-dropdown-child.active:after {
-	content:'\f106';
+	content:'\2192';
 }
 
 #mega-mobile > ul.menu > li > .drop-menu {

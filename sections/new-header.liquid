@@ -692,7 +692,8 @@
                     {%- for link in section.settings.menu.links -%}
                     <li class="column-1">
                       <a href="{{  link.url}}" title="">{{- link.title | escape -}}</a>
-                      <ul class="submenu">
+                      {% if link.links != blank %}
+                        <ul class="submenu">
                         {%- for childlink in link.links -%}
                         <li>
                           <a href="{{ childlink.url }}" title=""
@@ -705,6 +706,8 @@
                         </li>
                         {% endfor %}
                       </ul>
+                      {% endif %}
+                      
                       <!-- /.submenu -->
                     </li>
                     {% endfor %}

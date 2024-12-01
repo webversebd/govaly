@@ -52,7 +52,7 @@
   /* Responsive styles */
   @media (max-width: 768px) {
     .new-announcement-bar{
-    display: block;
+    display: none;
   }
     .social-info-bar {
       flex-direction: column;

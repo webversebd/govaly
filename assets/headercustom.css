@@ -25,7 +25,7 @@ ul {
 #mega-menu {
 	position:relative;
 	top:0px;
-	height:55px;
+	height:40px;
 	width:218px;
 	-webkit-transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
@@ -262,7 +262,7 @@ ul {
 #mainnav > ul.menu > li {
 	display:inline-block;
 	line-height:57px;
-	height:55px;
+	height:40px;
 }
 
 #mainnav ul.menu > li > a {
@@ -315,7 +315,7 @@ ul {
 }
 
 #mainnav.style2 {
-	padding-left:55px;
+	padding-left:40px;
 }
 
 #mainnav.style2 ul.menu > li {
@@ -351,7 +351,7 @@ ul {
 #mainnav ul.menu > li:hover > .submenu {
 	opacity:1;
 	visibility:visible;
-	top:55px;
+	top:40px;
 	-webkit-transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-ms-transition:all 0.3s ease-in-out;
@@ -360,7 +360,7 @@ ul {
 }
 
 #mainnav.style1 ul.menu > li.column-1:hover > .submenu {
-	top:55px;
+	top:40px;
 }
 
 #mainnav.style1 ul.menu > li:hover > .submenu {
@@ -373,7 +373,7 @@ ul {
 }
 
 .today-deal a {
-	line-height:55px;
+	line-height:40px;
 	color:#ffffff;
 	font-size:14px;
 	font-weight:600;
@@ -1169,7 +1169,7 @@ ul.menu li.column-1 .submenu > li > a i {
 	}
 
 	.counter.style1 .counter-content .count-down .square {
-		width:55px;
+		width:40px;
 	}
 
 	.top-search form.form-search .box-search .search-suggestions {
@@ -1477,7 +1477,7 @@ ul.menu li.column-1 .submenu > li > a i {
 	}
 
 	.imagebox.style1.v3 .box-price {
-		text-align:left;padding:0px 55px 0 0px;
+		text-align:left;padding:0px 40px 0 0px;
 	}
 
 	.imagebox.style1.v3 .box-image {

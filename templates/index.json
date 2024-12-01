@@ -107,55 +107,6 @@
         "padding_bottom": 0
       }
     },
-    "category_image_UMqTrV": {
-      "type": "category-image",
-      "blocks": {
-        "column_W6qwGb": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/flash-sale-shopping-poster-banner-600nw-2410266013.webp",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "link_label2": "",
-            "link2": ""
-          }
-        },
-        "column_Gnm8wQ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/fa1ec3a6848d4b9b9ca2933ae2594352.webp",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "link_label2": "",
-            "link2": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_W6qwGb",
-        "column_Gnm8wQ"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h0",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 44
-      }
-    },
     "countdown_4TRHPG": {
       "type": "countdown",
       "settings": {
@@ -462,7 +413,6 @@
   "order": [
     "slick_slider_KnEU9M",
     "category_image_N86EFC",
-    "category_image_UMqTrV",
     "countdown_4TRHPG",
     "category_list_bnyC7d",
     "shop_brand_6TyGVW",

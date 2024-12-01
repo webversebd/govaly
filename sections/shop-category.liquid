@@ -1,6 +1,228 @@
-{% schema %}
+{%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+      padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+      overflow: hidden;
+    }
+
+  
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+  <style>
+
+
+    /* Header section */
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+    }
+
+    .slider-header h2 {
+      font-weight: bold;
+      margin: 20px 0px;
+    }
+    /* Slider area */
+    .slider-track {
+      display: flex;
+      gap: 15px;
+      transition: transform 0.4s ease-in-out;
+      will-change: transform;
+    }
+
+    .slide {
+      min-width: 150px;
+      height: 150px;
+      background-color: #fff;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .slide img {
+      max-width: 80%;
+      max-height: 80%;
+      object-fit: contain;
+    }
+
+    /* Navigation arrows */
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
+    }
+
+    .arrow svg {
+      width: 20px;
+      height: 20px;
+      fill: #333;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 768px) {
+      .slide {
+        min-width: 120px;
+        height: 120px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .slider-header h2 {
+        font-size: 1.2rem;
+      }
+
+      .slide {
+        min-width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+
+  <div class="color-{{ section.settings.color_scheme }} gradient isolate">
+    <div class="section-{{ section.id }}-padding page-width">
+      <div class="brand-slider">
+        <div class="slider-header">
+          <h2>{{ section.settings.heading }}</h2>
+        </div>
+        <div class="slider-container isolate">
+          <button class="arrow left">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg>
+          </button>
+          <div class="slider-track">
+            {% for block in section.blocks %}
+              <div class="slide"><a href="{{block.settings.link.url}}"><img src="{{block.settings.image |  image_url }}" alt="Brand 1"></a></div>
+            {% endfor %}
+            
+          </div>
+          <button class="arrow right">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+        // Slider functionality
+        const track = document.querySelector('.slider-track');
+        const slides = document.querySelectorAll('.slide');
+        const leftArrow = document.querySelector('.arrow.left');
+        const rightArrow = document.querySelector('.arrow.right');
+    
+        let currentIndex = 0;
+    
+        function updateSlider() {
+          const slideWidth = slides[0].offsetWidth + 15; // Add gap
+          track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+    
+        function slideLeft() {
+          currentIndex = Math.max(currentIndex - 1, 0);
+          updateSlider();
+        }
+    
+        function slideRight() {
+          currentIndex = Math.min(currentIndex + 1, slides.length - 3); // Show 3 slides
+          updateSlider();
+        }
+    
+        leftArrow.addEventListener('click', slideLeft);
+        rightArrow.addEventListener('click', slideRight);
+    
+        // Responsive adjustment on window resize
+        window.addEventListener('resize', updateSlider);
+      </script>
+  
+  {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Shop Category",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Title"
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 52
+      }
+    ],
+    "blocks": [
+        {
+            "type": "column",
+            "name": "Add Slide",
+            "settings": [
+                {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Select image"
+                },
+                {
+                "type": "collection",
+                "id": "link",
+                "label": "Url"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Shop Category"
+      }
+    ]
   }
-{% endschema %}
+  {% endschema %}
+  

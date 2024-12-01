@@ -1296,6 +1296,7 @@ ul.menu li.column-1 .submenu > li > a i {
 
 	.btn-menu-mega {
 		float:left;
+      display:none;
 	}
 
 	.mainnav > ul.menu > li {

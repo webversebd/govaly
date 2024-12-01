@@ -119,22 +119,6 @@ ul {
 	color:#f28b00;
 }
 
-#mega-menu > ul.menu > li > a.dropdown:after {
-	content:'\2192';
-	position:absolute;
-	font-family:'fontawesome';
-	right:29px;
-	font-size:14px;
-	color:#484848;
-}
-
-#mega-menu > ul.menu > li > a .menu-img {
-	margin-right:18px;
-	min-width:30px;
-	display:inline-block;
-	text-align:center;
-}
-
 #mega-menu > ul.menu > li > a .menu-title {
 	color:#484848;
 }

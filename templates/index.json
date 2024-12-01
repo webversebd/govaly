@@ -497,24 +497,28 @@
         "column_ViB3WP": {
           "type": "column",
           "settings": {
-            "link": ""
+            "image": "shopify://shop_images/fashion_products_8_2.jpg",
+            "link": "kids-boys-clothing"
           }
         },
         "column_PxQjNp": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/fashion_products_8_6.jpg",
             "link": ""
           }
         },
         "column_3baK8y": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/fashion_products_11_2.jpg",
             "link": ""
           }
         },
         "column_qxjaTt": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/fashion_products_8_4.jpg",
             "link": ""
           }
         }

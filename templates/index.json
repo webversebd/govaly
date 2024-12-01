@@ -469,6 +469,35 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "shop_category_HfjEqP": {
+      "type": "shop-category",
+      "blocks": {
+        "column_GnBV4q": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1.webp",
+            "link": "baby"
+          }
+        },
+        "column_MFR8BH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/17121306420.jpg",
+            "link": "kids-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "column_GnBV4q",
+        "column_MFR8BH"
+      ],
+      "settings": {
+        "heading": "Title",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -481,6 +510,7 @@
     "long_banner_V4MtPn",
     "support_qeqKr8",
     "product_slider_rRkT9L",
-    "four_column_JrnV3j"
+    "four_column_JrnV3j",
+    "shop_category_HfjEqP"
   ]
 }

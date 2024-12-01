@@ -157,6 +157,7 @@
         "featured_collection_DgG8aC",
         "featured_collection_AYEcDK"
       ],
+      "disabled": true,
       "custom_css": [
         "#Slider-template--23780886184251__category_list_bnyC7d .card__heading a {display: none;}"
       ],

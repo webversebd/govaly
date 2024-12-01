@@ -54,7 +54,7 @@
         "slides_NjYP8w"
       ],
       "settings": {
-        "slider_height": "default",
+        "slider_height": "medium",
         "center_width": true
       }
     },
@@ -68,7 +68,7 @@
             "title": "Be the First to Introduce Exquisite Decor Collection",
             "text": "New Arrival",
             "link_label": "Shop Now",
-            "link": "",
+            "link": "shopify://collections",
             "link_label2": "",
             "link2": ""
           }
@@ -107,67 +107,6 @@
         "padding_bottom": 0
       }
     },
-    "category_list_RL6VYJ": {
-      "type": "category-list",
-      "blocks": {
-        "featured_collection_86Rpn7": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_eVxYpi": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_HiyYnb": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_i9r3wf": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_ciD4tj": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_aUxpDQ": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_86Rpn7",
-        "featured_collection_eVxYpi",
-        "featured_collection_HiyYnb",
-        "featured_collection_i9r3wf",
-        "featured_collection_ciD4tj",
-        "featured_collection_aUxpDQ"
-      ],
-      "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 6,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "countdown_4TRHPG": {
       "type": "countdown",
       "settings": {
@@ -182,6 +121,76 @@
         "color_scheme": "scheme-1",
         "padding_top": 60,
         "padding_bottom": 68
+      }
+    },
+    "shop_category_HfjEqP": {
+      "type": "shop-category",
+      "blocks": {
+        "column_GnBV4q": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1.webp",
+            "link": "baby"
+          }
+        },
+        "column_MFR8BH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/17121306420.jpg",
+            "link": "kids-accessories"
+          }
+        },
+        "column_4jAWJC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Product-1.jpg",
+            "link": "kids-accessories"
+          }
+        },
+        "column_ViB3WP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fashion_products_8_2.jpg",
+            "link": "kids-boys-clothing"
+          }
+        },
+        "column_PxQjNp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fashion_products_8_6.jpg",
+            "link": ""
+          }
+        },
+        "column_3baK8y": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fashion_products_11_2.jpg",
+            "link": ""
+          }
+        },
+        "column_qxjaTt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fashion_products_8_4.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_GnBV4q",
+        "column_MFR8BH",
+        "column_4jAWJC",
+        "column_ViB3WP",
+        "column_PxQjNp",
+        "column_3baK8y",
+        "column_qxjaTt"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Shop By Catagory",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "category_list_bnyC7d": {
@@ -218,6 +227,7 @@
         "featured_collection_DgG8aC",
         "featured_collection_AYEcDK"
       ],
+      "disabled": true,
       "custom_css": [
         "#Slider-template--23780886184251__category_list_bnyC7d .card__heading a {display: none;}"
       ],
@@ -474,8 +484,8 @@
   "order": [
     "slick_slider_KnEU9M",
     "category_image_N86EFC",
-    "category_list_RL6VYJ",
     "countdown_4TRHPG",
+    "shop_category_HfjEqP",
     "category_list_bnyC7d",
     "shop_brand_6TyGVW",
     "long_banner_V4MtPn",

@@ -1,5 +1,5 @@
 {{ 'component-sliders.css' | asset_url | stylesheet_tag: preload: true }}
- 
+  
 {%- liquid
   assign s = section.settings
   assign slider_height = s.slider_height
@@ -30,7 +30,7 @@
           assign bg_image_mob = bg_image
         endif
       -%}
-      <div class="slider-item {{slider_height}} color-{{ color_scheme }} gradient">
+      <div class="slider-item {{s.slider_height}} color-{{ color_scheme }} gradient">
         <div class="slider-info {{content_position}}">
           <div class="page-width w-100">
             <div class="slider-content content_{{content_alignment}}">
@@ -102,14 +102,17 @@
         "label": "Height",
         "options": [
           {
-            "label": "Default",
-            "value": "default"
+            "label": "Large",
+            "value": "large"
           }, {
             "label": "Medium",
             "value": "medium"
+          }, {
+            "label": "Small",
+            "value": "small"
           }
         ],
-        "default": "default"
+        "default": "large"
       }, {
         "type": "checkbox",
         "id": "center_width",

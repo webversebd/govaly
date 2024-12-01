@@ -24,9 +24,13 @@
                 <ul class="menu">
                   {%- for link in section.settings.l_menu.links -%}
                   <li>
+<<<<<<< HEAD
                     <a href="{{link.url}}" title="" class="dropdown">
                       <span class="menu-title"> {{link.title}} </span>
                     </a>
+=======
+                    <a href="{{link.url}}" title="" class="dropdown"> {{ link.title }} </a>
+>>>>>>> 88919f2f3ce5be8487ea21edf10c6d4d0010d2a2
                     {% if link.links != blank %}
                     <div class="drop-menu">
                       {%- for childlink in link.links -%}

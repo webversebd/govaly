@@ -24,30 +24,8 @@
                 <ul class="menu">
                   {%- for link in section.settings.l_menu.links -%}
                   <li>
-                    <a href="{{link.url}}" title="" class="dropdown"> {{ link.title }} </a>
-                    {% if link.links != blank %}
-                    <div class="drop-menu">
-                      {%- for childlink in link.links -%}
-                      <div class="one-third">
-                        <div class="cat-title"> <a href="{{childlink.url}}"> {{childlink.title}} </a> </div>
-                        {%- if childlink.links != blank -%}
-                        <ul>
-                          {%- for grandchildlink in childlink.links -%}
-                          <li>
-                            <a href="{{grandchildlink.url}}" title=""
-                              >{{grandchildlink.title}}</a
-                            >
-                          </li>
-                          {% endfor %}
-                        </ul>
-                        <div class="show">
-                          <a href="{{childlink.url}}" title="">Shop All</a>
-                        </div>
-                        {% endif %}
-                      </div>
-                      {% endfor %}
-                    </div>
-                    {% endif %}
+                    <a href="{{link.url}}" title="" > {{ link.title }} </a>
+                    
                   </li>
                   {% endfor %}
                 </ul>

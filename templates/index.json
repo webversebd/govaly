@@ -123,76 +123,6 @@
         "padding_bottom": 68
       }
     },
-    "shop_category_HfjEqP": {
-      "type": "shop-category",
-      "blocks": {
-        "column_GnBV4q": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/1.webp",
-            "link": "baby"
-          }
-        },
-        "column_MFR8BH": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/17121306420.jpg",
-            "link": "kids-accessories"
-          }
-        },
-        "column_4jAWJC": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Product-1.jpg",
-            "link": "kids-accessories"
-          }
-        },
-        "column_ViB3WP": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/fashion_products_8_2.jpg",
-            "link": "kids-boys-clothing"
-          }
-        },
-        "column_PxQjNp": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/fashion_products_8_6.jpg",
-            "link": ""
-          }
-        },
-        "column_3baK8y": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/fashion_products_11_2.jpg",
-            "link": ""
-          }
-        },
-        "column_qxjaTt": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/fashion_products_8_4.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_GnBV4q",
-        "column_MFR8BH",
-        "column_4jAWJC",
-        "column_ViB3WP",
-        "column_PxQjNp",
-        "column_3baK8y",
-        "column_qxjaTt"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "Shop By Catagory",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "category_list_bnyC7d": {
       "type": "category-list",
       "blocks": {
@@ -227,7 +157,6 @@
         "featured_collection_DgG8aC",
         "featured_collection_AYEcDK"
       ],
-      "disabled": true,
       "custom_css": [
         "#Slider-template--23780886184251__category_list_bnyC7d .card__heading a {display: none;}"
       ],
@@ -485,7 +414,6 @@
     "slick_slider_KnEU9M",
     "category_image_N86EFC",
     "countdown_4TRHPG",
-    "shop_category_HfjEqP",
     "category_list_bnyC7d",
     "shop_brand_6TyGVW",
     "long_banner_V4MtPn",

@@ -689,7 +689,7 @@
               <div class="nav-wrap">
                 <div id="mainnav" class="mainnav">
                   <ul class="menu">
-                    {%- for link in section.settings.menu.links -%}
+                    {%- for link in section.settings.menu.center_link -%}
                     <li class="column-1">
                       <a href="{{  link.url}}" title="">{{- link.title | escape -}}</a>
                       {% if link.links != blank %}
@@ -777,9 +777,9 @@
       },
       {
       "type": "link_list",
-      "id": "menu",
+      "id": "center_link",
       "default": "main-menu",
-      "label": "Left menu"
+      "label": "Center menu"
     },
     {
       "type": "link_list",

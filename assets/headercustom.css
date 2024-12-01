@@ -1292,11 +1292,12 @@ ul.menu li.column-1 .submenu > li > a i {
 	.btn-menu,
 	.btn-menu-mega {
 		display:block;
+      display:none;
 	}
 
 	.btn-menu-mega {
 		float:left;
-      display:none;
+      
 	}
 
 	.mainnav > ul.menu > li {

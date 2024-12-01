@@ -93,7 +93,9 @@
               
               <!-- /.nav-wrap -->
               <div class="today-deal">
-                <a href="#" title="">TODAY DEALS</a>
+                {%- for link in section.settings.r_menu.links -%}
+                <a href="{{link.url}}" title="">{{link.title}}</a>
+                {% endfor %}
               </div>
               <!-- /.today-deal -->
               <div class="btn-menu">

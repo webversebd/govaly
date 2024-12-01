@@ -49,6 +49,7 @@
         "link_list_iKhNpq"
       ],
       "settings": {
+        "payment_img": "shopify://shop_images/SSLCommerz_white_1.webp",
         "payment_width": 90,
         "color_scheme": "scheme-1",
         "newsletter_enable": false,

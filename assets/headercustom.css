@@ -38,7 +38,7 @@ ul {
 	font-weight:600;
 	font-size:16px;
 	color:#fefefe;
-	height:40px;
+	height:43px;
 	padding-left:87px;
 	line-height:40px;
 	background-color:#f9912f;
@@ -261,7 +261,7 @@ ul {
 
 #mainnav > ul.menu > li {
 	display:inline-block;
-	line-height:57px;
+	line-height:40px;
 	height:40px;
 }
 

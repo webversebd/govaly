@@ -510,6 +510,7 @@ ul.menu li.column-1 .submenu > li > a i {
 	width:100%;
 	position:absolute;
 	left:0;
+	top: 54px;
 	z-index:1000;
 	background-color:#222222;
 }
@@ -733,9 +734,10 @@ ul.menu li.column-1 .submenu > li > a i {
 	margin:0 auto;
 	width:100%;
 	position:absolute;
-	left:0;
+	left:15px;
 	z-index:1000;
 	background-color:#222222;
+	top: 54px;
 }
 
 #mega-mobile > ul.menu > li > a {

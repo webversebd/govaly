@@ -35,7 +35,7 @@
         "sticky_header_type": "always",
         "show_line_separator": true,
         "color_scheme": "scheme-cbb6cc45-c497-4184-bf84-ab4615e4123e",
-        "menu_color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-cbb6cc45-c497-4184-bf84-ab4615e4123e",
         "enable_country_selector": false,
         "enable_language_selector": false,
         "enable_customer_avatar": true,

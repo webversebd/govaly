@@ -85,19 +85,11 @@
     position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
   }
-  .new-header-search{
-    width: 75%
-  }
 
   @media screen and (min-width: 750px) {
     .section-header {
       margin-bottom: {{ section.settings.margin_bottom }}px;
    
-  }
-  @media screen and (min-width: 576px) {
-    .new-header-search{
-    width: 100%
-    }
   }
 
   @media screen and (min-width: 990px) {
@@ -172,7 +164,7 @@
       {%- endif -%}
     {%- endif -%}
 
-    <div class="new-header-search d-none d-sm-block">
+    <div class="new-header-search d-none d-sm-block" style="width: 75%;">
       {% render 'new-header-search'%} 
     </div>
 
@@ -287,7 +279,7 @@
     </div>
   </header>
     
-  <div class="new-header-search d-block d-sm-none">
+  <div class="new-header-search d-block d-sm-none" style="width: 100%;">
     {% render 'new-header-search'%} 
   </div>
 

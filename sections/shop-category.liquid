@@ -130,16 +130,16 @@
   </div>
   <script>
         // Slider functionality
-        const track = document.querySelector('#shop_category .slider-track');
-        const slides = document.querySelectorAll('#shop_category .slide');
-        const leftArrow = document.querySelector('#shop_category .arrow.left');
-        const rightArrow = document.querySelector('#shop_category .arrow.right');
+        const track2 = document.querySelector('#shop_category .slider-track');
+        const slider2 = document.querySelectorAll('#shop_category .slide');
+        const larrow = document.querySelector('#shop_category .arrow.left');
+        const rarrow = document.querySelector('#shop_category .arrow.right');
     
         let cIndex = 0;
     
         function updateShopSlider() {
-          const slideWidth = slides[0].offsetWidth + 15; // Add gap
-          track.style.transform = `translateX(-${cIndex * slideWidth}px)`;
+          const slideWidth = slider2[0].offsetWidth + 15; // Add gap
+          track2.style.transform = `translateX(-${cIndex * slideWidth}px)`;
         }
     
         function sleft() {
@@ -152,8 +152,8 @@
           updateShopSlider();
         }
     
-        leftArrow.addEventListener('click', sleft);
-        rightArrow.addEventListener('click', sright);
+        larrow.addEventListener('click', sleft);
+        rarrow.addEventListener('click', sright);
     
         // Responsive adjustment on window resize
         window.addEventListener('resize', updateShopSlider);

@@ -85,3 +85,31 @@ a:hover {
   border: 1px solid rgb(var(--color-secondary-button-text));
   box-shadow: 0 4px 9px rgb(var(--color-secondary-button-text));
 }
+
+/* Responsive Mobile */
+
+@media only screen and (max-width: 767px) {
+  .footer-block__image-wrapper{
+      margin:0 auto;
+      margin-bottom: 2rem  ;
+    }
+    .d-md-block{
+      display: block;
+    }
+    /* Mobile Menu */
+    .menu-drawer__account {
+      padding: 1rem 20px !important;
+      display: flex !important;
+      justify-content: center;
+    }
+    .menu-drawer__account account-icon svg{
+      margin-right: 10px;
+    }
+    .videoBackground .videoBoxInfoTitle {
+      font-size: 35px !important;
+      margin: 20px 0px !important;
+  }
+  .footer__content-bottom-wrapper {
+      flex-direction: column-reverse !important;
+    } 
+  }

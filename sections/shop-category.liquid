@@ -135,28 +135,28 @@
         const leftArrow = document.querySelector('#shop_category .arrow.left');
         const rightArrow = document.querySelector('#shop_category .arrow.right');
     
-        let currentIndex = 0;
+        let cIndex = 0;
     
-        function updateSlider() {
+        function updateShopSlider() {
           const slideWidth = slides[0].offsetWidth + 15; // Add gap
-          track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+          track.style.transform = `translateX(-${cIndex * slideWidth}px)`;
         }
     
-        function slideLeft() {
-          currentIndex = Math.max(currentIndex - 1, 0);
-          updateSlider();
+        function sleft() {
+          cIndex = Math.max(cIndex - 1, 0);
+          updateShopSlider();
         }
     
-        function slideRight() {
-          currentIndex = Math.min(currentIndex + 1, slides.length - 3); // Show 3 slides
-          updateSlider();
+        function sright() {
+          cIndex = Math.min(cIndex + 1, slides.length - 3); // Show 3 slides
+          updateShopSlider();
         }
     
-        leftArrow.addEventListener('click', slideLeft);
-        rightArrow.addEventListener('click', slideRight);
+        leftArrow.addEventListener('click', sleft);
+        rightArrow.addEventListener('click', sright);
     
         // Responsive adjustment on window resize
-        window.addEventListener('resize', updateSlider);
+        window.addEventListener('resize', updateShopSlider);
       </script>
   
   {% schema %}

@@ -85,6 +85,15 @@ a:hover {
   border: 1px solid rgb(var(--color-secondary-button-text));
   box-shadow: 0 4px 9px rgb(var(--color-secondary-button-text));
 }
+.field__input, .select__select, .customer .field input, .customer select {
+	height: 35px;
+}
+.field__label, .customer .field label {
+	line-height: 1;
+}
+.search__button:not(:focus-visible):not(.focused), .reset__button:not(:focus-visible):not(.focused) {
+	top: -2px;
+}
 
 /* Responsive Mobile */
 

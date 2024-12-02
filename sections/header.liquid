@@ -164,53 +164,9 @@
       {%- endif -%}
     {%- endif -%}
 
-    
-    <predictive-search class="search-modal__form d-none d-sm-block">
-      <search-form class="search-modal__form">
-        <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-      <div class="field">
-        <input
-          class="search__input field__input"
-          id="{{ input_id }}"
-          type="search"
-          name="q"
-          value="{{ search.terms | escape }}"
-          placeholder="{{ 'general.search.search' | t }}"
-          {%- if settings.predictive_search_enabled -%}
-            role="combobox"
-            aria-expanded="false"
-            aria-owns="predictive-search-results"
-            aria-controls="predictive-search-results"
-            aria-haspopup="listbox"
-            aria-autocomplete="list"
-            autocorrect="off"
-            autocomplete="off"
-            autocapitalize="off"
-            spellcheck="false"
-          {%- endif -%}
-        >
-        <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
-        <input type="hidden" name="options[prefix]" value="last">
-        <button
-          type="reset"
-          class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
-          aria-label="{{ 'general.search.reset' | t }}"
-        >
-          <span class="svg-wrapper">
-            {{- 'icon-reset.svg' | inline_asset_content -}}
-          </span>
-        </button>
-        <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-          {% render "icon-search" %}
-        </button>
-      </div>
-
-       
-    </form>
-    </search-form>
-      </predictive-search>
-
-
+    <div class="new-header-search d-block d-sm-none">
+      {% render 'new-header-search'%} 
+    </div>
 
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
@@ -322,8 +278,11 @@
       </a>
     </div>
   </header>
+    
+  <div class="new-header-search d-block d-sm-none">
+    {% render 'new-header-search'%} 
+  </div>
 
-  {% render 'header-search', input_id: 'Search-In-Modal' %} 
 
     
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>

@@ -105,7 +105,7 @@
     }
   </style>
 
-  <div class="color-{{ section.settings.color_scheme }} gradient isolate">
+  <div id="shop_category" class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
       <div class="brand-slider">
         <div class="slider-header">
@@ -130,10 +130,10 @@
   </div>
   <script>
         // Slider functionality
-        const track = document.querySelector('.slider-track');
-        const slides = document.querySelectorAll('.slide');
-        const leftArrow = document.querySelector('.arrow.left');
-        const rightArrow = document.querySelector('.arrow.right');
+        const track = document.querySelector('#shop_category .slider-track');
+        const slides = document.querySelectorAll('#shop_category .slide');
+        const leftArrow = document.querySelector('#shop_category .arrow.left');
+        const rightArrow = document.querySelector('#shop_category .arrow.right');
     
         let currentIndex = 0;
     

@@ -1,6 +1,9 @@
 a {
   text-decoration: none;
 }
+a:hover {
+  color: rga(var(--color-button));
+}
 .announcement-bar.announcement-bar--one-announcement,
 .announcement-bar--one-announcement .announcement-bar__link {
   margin: 0;

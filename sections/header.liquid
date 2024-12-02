@@ -164,9 +164,9 @@
       {%- endif -%}
     {%- endif -%}
 
-    <div class="new-header-search d-block d-sm-none">
+    {% comment %} <div class="new-header-search d-none d-sm-block"> {% endcomment %}
       {% render 'new-header-search'%} 
-    </div>
+    {% comment %} </div> {% endcomment %}
 
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}

@@ -43,7 +43,7 @@ ul {
 	line-height:40px;
 	background-color:#f9912f;
 	position:relative;
-	z-index:98;
+	z-index:1;
 	cursor:pointer;
 }
 
@@ -88,7 +88,7 @@ ul {
 
 #mega-menu > ul.menu {
 	position:relative;
-	z-index:90;
+	z-index:1;
 	background-color:#fff;
 	border:1px solid #484848;
 	border-bottom-left-radius:8px;
